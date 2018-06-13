@@ -1,130 +1,58 @@
-body { background-color:#ccc; }
-
-#bg_img { position:absolute; width:100%; height:100%; top:0; left:0; background:url(../img/bg_01.jpg) no-repeat center center; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; background-size:cover; }
-#layout { position:absolute; width:90%; height:100%; top:0; left:5%; }
+#main_wrap { width:100%; height:100%; background:url(../img/bg_main.jpg) no-repeat center center; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; }
 
 
 
 
 
-header { width:100%; height:35px; padding-top:35px; }
-
-h1#logo { float:left; }
-h1#logo a { font-size:25px; font-weight:bold; line-height:35px; }
-
-nav { float:right; }
-ul#nav_menu li { float:left; margin-right:75px; line-height:35px; }
-ul#nav_menu li:last-child { margin-right:0; }
-ul#nav_menu li a { font-size:15px; font-weight:bold; }
-ul#nav_menu li a:hover { opacity:0.5; }
+/*trailer_box*/
+#t_text { display:none; }
+#t_circle a { display:block; }
 
 
 
 
 
-#title_wrap { position:absolute; width:100%; top:25%; left:0; /*border:1px solid red; box-sizing:border-box;*/ }
+/*title_box*/
+#title_box { position:absolute; top:50%; left:5%; width:90%; transform:translateY(-30%); -webkit-transform:translateY(-30%); -moz-transform:translateY(-30%); }
 
-h2 { width:50%; float:left; }
-h2 img { width:100%; }
-
-
-
-#text_wrap { float:left; margin-left:10%; opacity:0.95; /*border:1px solid blue; box-sizing:border-box;*/ }
-
-#text { margin-top:55px; }
-#text span { display:block; font-size:15px; text-indent:3px; color:#fff; margin-bottom:15px; }
-#text p a { font-size:40px; font-weight:bold; line-height:1; }
-
-#arr_box { margin-top:100px; }
-#arr_box ul li { float:left; }
-#arr_box ul li:first-child { margin-right:25px; }
-
-#arr_box ul li a { display:block; width:50px; height:50px; background:url(../img/hover.png) no-repeat; text-indent:-9999px; overflow:hidden; opacity:0.85; }
-#arr_box ul li#arr_left a { background-position:-25px -25px; }
-#arr_box ul li#arr_right a { background-position:-100px -25px; }
-#arr_box ul li#arr_left a:hover { background-position:-25px -100px; }
-#arr_box ul li#arr_right a:hover { background-position:-100px -100px; }
+h2#title { width:100%; }
+h3#sub_title { width:25%; margin-top:50px; transition:0.3s all; -webkit-transition:0.5s all; -moz-transition:0.5s all; -o-transition:0.5s all; }
 
 
 
 
 
-#slide_icon { width:25px; height:110px; float:right; margin-top:55px; }
-
-#slide_icon li a { display:block; width:10px; height:2px; float:right; clear:both; margin-top:52px; background-color:#fff; }
-#slide_icon li:first-child a { width:30px; margin-top:0; }
 
 
-
-
-
-#bottom { position:absolute; width:100%; height:20px; bottom:25px; line-height:20px; }
-
-#site { float:left; }
-#site ul li { float:left; }
-#site ul li:first-child { margin-right:25px; }
-#site ul li a:hover { text-decoration:line-through; }
-
-#sound ul { width:70px; float:right; }
-#sound ul li:first-child { float:left; color:#fff; }
-#sound ul li:last-child { float:right; font-weight:bold; } 
-
-
-
-
-
-@media screen and (min-width:1600px) {  
-	
-	h2 { width:50%; }
-	
-}
-
+/*media query*/
 @media screen and (min-width:1350px) and (max-width:1599px) {  
-	
-	h2 { width:60%; }
-
-	#text { margin-top:55px; }
-	#arr_box { margin-top:70px; }
-	#text p a { font-size:35px; font-weight:bold; line-height:1; }
-
-	#slide_icon { height:100px; }
-	#slide_icon li a { margin-top:47px; }
-	
+	h3#sub_title { width:30%; }
 }
 
 @media screen and (min-width:1000px) and (max-width:1349px) {  
-	
-	h2 { width:75%; }
+	h3#sub_title { width:35%; }
 
-	#text_wrap { display:none; }
-
-	#slide_icon { height:100px; }
-	#slide_icon li a { margin-top:47px; }
-	
+	#t_circle a { display:none; }
 }
 
-@media screen and (min-width:480px) and (max-width:999px) {  
-	
-	h1#logo a { font-size:20px; }
-	ul#nav_menu li { margin-right:50px; }
+@media screen and (min-width:750px) and (max-width:999px) {  
+	h3#sub_title { width:45%; }
 
-	h2 { width:100%; }
-
-	#text_wrap { display:none; }
-	#slide_icon { display:none; }
-	
+	#t_circle a { display:none; }
 }
 
-@media screen and (max-width:479px) {  
-	
-	h1#logo a { font-size:20px; }
-	ul#nav_menu { display:none; }
+@media screen and (min-width:650px) and (max-width:749px) {  
+	h3#sub_title { width:45%; }
 
-	h2 { width:100%; }
-
-	#title_wrap { top:25%; }
-	#text_wrap { margin-left:0; }
-
-	#slide_icon { display:none; }
-	
+	#t_circle a { display:none; }
 }
+
+@media screen and (max-width:649px) { 
+	h3#sub_title { width:60%; }
+
+	#t_circle a { display:none; }
+}
+
+
+
+
