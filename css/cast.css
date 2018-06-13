@@ -53,9 +53,9 @@ h3 { font-size:50px; margin-top:25px; }
 }*/
 
 @media screen and (max-width:749px) { 
-	#title_box { height:500px; margin-top:-200px; }
+	#title_box { left:10%; width:80%; height:450px; margin-top:-175px; }
 	ul#cast_btn li#kris, ul#cast_btn li#nic { float:none; }
-	ul#cast_btn li + li { margin-top:100px; }
+	ul#cast_btn li + li { margin-top:15%; }
 
 	h2 { font-size:65px; }
 	h3 { font-size:35px; margin-top:15px; }

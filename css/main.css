@@ -42,12 +42,14 @@ h3#sub_title { width:25%; margin-top:50px; transition:0.3s all; -webkit-transiti
 }
 
 @media screen and (min-width:650px) and (max-width:749px) {  
+	#title_box { left:10%; width:80%; }
 	h3#sub_title { width:45%; }
 
 	#t_circle a { display:none; }
 }
 
 @media screen and (max-width:649px) { 
+	#title_box { left:10%; width:80%; }
 	h3#sub_title { width:60%; }
 
 	#t_circle a { display:none; }

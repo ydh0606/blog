@@ -32,13 +32,13 @@ img { border:none; vertical-align:middle; width:100%; }
 
 
 /*header_wrap layout*/
-header { position:absolute; top:75px; left:5%; width:90%; /*background-color:#fff;*/ }
+header { position:absolute; top:7%; left:5%; width:90%; transition:0.5s all; -webkit-transition:0.5s all; -moz-transition:0.5s all; -o-transition:0.5s all; }
 
 h1#logo, nav, p#nav_btn, ul#nav_menu { float:left; }
 ul#nav_menu > li { float:left; }
 #trailer_box { float:right; }
 
-h1#logo { width:100px; }
+h1#logo { width:100px; transition:0.5s all; -webkit-transition:0.5s all; -moz-transition:0.5s all; -o-transition:0.5s all; }
 
 nav { margin-left:10%; transition:0.5s all; -webkit-transition:0.5s all; -moz-transition:0.5s all; -o-transition:0.5s all; }
 
@@ -89,7 +89,7 @@ ul.menu_sub li + li { margin-top:25px; }
 
 
 /*bottom_box*/
-ul#bottom { position:absolute; bottom:50px; right:5%; }
+ul#bottom { position:absolute; bottom:5%; right:5%; transition:0.5s all; -webkit-transition:0.5s all; -moz-transition:0.5s all; -o-transition:0.5s all; }
 ul#bottom li { float:left; line-height:25px; text-align:center; }
 ul#bottom a { transition:0.3s all; -webkit-transition:0.3s all; -moz-transition:0.3s all; -o-transition:0.3s all; }
 
@@ -132,17 +132,27 @@ ul#bottom li:last-child a:hover { background-color:rgba(255,255,255,0.85); color
 @media screen and (min-width:650px) and (max-width:749px) {  
 	/*ul#nav_menu > li:first-child a { color:blue; }*/
 
+	header { left:10%; width:80%; }
+	h1#logo { width:125px; }
+
 	nav #nav_btn { position:absolute; width:17px; height:17px; right:0; margin-right:0; }
 	nav #nav_btn p, #nav_menu { display:none; }
 
 	#t_text { display:none; }
+
+	ul#bottom { right:10%; }
 }
 
 @media screen and (max-width:649px) { 
 	/*ul#nav_menu > li:first-child a { color:pink; }*/
 
+	header { left:10%; width:80%; }
+	h1#logo { width:125px; }
+
 	nav #nav_btn { position:absolute; width:17px; height:17px; right:0; margin-right:0; }
 	nav #nav_btn p, #nav_menu { display:none; }
 
 	#t_text { display:none; }
+
+	ul#bottom { right:10%; }
 }
