@@ -7,61 +7,130 @@
 	<link rel="shortcut icon" type="image/x-icon" href="img/favi.ico" />
 	<link href="https://fonts.googleapis.com/css?family=Raleway:200,300,400,500,600,700" rel="stylesheet">
 
-	<link href="css/common.css" rel="stylesheet" type="text/css"/>
-	<link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="css/index.css" rel="stylesheet" type="text/css"/>
 </head>
 
 
 
 <body>
 
+	<div id="cursor"></div>
+
 	<div id="main_wrap">
 		
 		<div id="header_wrap">
-			<div id="nav_bg"></div>
+			<div id="nav_bg">
+				<div id="sub_outbox">
+					<div id="sub_inbox">
+						<div id="sub">
+							<ul class="menu_sub">
+								<li><a href="#">KRISTEN STEWART</a></li>
+								<li><a href="#">NICHOLAS HOULT</a></li>
+							</ul>
+							<ul class="menu_sub">
+								<li><a href="#">SYNOPSIS<br>&amp; CREW</a></li>
+							</ul>
+							<ul class="menu_sub">
+								<li><a href="#">GALLERY</a></li>
+								<li><a href="#">TRAILER</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
 
 			<header>
-				<h1 id="logo"><a href="index.html"><img src="img/logo.png" alt="EQUALS Text logo"></a></h1>
+				<h1 id="logo" class="menu_title circle"><a href="#"><img src="img/logo.png" alt="EQUALS Text logo"></a></h1>
 
 				<nav>
 					<div id="nav_btn">
-						<b><span></span></b>
-						<p>MENU</p>
+						<a href="#">
+							<b><span></span></b>
+							<p>MENU</p>
+						</a>
 					</div>
 
 					<ul id="nav_menu">
-						<li class="menu_title"><a href="cast.html">CAST</a>
-							<ul class="menu_sub">
-								<li><a href="cast_nic.html">KRISTEN STEWART</a></li>
-								<li><a href="cast_kris.html">NICHOLAS HOULT</a></li>
-							</ul>
+						<li id="menu_cast"><h2 class="menu_title"><a href="#">CAST</a></h2>
+							<!-- <ul class="menu_sub">
+								<li><a href="#">KRISTEN STEWART</a></li>
+								<li><a href="#">NICHOLAS HOULT</a></li>
+							</ul> -->
 						</li>
-						<li class="menu_title"><a href="story.html">STORY</a>
-							<ul class="menu_sub">
-								<li><a href="story_sub.html">SYNOPSIS<br>&amp; CREW</a></li>
-							</ul>
+						<li id="menu_story"><h2 class="menu_title"><a href="#">STORY</a></h2>
+							<!-- <ul class="menu_sub">
+								<li><a href="#">SYNOPSIS<br>&amp; CREW</a></li>
+							</ul> -->
 						</li>
-						<li class="menu_title"><a href="high.html">HIGHLIGHT</a>
-							<ul class="menu_sub">
-								<li><a href="high_sub.html">GALLERY</a></li>
-								<li><a href="trailer.html">TRAILER</a></li>
-							</ul>
+						<li id="menu_high"><h2 class="menu_title"><a href="#">HIGHLIGHT</a></h2>
+							<!-- <ul class="menu_sub">
+								<li><a href="#">GALLERY</a></li>
+								<li><a href="#">TRAILER</a></li>
+							</ul> -->
 						</li>
 					</ul>
 				</nav>
 
 				<div id="trailer_box">
 					<span id="t_text"><a href="#">WATCH THE <b>TRAILER</b></a></span>
-					<div id="t_circle"><a href="#"></a></div>
+					<div id="t_circle">
+						<span id="t_play"><img src="img/t_play.png"></span>
+						<a href="#">
+							<span><img src="img/t_mask.png"></span>
+							<img id="t_video" src="img/t_img.jpg">
+						</a>
+					</div>
 				</div>
 			</header>
+		</div>	<!-- header_wrap -->
+
+
+		<div id="main_bg" class="bg fade_in">
+			<div class="main_color"></div>
+			<div id="main_box">
+				<h2 id="title" class="parallax"><img src="img/main_title.png" alt="EQUALS Title Text"></h2>
+				<h3 id="sub_title"><img src="img/main_sub_title.png" alt="Find Your Equals"></h3>
+			</div>
 		</div>
 
+		<div id="cast_bg" class="bg">
+			<div class="color_bg"></div>
+			<div id="cast_box" class="parallax">
+				<ul id="cast_btn">
+					<li id="kris">
+						<a href="cast_kirs.html">
+							<h2>KRISTEN<br>STEWART</h2>
+							<h3>Nia</h3>
+						</a>
+					</li>
+					<li id="nic">
+						<a href="cast_nid.html">
+							<h2>NICHOLAS<br>HOULT</h2>
+							<h3>Silas</h3>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</div>
 
+		<div id="story_bg" class="bg">
+			<div class="color_bg"></div>
+			<div id="story_box">
+				<div class="cont_p parallax">
+					<h2><a href="#">SYNOPSIS<br>&amp; CREW</a></h2>
+					<h3>“ I never could have imagined<br>&nbsp;&nbsp;what love felt like. ”</h3>
+				</div>
+			</div>
+		</div>
 
-		<div id="title_box">
-			<h2 id="title"><img src="img/main_title.png" alt="EQUALS Title Text"></h2>
-			<h3 id="sub_title"><img src="img/main_sub_title.png" alt="Find Your Equals"></h3>
+		<div id="high_bg" class="bg">
+			<div class="color_bg"></div>
+			<div id="high_box">
+				<div class="cont_p parallax">
+					<h2><a href="#">GALLEY</a></h2>
+					<h3>“ just remember what this feels like. ”</h3>
+				</div>
+			</div>
 		</div>
 
 
@@ -81,8 +150,7 @@
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
 	<script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js'></script>
 	
-<!-- 	<script src="js/script.js"></script>
-	<script src="js/main.js"></script> -->
+	<script src="js/script.js"></script>
 </body>
 
 </html>

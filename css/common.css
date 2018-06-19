@@ -1,10 +1,7 @@
-
-
-
-
 #transition { transition:0.5s all; -webkit-transition:0.5s all; -moz-transition:0.5s all; -o-transition:0.5s all; }
 
 #transform { transform:translateY(-50%); -webkit-transform:translateY(-50%); -moz-transform:translateY(-50%); }
+
 
 
 @charset "utf-8";
@@ -32,7 +29,7 @@ img { border:none; vertical-align:middle; width:100%; }
 
 
 /*header_wrap layout*/
-header { position:absolute; top:7%; left:5%; width:90%; transition:0.5s all; -webkit-transition:0.5s all; -moz-transition:0.5s all; -o-transition:0.5s all; }
+header { z-index:10000; position:absolute; top:7%; left:5%; width:90%; transition:0.5s all; -webkit-transition:0.5s all; -moz-transition:0.5s all; -o-transition:0.5s all; }
 
 h1#logo, nav, p#nav_btn, ul#nav_menu { float:left; }
 ul#nav_menu > li { float:left; }
