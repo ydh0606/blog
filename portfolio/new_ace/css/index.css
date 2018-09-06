@@ -1,0 +1,194 @@
+
+
+
+/*Fixed*/
+
+#bg_box { position:fixed; width:100%; height:100%; background:url(../img/bg_mar.jpg) no-repeat; }
+
+#fix_box { position:absolute; z-index:100; }
+.fix { position:fixed; }
+
+h2#h_logo { width:60px; height:30px; top:3%; left:4%; }
+
+#sns { width:50px; height:20px; top:3%; right:4%; }
+#sns a { text-indent:-9999px; overflow:hidden; }
+#sns span { display:block; width:50px; height:20px; background:url(../img/hover.png) -50px -50px no-repeat;  }
+#sns span:hover { background-position:-50px -80px; }
+
+.f_site { bottom:3%; left:4%; cursor:pointer; }
+.f_site a { display:block; line-height:15px; }
+.f_site a.a_title { font-size:11px; color:#56307c; font-weight:bold;}
+#f_site02 { display:none; color:#56307c; }
+#f_site02 ul li { float:left; margin-right:15px; }
+#f_site02 a.a_sub { color:#56307c; }
+#f_site02 a.a_sub:hover { color:#bbbad3; }
+
+
+#ux_box { width:12px; height:147px; float:right; top:50%; right:4%; margin-top:-73px; }
+ul#ux li { width:12px; height:12px; margin-bottom:15px; } 
+ul#ux li#ux_last { margin-bottom:0; } 
+
+ul#ux li a { display:block; width:12px; height:12px; background:url(../img/hover.png) -50px -110px no-repeat; text-indent:-9999px; overflow:hidden; }
+ul#ux li a:hover { background-position:-50px -132px; } 
+ul#ux li a.view { background-position:-50px -132px; }
+
+
+
+
+
+/*Page 01*/
+
+#page01 { position:absolute; width:100%; height:100%; top:0%; }
+
+#home_box { position:absolute; width:554px; height:274px; top:50%; left:47%; margin:-137px 0 0 -224px; }
+h1#a_logo { width:325px; height:210px; margin:0 0 50px 114px; } 
+
+#menu_box { width:554px; height:13px; float:left; }
+ul#menu li { float:left; margin-right:46px; }
+ul#menu li#menu05 { margin-right:0; }
+ul#menu li a { display:block; height:14px; background:url(../img/hover.png) -110px -50px no-repeat; text-indent:-9999px; overflow:hidden; }
+
+ul#menu li#menu01 a { width:69px; background-position:-110px -50px; } 
+ul#menu li#menu02 a { width:84px; background-position:-188px -50px; } 
+ul#menu li#menu03 a { width:68px; background-position:-282px -50px; } 
+ul#menu li#menu04 a { width:75px; background-position:-360px -50px; } 
+ul#menu li#menu05 a { width:73px; background-position:-445px -50px; } 
+ul#menu li#menu01 a:hover { background-position:-110px -80px; } 
+ul#menu li#menu02 a:hover { background-position:-188px -80px; } 
+ul#menu li#menu03 a:hover { background-position:-282px -80px; } 
+ul#menu li#menu04 a:hover { background-position:-360px -80px; } 
+ul#menu li#menu05 a:hover { background-position:-445px -80px; } 
+
+
+
+
+
+
+/*Page 02*/
+
+#page02 { position:absolute; width:100%; height:100%; top:100%; }
+
+#page02 #new_ace { position:absolute; width:939px; height:521px; top:50%; left:50%; margin:-275px 0 0 -468px; }
+#page02 span { position:absolute; width:63px; height:20px; bottom:5px; left:50%; margin-left:-30px; }
+
+
+
+
+
+/*Page 03*/
+
+#page03 { position:absolute; width:100%; height:100%; top:200%; }
+
+h3.title { position:absolute; height:112px; top:50%; left:50%; margin-top:-325px; z-index:10000; }
+
+h3#title03 { width:420px; margin-left:-210px; }
+
+#story_box { position:absolute; width:940px; height:400px; top:50%; left:50%; margin-left:-470px; margin-top:-125px; }
+
+#s_text_box { width:439px; height:400px; float:left; }
+#s_text_box #s_title { display:block; position:absolute; margin-top:80px; margin-left:83px; }
+#s_text_box p { display:block; position:absolute; margin-top:195px; margin-left:83px; line-height:1.5; }
+#s_text_box p span { font-weight:bold; }
+
+#s_text_box ul#btn_box { position:absolute; width:225px; height:25px; margin:324px 0 0 83px; }
+ul#btn_box li { float:left; }
+ul#btn_box li#s_btn01 { margin-right:25px; }
+ul#btn_box li a { display:block; width:100px; height:25px; background:url(../img/hover.png) no-repeat; text-indent:-9999px; overflow:hidden; cursor:pointer; }
+ul#btn_box li#s_btn01 a { background-position:-110px -184px; }
+ul#btn_box li#s_btn01 a:hover { background-position:-110px -219px; }
+ul#btn_box li#s_btn02 a { background-position:-220px -184px; }
+ul#btn_box li#s_btn02 a:hover { background-position:-220px -219px; }
+
+#s_img_box { position:absolute; margin-left:440px; width:500px; height:400px; overflow:hidden; }
+#s_img_box ul#s_img_slide { position:absolute; left:-500px; width:2500px; height:400px; }
+#s_img_box ul#s_img_slide li { width:500px; height:400px; float:left; }
+
+
+#s_img_box ul#s_img_ux { position:absolute; width:85px height:5px; bottom:25px; left:208px; }
+ul#s_img_ux li { float:left; margin-right:5px; width:25px; height:5px; background:url(../img/hover.png) -50px -169px no-repeat; cursor:pointer; }
+ul#s_img_ux li.last_ux { margin-right:0; }
+ul#s_img_ux li:hover { background-position:-50px -154px; }
+ul#s_img_ux li.view03 { background-position:-50px -154px; }
+
+#s_img_box ul#star { position:absolute; width:100px; height:10px; top:0; left:0; z-index:9999; display:none; }
+#s_img_box ul#star li { float:left; position:absolute; top:0; left:0; margin-right:10px; cursor:pointer; }
+
+#story_box>span { position:absolute; width:50px; height:50px; }
+#story_box>span#s_frame_01 { top:0; left:0; }
+#story_box>span#s_frame_02 { bottom:0; right:0; }
+
+
+
+
+
+
+/*Page 04*/
+
+#page04 { position:absolute; width:100%; height:100%; top:300%; }
+
+h3#title04 { width:380px; margin-left:-190px; }
+
+#no_box { position:absolute; width:975px; height:400px; top:50%; left:50%; margin-left:-487px; margin-top:-125px; }
+#no_box span.n_arr { position:absolute; width:17px; height:25px; margin-top:180px; cursor:pointer; }
+#no_box span#n_arr02 { right:0; }
+
+#n_img_box { position:absolute; width:900px; height:400px; margin-left:36px; background:url(../img/n_img_box.png) no-repeat; overflow:hidden;}
+
+#n_img_box ul#n_slide_box { position:absolute; left:-900px; width:5400px; height:400px; }
+#n_img_box ul#n_slide_box li { width:900px; height:400px; float:left; }
+
+#n_img_box ul#n_slide_ux { position:absolute; width:115px height:5px; bottom:25px; left:393px; }
+ul#n_slide_ux li { float:left; margin-right:5px; width:25px; height:5px; background:url(../img/hover.png) -50px -169px no-repeat; cursor:pointer; }
+ul#n_slide_ux li.last_ux { margin-right:0; }
+ul#n_slide_ux li:hover { background-position:-50px -154px; }
+ul#n_slide_ux li.view03 { background-position:-50px -154px; }
+
+
+
+
+
+/*Page 05*/
+
+#page05 { position:absolute; width:100%; height:100%; top:400%; overflow:hidden;}
+h3#title05 { width:431px; margin-left:-215px; }
+
+#cafe_box { width:100%; height:100%; background-color:#fff; }
+
+#cafe_bg { position:absolute; width:100%; height:100%; }
+#cafe_bg img { width:100%; height:100%; opacity:0.85; }
+
+#cafe_bg span#go_cafe { position:absolute; width:150px; height:25px; top:50%; left:50%; margin:-12px 0 0 -75px; }
+#cafe_bg span#go_cafe a { display:block; width:150px; height:25px; background:url(../img/hover.png) -360px -219px no-repeat; text-indent:-9999px; cursor:pointer; }
+#cafe_bg span#go_cafe a:hover { background-position:-360px -184px; }
+
+#c_contents { position:absolute; width:1000px; height:125px; bottom:15%; left:50%; margin-left:-500px; }
+
+#c_bg { position:absolute; width:1000px; height:125px; background-color:#fff; opacity:0.7; }
+
+#c_contents ul#c_text { position:relative; width:840px; height:66px; margin-left:80px; margin-top:30px; }
+#c_contents ul#c_text li { float:left; }
+#c_contents ul#c_text li#c_text02 { margin:0 25px 0 115px; }
+
+
+
+
+
+/*Page 06*/
+
+#page06 { position:absolute; width:100%; height:100%; top:500%; }
+h3#title06 { width:297px; margin-left:-148px; z-index:10000; }
+
+#love_box { position:absolute; width:940px; height:400px; top:50%; left:50%; margin-left:-469px; margin-top:-125px; }
+#love_box ul#l_img_box li { width:235px; height:200px; float:left; }
+#love_box ul#l_img_box li a { opacity:0.5; cursor:pointer; }
+
+
+
+
+
+/*POPUP*/
+#popup { position:absolute; width:100%; height:100%; background-color:rgba(255,255,255,0.85);  display:none; z-index:10000; }
+
+#pop_box { position:relative; width:940px; height:517px; top:50%; left:50%; margin-top:-235px; margin-left:-470px; background-color:#fff; cursor:pointer;  }
+
+#pop_box p:active { opacity:0.7; }

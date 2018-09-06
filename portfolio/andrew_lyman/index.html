@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<title>Andrew Lyman</title>
+
+	<link rel="shortcut icon" type="image/x-icon" href="img/al_favi.ico" />
+
+	<link href="css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="css/main.css" rel="stylesheet" type="text/css"/>
+</head>
+
+
+
+<body>
+
+	<!-- audio / 배경 음악 -->
+	<audio id="bgsound" autoplay loop="infinite">
+		<source src="audio/youth_acoustic.mp4" type="audio/mpeg">
+	</audio>
+
+
+
+	<!-- first / 배경 이미지 -->
+	<div id="first">
+
+		<!-- fix_wrap / 고정되는 요소 / 페이지 전체 동일 -->
+		<div id="fix_wrap">
+			<!-- header / 상단 / 로고 & 네비게이션 -->
+			<header>
+				<h1 id="logo"><a href="index.html">Andrew Lyman</a></h1>
+				<nav>
+					<ul id="nav_menu">
+						<li><a href="about.html">About</a></li>
+						<li><a href="works.html">Works</a></li>
+						<li><a href="story.html">Story</a></li>
+					</ul>
+				</nav>
+			</header>
+
+			<!-- bottom / 하단 / 사이트 링크 & 음악 재생 버튼 -->
+			<div id="bottom">
+				<div id="site">
+					<ul>
+						<li><a href="http://www.andrewlymanart.com/" target="blank">Website</a></li>
+						<li><a href="http://andrewlymanblog.tumblr.com/" target="blank">Tumblr</a></li>
+					</ul>
+				</div>
+				<div id="sound">
+					<p>Sound</p>
+					<span id="toggle">ON</span>
+				</div>
+			</div>
+		</div>
+
+		<!-- article title_wrap / 메인 타이틀 및 텍스트 영역 -->
+		<article id="title_wrap">
+			<h2 id="title"><img src="img/main_title.png" alt="Andrew Lyman Title"/></h2>
+			<h2 id="small"><img src="img/small.png" alt="Too Small"/></h2>
+
+			<div id="text_box">
+				<div id="text">
+					<span>01 / 03</span>
+					<p><a href="works.html">Chris</br>and Sarah</a></p>
+				</div>
+				<div id="arr">
+					<ul>
+						<li id="arr_left"><a href="#">Left Arrow</a></li>
+						<li id="arr_right"><a href="#">Right Arrow</a></li>
+					</ul>
+				</div>
+			</div>
+		</article>
+
+		<!-- slide_nav / 슬라이드 아이콘 -->
+		<div id="slide_nav">
+			<ul>
+				<li><a href="#"><span class="slide_w"></span></a></li>
+				<li><a href="#"><span></span></a></li>
+				<li><a href="#"><span></span></a></li>
+			</ul>
+		</div>
+
+	</div>	<!-- first -->
+
+
+
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js'></script>
+	<script src='https://cdnjs.cloudflare.com/ajax/libs/lettering.js/0.7.0/jquery.lettering.min.js'></script>
+	
+	<script src="js/script.js"></script>
+	<script src="js/main.js"></script>
+</body>
+
+</html>

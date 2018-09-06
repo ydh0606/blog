@@ -1,0 +1,195 @@
+/* MAIN 01 HOME _ 메인 첫번째 홈 */
+
+#home_wrap { position:relative; left:0; top:0; width:100%; height:100%; }
+#home_wrap #home { position:absolute; width:100%; height:100%; z-index:500; }
+
+
+
+#home #home_back { position:absolute; width:100%; height:100%; background:#fff; }
+#home_back #home_img { position:absolute; left:0; top:0; width:100%; height:100%; overflow:hidden; }
+#home_back #home_img img { position:absolute; left:0; top:0; }
+#home_back #home_img img#home_img01 { width:100%; }
+#home_back #home_img img#home_img02 { width:100%; height:100%; }
+
+
+
+#home_back #home_contents { position:relative; width:100%; height:100%; }
+#home_contents h1#top_hello { position:absolute; top:3%; left:3%; width:146px; height:17px; }
+
+#home_contents ul#top_menu { position:absolute; top:3%; right:3%; width:120px; height:17px; overflow:hidden;}
+#home_contents ul#top_menu li { float:left; height:16px; margin-top:4px; }
+#home_contents ul#top_menu li#top_resume { width:48px; }
+#home_contents ul#top_menu li#top_contact { width:57px; margin-left:15px; }
+#home_contents ul#top_menu li a { display:block; font-size:12px; color:#aaa; }
+#home_contents ul#top_menu li a:hover { color:#808080; }
+
+#home_contents h1#home_logo { position:absolute; width:150px; height:150px; left:50%; top:50%; margin-left:-75px; margin-top:-75px; }
+
+#home_contents #home_link h2#link_about { position:absolute; top:20%; left:50%; width:186px; height:93px; margin-left:-90px; }
+#home_contents #home_link h2#link_port { position:absolute; top:50%; right:10%; width:288px; height:93px; margin-top:-46px; }
+#home_contents #home_link h2#link_work { position:absolute; top:50%; left:10%; width:269px; height:93px; margin-top:-46px; }
+
+#home_link h2 .line_wrap { position:absolute; left:50%; top:50%; width:50px; height:3px; margin-left:-25px;  }
+#home_link h2 .line_wrap span { display:block; width:0px; height:3px; background:#fff; }
+#home_link h2 .line_wrap span.link_line01 { float:right; margin-top:10px; margin-right:25px; }
+#home_link h2 .line_wrap span.link_line02 { float:left; margin-top:-3px; margin-left:25px; }
+
+#home_contents #scroll_box { position:absolute; width:64px; height:35px; left:50%; bottom:15%; margin-left:-32px; }
+#home_contents #scroll_box p#home_wel { display:block; width:64px; height:9px; margin:0 auto 18px; }
+#home_contents #scroll_box span { display:block; width:34px; height:8px; margin:0 auto; }
+
+
+
+
+
+/* MAIN 02 - 05  _ 메인 배경 */
+
+#main_wrap { /*position:absolute;*/ width:100%; height:100%; top:0; left:0; background-color:#ddd; }
+
+
+
+
+
+#main_wrap .back_img { width:100%; height:100%; }
+
+.back_img .front_img { position:relative; width:100%; height:100%; }
+.back_img .front_img > img { position:absolute; left:50%; top:50%; }
+.back_img .front_img .main_dol01, .main_dol02 { position:absolute; left:50%; top:50%; }
+
+.front_img .title_box { position:absolute; width:500px; height:220px; left:50%; top:50%; margin-left:-250px; margin-top:-110px; z-index:100; text-align:center; }
+.title_box .title_02 { margin:35px auto 10px; }
+.title_box .title_04 { margin:25px auto 10px; }
+
+.title_box span.title_view { width:150px; height:30px; }
+.title_box span.title_view a { display:block; width:150px; height:30px; margin:0 auto; background:url(../img/hover_img.png) no-repeat -475px -62px; text-indent:-9999px; overflow:hidden; }
+.title_box span.title_view a:hover { background-position:-475px -10px; }
+
+
+
+#main_wrap #main_about { position:absolute; left:0; top:100%; background:url(../img/home_011.jpg) no-repeat center center; }
+#main_about img#about_moon { width:714px; height:714px; margin-left:-357px; margin-top:-357px; }
+#main_about #about_dol { width:650px; height:650px; margin-left:-325px; margin-top:-325px; overflow:hidden; }
+
+#main_wrap #main_port { position:absolute; left:0; top:200%; background:url(../img/home_022.jpg) no-repeat center center; }
+#main_port #port_dol { width:700px; height:550px; margin-left:-350px; margin-top:-275px; overflow:hidden; }
+
+#main_wrap #main_work { position:absolute; left:0; top:300%; background:url(../img/home_033.jpg) no-repeat center center; }
+#main_work #work_dol { width:700px; height:550px; margin-left:-320px; margin-top:-261px; overflow:hidden; }
+
+#main_wrap #main_cont { position:absolute; left:0; top:400%; background:url(../img/home_00.jpg) no-repeat center center; }
+#main_cont img#cont_blur { width:910px; height:828px; margin-left:-455px; margin-top:-414px; }
+#main_cont #cont_dol { width:650px; height:650px; margin-left:-325px; margin-top:-325px; overflow:hidden; }
+
+
+
+
+
+/* MAIN 05  CONTACT - 연락처 */
+
+#main_cont .front_img #cont_contents { position:absolute; left:50%; top:50%; width:500px; height:220px; margin-left:-250px; margin-top:-250px; }
+
+#cont_contents img#c_white { position:absolute; left:0; top:0; width:500px; height:500px; }
+
+#cont_contents #c_text, #c_title, #c_me { position:absolute; left:50%; }
+#cont_contents #c_text { width:297px; height:32px; margin-left:-148px; margin-top:100px; }
+#cont_contents #c_title { width:303px; height:44px; margin-left:-151px; margin-top:160px; }
+#cont_contents #c_me { width:117px; height:12px; margin-left:-58px; margin-top:215px; }
+
+
+#cont_contents ul#cont_list { position:relative; width:400px; height:150px; left:50%; margin-left:-200px; margin-top:285px; z-index:100; }
+ul#cont_list li { width:200px; height:25px; margin:0 auto 30px; }
+
+
+
+
+
+/* MAIN 02 - 05  _ UX 컨텐츠 */
+
+#main_wrap #main_contents {}
+#main_contents #gnb01 { position:fixed; width:100%; height:100%; left:0; top:0; z-index:50; }
+
+.gnb .uxbar_wrap { position:absolute; width:300px; height:100%; left:0; top:0; }
+
+.gnb .ux { position:relative; left:50px; top:0; width:250px; height:100%; }
+.ux span.ux_icon { position:absolute; width:20px; height:16px; top:5%; left:0%; }
+.ux h1.main_logo { position:absolute; width:100px; height:118px; top:15%; left:0; }
+
+
+
+.ux ul.ux_menu { position:absolute; width:250px; top:40%; left:0; }
+ul.ux_menu li { width:250px; height:62px; }
+
+ul.ux_menu li a { display:block; width:150px; height:50px; text-indent:-9999px; overflow:hidden; }
+ul.ux_menu li#ux_home01 a { background:url(../img/hover_img.png) no-repeat -10px -129px; }
+ul.ux_menu li#ux_about01 a { background:url(../img/hover_img.png) no-repeat -10px -179px; }
+ul.ux_menu li#ux_port01 a { background:url(../img/hover_img.png) no-repeat -10px -229px; }
+ul.ux_menu li#ux_work01 a { background:url(../img/hover_img.png) no-repeat -10px -279px; }
+ul.ux_menu li#ux_con01 a { background:url(../img/hover_img.png) no-repeat -10px -329px; }
+
+ul.ux_menu li#ux_home01 a:hover { background-position:-174px -129px; }
+ul.ux_menu li#ux_about01 a:hover { background-position:-174px -179px; }
+ul.ux_menu li#ux_port01 a:hover { background-position:-174px -229px; }
+ul.ux_menu li#ux_work01 a:hover { background-position:-174px -279px; }
+ul.ux_menu li#ux_con01 a:hover { background-position:-174px -329px; }
+
+#gnb01 .ux span#ux_scroll { position:absolute; width:30px; height:42px; bottom:5%; left:0; }
+
+
+
+#main_contents #gnb02 { position:fixed; left:0; top:0; width:100%; height:100%; }
+#gnb02 .uxbar_wrap #ux_bar { position:absolute; left:0; top:0; width:0px; height:100%; overflow:hidden; }
+
+ul.ux_menu li a { display:block; width:150px; height:50px; background:url(../img/hover_img.png) no-repeat; }
+ul.ux_menu li#ux_home02 a { background-position:-174px -129px; }
+ul.ux_menu li#ux_about02 a { background-position:-174px -179px; }
+ul.ux_menu li#ux_port02 a { background-position:-174px -229px; }
+ul.ux_menu li#ux_work02 a { background-position:-174px -279px; }
+ul.ux_menu li#ux_con02 a { background-position:-174px -329px; }
+
+ul.ux_menu li#ux_home02 a:hover { background-position:-476px -129px; }
+ul.ux_menu li#ux_about02 a:hover { background-position:-476px -179px; }
+ul.ux_menu li#ux_port02 a:hover { background-position:-476px -229px; }
+ul.ux_menu li#ux_work02 a:hover { background-position:-476px -279px; }
+ul.ux_menu li#ux_con02 a:hover { background-position:-476px -329px; }
+
+
+
+#main_contents #resume { position:fixed; width:45px; height:47px; bottom:5%; right:2%; z-index:100; }
+#main_contents #resume p { width:45px; height:8px; margin-bottom:10px; }
+
+#resume span a { display:block; width:45px; height:12px; text-indent:-9999px; overflow:hidden; }
+#resume span#pdf a { background:url(../img/hover_img.png) no-repeat -145px -10px; margin-bottom:5px; }
+#resume span#hwp a { background:url(../img/hover_img.png) no-repeat -145px -35px; }
+
+#resume span#pdf a:hover { background-position:-211px -10px; }
+#resume span#hwp a:hover { background-position:-211px -35px; }
+
+
+
+
+
+/*MAIN FOOTER _ 푸터*/
+
+#footer_wrap { position:absolute; left:0; top:500%; width:100%; height:300px; }
+#footer_wrap #footer { position:absolute; left:0; top:0; width:100%; height:350px; background-color:#333; z-index:500; }
+
+#footer #footer_logo { width:75px; height:75px; margin:100px auto 30px; }
+
+#footer ul#footer_ux { width:566px; height:10px; margin:0 auto; }
+#footer ul#footer_ux li { float:left; margin:0 25px; }
+
+#footer ul#footer_ux li a { display:block; height:10px; text-indent:-9999px; overflow:hidden; }
+
+#footer ul#footer_ux li#footer_home a { width:36px; background:url(../img/hover_img.png) no-repeat -362px -610px; }
+#footer ul#footer_ux li#footer_about a { width:67px; background:url(../img/hover_img.png) no-repeat -362px -660px; }
+#footer ul#footer_ux li#footer_port a { width:70px; background:url(../img/hover_img.png) no-repeat -362px -710px; }
+#footer ul#footer_ux li#footer_work a { width:83px; background:url(../img/hover_img.png) no-repeat -362px -760px; }
+#footer ul#footer_ux li#footer_cont a { width:60px; background:url(../img/hover_img.png) no-repeat -362px -810px; }
+
+#footer ul#footer_ux li#footer_home a:hover { width:36px; background:url(../img/hover_img.png) no-repeat -512px -610px; }
+#footer ul#footer_ux li#footer_about a:hover { width:67px; background:url(../img/hover_img.png) no-repeat -512px -660px; }
+#footer ul#footer_ux li#footer_port a:hover { width:70px; background:url(../img/hover_img.png) no-repeat -512px -710px; }
+#footer ul#footer_ux li#footer_work a:hover { width:83px; background:url(../img/hover_img.png) no-repeat -512px -760px; }
+#footer ul#footer_ux li#footer_cont a:hover { width:60px; background:url(../img/hover_img.png) no-repeat -512px -810px; }
+
+#footer p#f_copy {  position:absolute; left:50%; bottom:0; width:332px; height:16px; margin-left:-166px; margin-bottom:30px; text-align:center; font-size:11px; color:#777; }

@@ -1,0 +1,23 @@
+@charset "utf-8";
+@font-face { font-family:'NanumGothicWeb'; src:url('font/NanumGothic.eot'); src:local(''), url('font/NanumGothic.woff'); }
+
+
+
+
+
+/* CSS Document */
+html, body { width:100%; height:100%; }
+html, body, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, p, a, span, img, form, input {
+	padding:0;
+	margin:0;
+	border:0;
+	font-family:"NanumGothic";
+	font-size:12px;
+	letter-spacing:-0.5px; 
+}
+
+img { border:none; vertical-align:center; }
+ul li, ol li { list-style:none; }
+a { text-decoration:none; }
+
+

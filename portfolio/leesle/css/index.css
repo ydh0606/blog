@@ -1,0 +1,8 @@
+#home_back { position:relative; width:100%; height:100%; background:url(../img/home_back.jpg); }
+
+#home_back h1 { position:absolute; width:51px; height:49px; left:30px; bottom:30px; }
+
+#home_back #textbox { position:absolute; width:435px; height:150px; right:50px; top:50%; }
+#textbox h2 { width:435px; height:101px; }
+#textbox span#enter a { display:block; float:right; width:100px; height:25px; background:url(../img/hover_img.png) no-repeat -10px -10px;  margin-top:24px; overflow:hidden; text-indent:-9999px; }
+#textbox span#enter a:hover { background-position:-10px -45px; }

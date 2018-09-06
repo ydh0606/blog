@@ -1,0 +1,46 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+/*side_nav*/
+#side_wrap { width:150px; float:left; padding-right:50px;}
+#side_wrap h2#side_title { width:150px; height:125px; }
+
+#side_wrap #side_bar { padding-top:30px; }
+#side_wrap #side_bar ul#side li { height:17px; border-bottom:1px solid #ddd; padding:13px 0;  }
+#side_wrap #side_bar ul#side li a { display:block; width:150px; height:17px; background:url(../img/subpage.png) no-repeat center -193px; overflow:hidden; text-indent:-9999px; }
+#side_wrap #side_bar ul#side li#side02 a { background-position:0 -55px; }
+#side_wrap #side_bar ul#side li#side03 a { background-position:0 -102px; }
+#side_wrap #side_bar ul#side li#side04 a { background-position:0 -148px; }
+#side_wrap #side_bar ul#side li#side02 a:hover { background-position:0 -239px; }
+#side_wrap #side_bar ul#side li#side03 a:hover { background-position:0 -286px; }
+#side_wrap #side_bar ul#side li#side04 a:hover { background-position:0 -332px; }
+
+
+
+/*sub_main*/
+#sub_wrap { width:800px; float:left; }
+
+#sub_wrap #title_wrap { width:800px; height:27px; padding:15px 0 50px; }
+#sub_wrap #title_wrap h4#sub_title { width:141px; height:27px; float:left; }
+
+#sub_wrap #title_wrap ul#sub_guide { padding-top:15px; width:230px; height:12px; float:right; overflow:hidden; }
+#sub_wrap #title_wrap ul#sub_guide li { float:left; padding:0 13px; margin-left:-5px; background:url(../img/arrow.png) no-repeat left center;  }
+#sub_wrap #title_wrap ul#sub_guide li:last-child { padding-right:0; }
+#sub_wrap #title_wrap ul#sub_guide li a { float:left; color:#898989; line-height:12px; }
+#sub_wrap #title_wrap ul#sub_guide li a:hover { text-decoration:underline; }
+#sub_wrap #title_wrap ul#sub_guide li#s_guide03 a{ color:#7ead51; }
+#sub_wrap #title_wrap ul#sub_guide li#s_guide01 a { background:url(../img/home.png) no-repeat left 0; padding-left:20px;}
+
+
+#sub_wrap #sub_txt h5#txt01 { width:491px; height:84px; padding-bottom:65px; }
+#sub_wrap #sub_txt p#txt02 { color:#898989; line-height:1.5; }
+
+#sub_wrap p#sub_img { width:800px; height:564px; padding-top:30px; }
+
+
+
+

@@ -1,0 +1,101 @@
+@charset "utf-8";
+@font-face { font-family:'NanumGothic'; src:url('font/NanumGothic.eot'); src:local(''), url('font/NanumGothic.woff'); }
+
+
+
+html, body { width:100%; height:100%; }
+html, body, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, p, a, span, form, input {
+	padding : 0;
+	margin : 0;
+}
+
+body { font-family:'NanumGothic',"돋움"; font-size:12px; color:#555;}
+img { border:none; vertical-align:top; }
+ul li, ol li { list-style:none; }
+a { text-decoration:none; }
+
+
+.memory_box { position:absolute; width:1000px; height:1826px; left:50%; top:0; margin-left:-500px; /*background-color:#ccc;*/ }
+.memory_box .top_box { width:750px; height:50px; margin:50px 0 0 125px; }
+
+.top_box h1 { float:left; width:179px; height:51px; }
+.top_box ul#menu { float:left; width:250px; height:50px; margin-left:100px; }
+
+ul#menu li { float:left; height:25px; margin-top:12px; }
+ul#menu li p { height:14px; }
+ul#menu li a { display:block; color:#555; font-weight:bold; font-size:13px; }
+ul#menu li a:hover { font-weight:normal; color:#779aa2; }
+
+ul#menu li#menu_01 a { width:100px; margin-right:100px; }
+ul#menu li#menu_02 a { width:50px; font-weight:normal; }
+
+
+
+.con_box { width:1000px; height:1201px; margin-top:25px; /*background-color:#aaa;*/ }
+.con_box #back_img { width:750px; height:750px; margin:25px 0 0 125px; }
+.con_box #back_01 { position:absolute; width:267px; height:263px; left:0; top:0; margin-top:1000px; }
+.con_box #back_bar { position:absolute; left:0; top:0; margin:1128px 0 0 875px; }
+
+.con_box h2 { position:absolute; left:0; top:0; margin:62px 0 0 815px; }
+
+
+
+.con_box .gallery { position:absolute; left:0; top:0; width:747px; height:1118px; margin-top:208px; /*background-color:pink*/ }
+.gallery #main_img a { display:block; width:570px; height:367px; background:url("../img/images.png") no-repeat -10px -10px; margin-bottom:75px; }
+.gallery #main_img a:hover { background-position:-600px -10px; }
+
+.gallery ul.list { width:500px; height:150px; margin:25px 0 0 246px; /*background-color:blue;*/ }
+ul.list li { float:left; width:150px; height:150px; /*background-color:red;*/ }
+ul.list li.margin01 { margin-right:25px; }
+ul.list li.margin02 { margin:0 25px 0; }
+ul.list li.margin03 { margin-left:175px; }
+ul.list li.margin04 { margin-left:25px; }
+
+ul.list li a { display:block; width:150px; height:150px; background:url("../img/images.png") no-repeat; }
+
+ul.list li#img01 a { background-position:-1200px -10px; }
+ul.list li#img01 a:hover { background-position:-1200px -200px; }
+
+ul.list li#img02 a { background-position:-1400px -10px; }
+ul.list li#img02 a:hover { background-position:-1400px -200px; }
+
+ul.list li#img03 a { background-position:-1600px -10px; }
+ul.list li#img03 a:hover { background-position:-1600px -200px; }
+
+ul.list li#img04 a { background-position:-1800px -10px; }
+ul.list li#img04 a:hover { background-position:-1800px -200px; }
+
+ul.list li#img05 a { background-position:-2000px -10px; }
+ul.list li#img05 a:hover { background-position:-2000px -200px; }
+
+ul.list li#img06 a { background-position:-2200px -10px; }
+ul.list li#img06 a:hover { background-position:-2200px -200px; }
+
+ul.list li#img07 a { background-position:-2400px -10px; }
+ul.list li#img07 a:hover { background-position:-2400px -200px; }
+
+ul.list li#img08 a { background-position:-2600px -10px; }
+ul.list li#img08 a:hover { background-position:-2600px -200px; }
+
+
+
+.con_box .text_box { position:absolute; left:0; top:0; margin:1040px 0 0 125px; width:200px; height:300px; /*background-color:pink;*/ }
+.text_box h3 { width:84px; height:22px; margin-bottom:10px; }
+
+.text_box ul#text_list { font-size:11px; color:#555; margin-top:15px; }
+ul#text_list li { margin-bottom:15px; }
+ul#text_list li span { font-weight:bold; }
+ul#text_list li span#white { font-weight:normal; margin-left:30px; }
+
+
+
+.con_box ul.etc_box { position:absolute; left:0; top:0; margin:520px 0 0 525px; width:250px; height:10px; /*background-color:pink;*/ }
+ul.etc_box li { float:left; }
+ul.etc_box li#thebay { margin-left:15px; line-height:10px; color:#555; font-weight:bold; }
+
+
+
+
+.footer { position:absolute; width:100%; height:75px; top:0; margin-top:1626px; background-color:#779aa2; padding-top:175px;}
+.footer p { color:#fff;}
+.footer span { font-weight:bold; }

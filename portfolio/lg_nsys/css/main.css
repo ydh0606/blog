@@ -1,0 +1,41 @@
+@charset "utf-8";
+/* CSS Document */
+
+
+
+
+
+/*slider*/
+#slider_wrap #slider { height:424px; width:100%; overflow:hidden; }
+#slider_wrap #slider #img_view { position:relative; width:1024px; height:424px; margin:0 auto; }
+
+#slider_wrap #slider #img_view ul#s_img { /*width:5120px;*/ height:424px; position:absolute; left:-1024px; top:0; z-index:1; }
+#slider_wrap #slider #img_view ul#s_img li { float:left; width:1024px; height:424px; }
+
+#slider_wrap #slider #img_view #s_txt { position:absolute; width:316px; height:328px; overflow:hidden; top:35px; right:50px; }
+#slider_wrap #slider #img_view #s_txt ul#text_box { width:1580px; height:328px; position:absolute; left:-316px; top:0; z-index:5; }
+#slider_wrap #slider #img_view #s_txt ul#text_box li { float:left; }
+
+#slider_wrap #slider #img_view #s_txt ul#s_btn { position:absolute; bottom:50px; left:35px; z-index:10; }
+#slider_wrap #slider #img_view #s_txt ul#s_btn li { float:left; margin-right:5px; cursor:pointer; }
+
+#slider #s_left { position:absolute; width:1024px; height:424px; top:0; left:0; margin-left:1024px; z-index:20; background-color:rgba(255,255,255,0.75); }
+#slider #s_right { position:absolute; width:1024px; height:424px; top:0; right:0; margin-right:1024px; z-index:20; background-color:rgba(255,255,255,0.75); }
+
+
+
+
+
+/*main_content*/
+#main_content ul#content_box { width:1024px; height:389px; }
+ul#content_box > li { float:left; width:333px; height:188px; border:1px solid #ddd; margin:0 9px 9px 0; position:relative; }
+ul#content_box .c_width { margin-right:0; }
+ul#content_box h3 { padding:30px 0 20px 25px; }
+
+ul#content_box ul.content_sub { padding-left:25px; }
+ul#content_box ul.content_sub li { background:url(../img/bul_pink.gif) no-repeat left center; padding-left:10px; }
+ul#content_box ul.content_sub li a { color:#707070; line-height:20px; }
+ul#content_box ul.content_sub li a:hover { text-decoration:underline; }
+
+ul#content_box span.more { position:absolute; top:25px; right:25px; }
+ul#content_box span#play { position:absolute; top:65px; right:145px; }

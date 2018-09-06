@@ -1,0 +1,131 @@
+/*first*/
+#first { background:url(../img/bg_011.jpg) no-repeat center center; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; }
+
+
+
+
+
+/*first - fix_wrap - header*/
+/*Menu Navigation Location*/
+ul#nav_menu li:nth-child(1) a { opacity:0.5; }
+
+
+
+
+
+/*first - article#title_wrap*/
+/*Main 'Title Text' Area*/
+article#title_wrap { position:absolute; width:90%; top:50%; left:5%; transform:translateY(-45%); -webkit-transform:translateY(-45%); -moz-transform:translateY(-45%); /*border:1px solid red; box-sizing:border-box;*/ }
+
+h2#title { width:50%; transition:0.3s all ease-in-out; -webkit-transition:0.3s all ease-in-out; -moz-transition:0.3s all ease-in-out; -o-transition:0.3s all ease-in-out; }
+
+
+
+
+
+/*first - article*/
+/*Main 'Sub Text' Area*/
+#text_box { position:absolute; bottom:27%; left:65%; opacity:0.95; /*border:1px solid orange; box-sizing:border-box;*/ transition:0.3s all ease-in-out; -webkit-transition:0.3s all ease-in-out; -moz-transition:0.3s all ease-in-out; -o-transition:0.3s all ease-in-out; }
+#text_box li { font-size:15px; color:#fff; }
+#text_box li:last-child { margin-top:25px; }
+
+
+
+
+
+/*section#about_wrap*/
+/*'About' Contents Area*/
+section#about_wrap { width:100%; color:#333; }
+section#about_wrap article { width:70%; max-width:1300px; margin:0 auto; padding:200px 0; }
+article h5 { font-size:20px; font-weight:700; letter-spacing:5px; text-align:center; margin-bottom:200px; }
+article h3 { font-size:45px; font-weight:700; letter-spacing:5px; line-height:1.2; margin-bottom:75px; transition:0.3s all ease-in-out; -webkit-transition:0.3s all ease-in-out; -moz-transition:0.3s all ease-in-out; -o-transition:0.3s all ease-in-out; }
+article p { font-size:13px; line-height:1.5; }
+
+
+
+/*'About' Andrew Lyman*/
+article#about_al { /*background-color:#ccc;*/ }
+#intro_p { width:50%; text-align:justify; margin-bottom:150px; transition:0.3s all ease-in-out; -webkit-transition:0.3s all ease-in-out; -moz-transition:0.3s all ease-in-out; -o-transition:0.3s all ease-in-out; }
+
+#etc_p { display:flex; width:100%; height:600px; /*background-color:#ccc;*/ }
+#etc_p #profile_img { flex:1; -webkit-flex:1; -ms-flex:1; -moz-flex:1; margin-right:5%; overflow:hidden; background:url(../img/profile.jpg) no-repeat center center; transition:1s all ease-out 0.1s; -webkit-transition:1s all ease-out 0.1s; -moz-transition:1s all ease-out 0.1s; -o-transition:1s all ease-out 0.1s; }
+#etc_p #profile_img:hover { background-position:center left; }
+#etc_p #etc_text { flex:1; -webkit-flex:1; -ms-flex:1; -moz-flex:1; text-align:justify; }
+
+
+
+/*'About' Exhibition*/
+article#about_ex { /*background-color:#ccc;*/ }
+ul#ex_list > li { position:relative; width:100%; height:700px; background-color:#fff; }
+ul#ex_list > li + li { margin-top:100px; }
+
+ul.ex_img li { position:absolute; }
+
+
+
+/*'About' Exhibition Image*/
+ul.ex_img li.ex_main { width:700px; height:467px; top:7%; left:50%; margin-left:-350px; transition:0.5s all ease-out 0.1s; -webkit-transition:0.5s all ease-out 0.1s; -moz-transition:0.5s all ease-out 0.1s; -o-transition:0.5s all ease-out 0.1s; }
+ul.ex_img li.ex_main:hover { margin-top:25px; }
+
+ul.ex_img li.ex_ver { z-index:1000; width:255px; height:350px; top:50%; left:7%; margin-top:-225px; transition:0.5s all ease-out 0.1s; -webkit-transition:0.5s all ease-out 0.1s; -moz-transition:0.5s all ease-out 0.1s; -o-transition:0.5s all ease-out 0.1s; }
+ul.ex_img li.ex_ver:hover { margin-top:-235px; margin-left:25px; }
+
+ul.ex_img li.ex_hor { z-index:1000; width:300px; height:200px; top:50%; right:3%; margin-top:-175px; transition:0.5s all ease-out 0.1s; -webkit-transition:0.5s all ease-out 0.1s; -moz-transition:0.5s all ease-out 0.1s; -o-transition:0.5s all ease-out 0.1s; }
+ul.ex_img li.ex_hor:hover { margin-top:-165px; margin-right:25px; }
+
+li#ex_02 li.ex_ver { width:300px; height:200px; left:3%; margin-top:-125px; }
+li#ex_02 li.ex_ver:hover { margin-top:-115px; margin-left:25px; }
+li#ex_02 li.ex_hor { width:255px; height:350px; right:7%; margin-top:-225px; }
+li#ex_02 li.ex_hor:hover { margin-top:-235px; margin-right:25px; }
+
+
+
+/*'About' Exhibition Text*/
+ul.ex_text { position:absolute; width:700px; bottom:10%; left:50%; margin-left:-350px; transition:0.3s all ease-in-out; -webkit-transition:0.3s all ease-in-out; -moz-transition:0.3s all ease-in-out; -o-transition:0.3s all ease-in-out; }
+ul.ex_text h4 { font-size:25px; font-weight:700; letter-spacing:2px; }
+ul.ex_text h4 a { transition:0.5s all ease-in-out; -webkit-transition:0.5s all ease-in-out; -moz-transition:0.5s all ease-in-out; -o-transition:0.5s all ease-in-out; }
+ul.ex_text h4 a:hover { letter-spacing:5px; }
+ul.ex_text h6 { font-size:17px; }
+ul.ex_text span { position:absolute; font-size:13px; top:0; right:0; }
+
+
+
+
+
+/*media query*/
+@media screen and (min-width:1000px) and (max-width:1349px) {  
+
+	#intro_p { width:70%; }
+
+	ul.ex_img li.ex_main { width:600px; top:7%; left:50%; margin-left:-300px; }
+	ul.ex_img li.ex_ver { width:200px; left:3%; }
+	ul.ex_img li.ex_hor { width:250px; right:0%; }
+	li#ex_02 li.ex_ver { width:250px; left:0%; }
+	li#ex_02 li.ex_hor { width:200px; right:3%; }
+
+	ul.ex_text { width:600px; bottom:20%; margin-left:-300px; }
+	
+
+}
+
+@media screen and (min-width:650px) and (max-width:999px) {  
+
+	h2#title { width:60%; }
+	#text_box { left:75%; } 
+	
+	#intro_p { width:100%; }
+
+	.ex_ver, .ex_hor { display:none; }
+	
+}
+
+
+@media screen and (max-width:649px) {  
+
+	h2#small { display:block; width:100%; }
+
+	nav, h2#title { display:none; }
+	#text_box { display:none; }
+	section, #footer_wrap { display:none; }
+	
+}

@@ -1,0 +1,35 @@
+@charset "utf-8";
+@font-face { font-family:'NanumGothic'; src:url('font/NanumGothic.eot'); src:local(''), url('font/NanumGothic.woff'); }
+
+
+
+html, body { width:100%; height:100%; }
+html, body, h1, h2, h3, h4, h5, h6, ul, li, ol, dl, dt, dd, p, a, span, form, input {
+	padding : 0;
+	margin : 0;
+}
+
+body { font-family:'NanumGothic', "돋움"; font-size:12px; color:#555;}
+img { border:none; vertical-align:top; }
+ul li, ol li { list-style:none; }
+a { text-decoration:none; }
+
+
+.home_box { position:absolute; width:1000px; height:700px; top:50%; left:50%; margin:-350px 0 0 -500px; /*background-color:#ccc;*/ } 
+.home_box .img_box { width:601px; height:552px; margin:74px 0 0 200px; /*background-color:#aaa;*/ }
+
+.img_box span#home_01 { width:551px; height:9px; margin-left:26px; }
+
+.img_box #bg_box { width:601px; height:403px; background-color:#fff; margin-top:100px; margin-bottom:30px; }
+
+#bg_box span#sea_01 { position:absolute; left:0; top:0; margin:324px 0 0 200px; }
+#bg_box span#sea_02 { position:absolute; left:0; top:0; margin:183px 0 0 507px; }
+#bg_box span#sand_01 { position:absolute; left:0; top:0; margin:551px 0 0 225px; }
+#bg_box span#sand_02 { position:absolute; left:0; top:0; margin:522px 0 0 583px; }
+
+#bg_box span#main_img { position:absolute; left:0; top:0; margin:193px 0 0 324px; width:363px; height:375px; }
+
+span#home_02 { text-indent:-9999px; overflow:hidden;  }
+span#home_02 a { display:block; width:210px; height:12px; background:url("../img/images.png") no-repeat -10px -450px; margin-left:195px; }
+span#home_02 a:hover { background-position:-10px -475px; } 
+

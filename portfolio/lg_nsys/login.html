@@ -1,0 +1,246 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1" />
+
+<title>LG N-Sys</title>
+
+<!--[if lt IE 9]>
+<script src="http://html5shiv-printshiv.googlecode.com/svn/trunk/html5shiv-printshiv.js"></script>
+<![endif]-->
+
+<link rel="shortcut icon" type="image/x-icon" href="img/lg_logo.ico" />
+<link href="css/common.css" rel="stylesheet" type="text/css" />
+<link href="css/login.css" rel="stylesheet" type="text/css" />
+
+<script src="js/jquery-1.11.3.min.js"></script>
+<script src="js/lgnsysjq.js"></script>
+
+</head>
+
+
+
+
+
+<body>
+
+    <div id="header_wrap">
+        <div id="header" class="width_box">
+            <h1 id="header_logo"><a href="index.html"><img src="img/logo.png" alt="LG 엔시스 로고" /></a></h1>
+
+            <div id="header_top">
+                <ul id="top_menu">
+                    <li><a href="login.html">LOGIN</a></li>
+                    <li><a href="#">JOIN</a></li>
+                    <li><a href="#">SITEMAP</a></li>
+                    <li><a href="#">ENGLISH</a></li>
+                    <li id="m_green"><a href="#">고객지원</a></li>
+                </ul>
+                <div id="search_wrap">
+                    <form action="#">
+                        <fieldset>
+                            <legend>검색</legend>
+                            <label for="sch_input">검색</label>
+                            <input type="text" id="sch_input" />
+                            <button type="submit" id="sch_button">찾기</button>
+                        </fieldset>
+                    </form>
+                </div> 
+            </div> <!----------//header_top---------->
+            
+            <div id="nav">
+                <ul id="gnb">
+                    <li id="menu01"><h2 class="gnb_menu"><a href="sub.html">기업소개</a></h2>
+                        <span id="tri_pointer"></span>
+                        <ul class="nav_sub" id="nav_sub01">
+                            <li><a href="sub.html">기업소개</a></li>
+                            <li><a href="#">브랜드</a></li>
+                            <li><a href="#">CEO</a></li>
+                            <li><a href="#">정도경영</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu02"><h2 class="gnb_menu"><a href="#">사업소개</a></h2>
+                        <ul class="nav_sub" id="nav_sub02">
+                            <li><a href="#">사업소개</a></li>
+                            <li><a href="#">구축사례</a></li>
+                            <li><a href="#">만화로 보는 엔시스</a></li>
+                            <li><a href="#">파트너 안내</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu03"><h2 class="gnb_menu"><a href="#">제품소개</a></h2>
+                        <ul class="nav_sub" id="nav_sub03">
+                            <li><a href="#">시스템</a></li>
+                            <li><a href="#">네트워크</a></li>
+                            <li><a href="#">솔루션</a></li>
+                            <li><a href="#">스마트IT</a></li>
+                            <li><a href="#">서비스</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu04"><h2 class="gnb_menu"><a href="#">홍보센터</a></h2>
+                        <ul class="nav_sub" id="nav_sub04">
+                            <li><a href="#">뉴스</a></li>
+                            <li><a href="#">기업홍보</a></li>
+                            <li><a href="#">인증·수상</a></li>
+                            <li><a href="#">웹진</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu05"><h2><a href="#"><img src="img/jops-button.png" alt="인재채용" /></a></h2>
+                        <span class="nav_sub"></span>
+                    </li>
+                    <ul id="nav_pointer">
+                        <li id="nav_pointer01"></li>
+                        <li id="nav_pointer02"></li>
+                        <li id="nav_pointer03"></li>
+                        <li id="nav_pointer04"></li>
+                    </ul>
+                </ul> 
+            </div> <!----------//nav---------->
+
+        </div> 
+        <div id="nav_bg"></div>
+        <div id="nav_border"></div>
+    </div> <!----------//header_wrap---------->
+    
+    
+    
+	<div class="width_box">
+        <div id="sub_wrap">	
+        
+            <div id="log_bar">
+                <h2><img src="img/subTitle7.gif" alt="회원서비스" /></h2>
+                <ul id="sub_menu">
+                    <li id="s_menu01"><h3><a href="login.html" id="l_m_1">로그인</a></h3></li>
+                    <li id="s_menu02"><h3><a href="#">회원가입</a></h3></li>
+                </ul>
+                <ul id="sub_icon">
+                    <li><a href="#"><img src="img/webjin-icon.png" alt="웹진" /></a></li>
+                    <li><a href="#"><img src="img/qna-icon.png" alt="Q&amp;A" /></a></li>
+                    <li><a href="#"><img src="img/location-icon.png" alt="오시는길" /></a></li>
+                </ul>
+            </div> <!----------//sub_bar---------->
+            
+            <span id="sub_info"><a href="#"><img src="img/quick.png" alt="채용정보" /></a></span>
+            
+            <div id="sub_main">
+                <ul id="sub_g">
+                    <li><a href="index.html"><img src="img/home-icon.png" alt="HOME" /></a></li>
+                    <li id="pink"><a href="login.html">로그인</a></li>
+                </ul>
+                <h4 id="sub_title"><img src="img/subTitle6_1.png" alt="로그인" /></h4>
+                <div id="login_wrap">
+                <form action="#">
+                    <fieldset id="login">
+                        <legend>로그인</legend>
+                        <div id="log_line">
+                            <label for="u_id">아이디</label>
+                            <input type="text" id="u_id" />
+                        </div>
+                        <div id="log_line">
+                            <label for="u_pw">비밀번호</label>
+                            <input type="text" id="u_pw" />
+                        </div>
+                        <button type="submit" id="log_btn">로그인</button>
+                        <ul id="member">
+                            <li>
+                                <p class="member_list">LG엔시스 아이디가 없으신 고객님은 회원가입을 해주세요.</p>
+                                <a href="#" class="member_btn">회원가입</a>
+                            </li>
+                            <li>
+                                <p class="member_list">아이디 또는 비밀번호가 생각나지 않으세요?</p>
+                                <a href="#" class="member_btn">아이디/비밀번호 찾기</a>
+                            </li>
+                        </ul>
+                    </fieldset>
+                </form>
+                <ul id="etc">
+                    <li>홈페이지 비밀번호를 잊으셨거나, 로그인에 문제가 있는 분은 <a href="#"><span>아이디/비밀번호 찾기</span></a> 버튼을 눌러주세요.</li>
+                    <li>아이디가 없으신 분은 <a href="#"><span>회원가입</span></a> 후 이용하실 수 있습니다.</li>
+                    <li>웹진 뉴스레터를 수신거부하실 고객님은 <a href="#"><span>마이페이지 > 회원정보수정</span></a>의 수신거부 선택을 통하여 설정바랍니다.</li>
+                </ul>
+            	</div> 
+			</div> <!----------//sub_main---------->
+            
+        </div> 
+	</div> <!----------//width_box---------->
+    
+    
+    
+	<div id="footer_wrap">
+    	<footer id="footer" class="width_box">
+        	<div id="f_sitemap">
+            	<ul id="site_menu">
+                	<li id="menu01"><a href="sub.html">기업소개</a>
+                    	<ul class="fnav_sub">
+                        	<li><a href="sub.html">기업소개</a></li>
+                            <li><a href="#">브랜드</a></li>
+                            <li><a href="#">CEO</a></li>
+                            <li><a href="#">정도경영</a></li>
+                            <li><a href="#">오시는 길</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu02"><a href="#">사업소개</a>
+                    	<ul class="fnav_sub">
+                        	<li><a href="#">사업소개</a></li>
+                            <li><a href="#">구축사례</a></li>
+                            <li><a href="#">만화로 보는 엔시스</a></li>
+                            <li><a href="#">파트너 안내</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu03"><a href="#">제품소개</a>
+                    	<ul class="fnav_sub">
+                        	<li><a href="#">시스템</a></li>
+                            <li><a href="#">네트워크</a></li>
+                            <li><a href="#">솔루션</a></li>
+                            <li><a href="#">스마트IT</a></li>
+                            <li><a href="#">서비스</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu04"><a href="#">홍보센터</a>
+                    	<ul class="fnav_sub">
+                        	<li><a href="#">뉴스</a></li>
+                            <li><a href="#">기업홍보</a></li>
+                            <li><a href="#">인증·수상</a></li>
+                            <li><a href="#">웹진</a></li>
+                            <li><a href="#">이벤트</a></li>
+                        </ul>
+                    </li>
+                    <li id="menu05"><a href="#">고객지원</a>
+                    	<ul class="fnav_sub">
+                        	<li><a href="#">공지사항</a></li>
+                            <li><a href="#">서비스센터</a></li>
+                            <li><a href="#">FAQ</a></li>
+                            <li><a href="#">Q&amp;A</a></li>
+                            <li><a href="#">주요연락처</a></li>
+                        </ul>
+                    </li>
+                </ul> <!----------//site_menu---------->
+            </div> <!----------//f_sitemap---------->
+            <div id="f_policy">
+                <select>
+                    <option selected>Family Site</option>
+                    <option>(주)LG</option>
+                    <option>LG CNS</option>
+                    <option>파트너넷</option>
+                </select>
+            	<span><a href="#"><img src="img/txt_sinmungo.gif" alt="정도경영 사이버 신문고 /"></a></span>
+            	<ul id="policy_menu">
+					<li><a href="#">협력회사 상생고</a></li>
+					<li id="f_green"><a href="#">개인정보취급방침</a></li>
+                    <li><a href="#">이용약관</a></li>
+                    <li><a href="#">이메일 무단수집 거부</a></li>          
+                </ul>
+            </div> <!----------//f_policy---------->
+            <address>04143 서울시 마포구 마포대로 155 LG마포빌딩 (02)3773-1114</address>
+            <p>COPYRIGHT ⓒ 2015 LG-N Sys Inc All Rights Reserved.</p>
+        </footer> <!----------//footer---------->
+	</div> <!----------//footer_wrap---------->
+    
+</body>
+</html>
+
+
+
+

@@ -1,0 +1,112 @@
+/*first*/
+#first { background:url(../img/bg_022.jpg) no-repeat center center; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; }
+
+
+
+
+
+/*first - fix_wrap - header*/
+/*Menu Navigation Location*/
+ul#nav_menu li:nth-child(2) a { opacity:0.5; }
+
+
+
+
+
+/*first - article#title_wrap*/
+/*Main 'Title Text' Area*/
+article#title_wrap { position:absolute; width:90%; top:50%; left:5%; transform:translateY(-45%); -webkit-transform:translateY(-45%); -moz-transform:translateY(-45%); /*border:1px solid red; box-sizing:border-box;*/ }
+
+h2#title { width:50%; transition:0.3s all ease-in-out; -webkit-transition:0.3s all ease-in-out; -moz-transition:0.3s all ease-in-out; -o-transition:0.3s all ease-in-out; }
+
+
+
+
+
+/*first - article*/
+/*Main 'Title Text' Area*/
+#text_box { position:absolute; bottom:27%; left:65%; opacity:0.95; /*border:1px solid orange; box-sizing:border-box;*/ }
+#text_box li { font-size:15px; color:#fff; }
+
+
+
+
+
+/*section#work_wrap*/
+section#work_wrap { width:100%; color:#333; min-width:850px; }
+section#work_wrap article#work_list { width:70%; max-width:1300px; margin:0 auto; padding:200px 0; transition:0.5s all ease-in-out; -webkit-transition:0.5s all ease-in-out; -moz-transition:0.5s all ease-in-out; -o-transition:0.5s all ease-in-out; }
+
+article#work_list h5 { font-size:20px; font-weight:700; letter-spacing:5px; text-align:center; margin-bottom:200px; }
+
+article#work_list ul { display:flex; width:100%; height:550px; transition:0.5s all ease-in-out; -webkit-transition:0.5s all ease-in-out; -moz-transition:0.5s all ease-in-out; -o-transition:0.5s all ease-in-out; }
+article#work_list ul li { position:relative; flex:1; -webkit-flex:1; -ms-flex:1; -moz-flex:1; }
+article#work_list ul li + li { margin-left:1%; }
+article#work_list ul li a, #etc a { display:block; width:100%; height:100%; font-size:30px; font-weight:700; letter-spacing:2px; line-height:1.2; text-align:center; color:#fff; transition:0.5s all ease-in-out; -webkit-transition:0.5s all ease-in-out; -moz-transition:0.5s all ease-in-out; -o-transition:0.5s all ease-in-out; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; }
+article#work_list a:hover { letter-spacing:5px; }
+
+#chris a { background:url(../img/work_01.jpg) no-repeat center center; }
+#gate a { background:url(../img/work_02.jpg) no-repeat center center; }
+#fleet a { background:url(../img/work_03.jpg) no-repeat center center; }
+#etc a { background:url(../img/work_04.jpg) no-repeat center -475px; }
+
+#chris a:hover { background-image:url(../img/work_011.jpg); }
+#gate a:hover { background-image:url(../img/work_022.jpg); }
+#fleet a:hover { background-image:url(../img/work_033.jpg); }
+#etc a:hover { background:url(../img/work_044.jpg) no-repeat center -475px; }
+
+
+
+article#work_list span { display:block; position:absolute; top:250px; left:0; width:100%; opacity:0.95; }
+article#work_list small { display:block; position:absolute; top:295px; left:50%; margin-left:-27px; font-size:20px; font-weight:400; letter-spacing:2px; text-align:center; color:#fff; }
+article#work_list li#fleet span { top:230px; }
+article#work_list li#fleet small { top:315px; }
+article#work_list #etc span { top:200px; }
+
+
+
+#etc { position:relative; width:100%; height:400px; background-color:#aaa; margin-top:1%; transition:0.5s all ease-in-out; -webkit-transition:0.5s all ease-in-out; -moz-transition:0.5s all ease-in-out; -o-transition:0.5s all ease-in-out; }
+
+
+
+
+
+/*media query*/
+@media screen and (min-width:1000px) and (max-width:1349px) {  
+
+	section#work_wrap article#work_list { width:90%; }
+	article#work_list ul li a, #etc a { font-size:25px; }
+
+
+}
+
+@media screen and (min-width:650px) and (max-width:999px) {
+
+	h2#title { width:60%; }
+	#text_box { left:75%; }   
+
+	section#work_wrap article#work_list { width:90%; }
+	article#work_list ul { height:350px; }
+	#etc { height:300px; }
+
+	section#work_wrap article#work_list { width:90%; }
+	article#work_list ul li a, #etc a { font-size:23px; }
+
+	article#work_list span { top:255px; }
+	article#work_list small { top:300px; }
+	article#work_list li#fleet small { top:300px; }
+	article#work_list #etc span { top:200px; }
+
+	article#work_list a:hover { letter-spacing:2px; }
+}
+
+@media screen and (max-width:649px) { 
+
+	/*#first { background-image:none; background-color:#333; }*/
+	article#title_wrap { top:20%; }
+	h2#small { display:block; width:100%; }
+
+	nav, h2#title { display:none; }
+	#text_box { display:none; }
+	section, #footer_wrap { display:none; }
+
+}
