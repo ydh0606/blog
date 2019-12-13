@@ -13,7 +13,22 @@ $('.control_item').hide()
 
 // Intro
 
-function introOpenAni(){
+// function introOpenAni(){
+
+// 	var dur = 1; 
+
+// 	TweenMax.set($('.intro_open'), {y:100});
+// 	TweenMax.to($('.intro_open'), dur, {y:0});
+
+//     $('.intro .moon').show().stop(true).delay(200)
+//     .animate({'opacity':1}, 700)
+
+//     $('.intro .moon_line').show().stop(true).delay(500)
+//     .animate({'opacity':1}, 1000)
+
+// }
+
+var introOpenAni = setTimeout(function(){
 
 	var dur = 1; 
 
@@ -26,7 +41,11 @@ function introOpenAni(){
     $('.intro .moon_line').show().stop(true).delay(500)
     .animate({'opacity':1}, 1000)
 
-}
+}, 100)
+
+	
+
+
 
 
 
