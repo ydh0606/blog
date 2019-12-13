@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<!-- <meta http-equiv="X-UA-Compatible" content="IE=edge"> -->
+	<title>PORTFOLIO | D, Half Moon</title>
+	<link rel="shortcut icon" type="image/x-icon" href="img/favi.ico" />
+	<link href="css/common.css" rel="stylesheet" type="text/css"/>
+	<link href="css/home.css" rel="stylesheet" type="text/css"/>
+</head>
+
+<body>
+	<div class="wrap">
+
+		<!-- intro -->
+		<div class="intro">
+			<div class="moon intro_item intro_open big_move_r">
+				<img src="" alt="달">
+			</div>
+			<div class="moon_line intro_item intro_open small_move_r">
+				<img src="img/arc_line.png" alt="달 라인">
+			</div>
+			<h1 class="intro_title intro_item intro_close">
+				<span id="intro_i" class="etc_move p_bg">I Stay Awake</span>
+				<span id="intro_f" class="small_move p_bg">From Day To Dawn</span>
+			</h1>
+		</div> <!-- intro -->
+
+
+
+		<!-- header -->
+		<header>
+			<div class="main_item" id="logo">
+				<a href="index.html">
+					D, Half Moon
+				</a>
+			</div>
+			<div class="gnb main_item">
+				<ul>
+					<li class="select"><a href="index.html">HOME</a></li>
+					<li><a href="about.html">ABOUT</a></li>
+					<li><a href="work.html">WORKS</a></li>
+				</ul>
+			</div>
+			<div class="main_item" id="resume">
+				<a href="doc/resume/yoondahye_portfolio.pdf" target="blank" class="transition" download>Portfolio</a>
+			</div>
+		</header>
+
+
+
+		<!-- main -->
+		<div class="main">
+			<div class="moon big_move_r">
+				<ul class="moon_list">
+					<li id="m_01">
+						<img src="img/moon_00.png">
+					</li>
+					<li id="m_02">
+						<img src="img/moon_01.png">
+					</li>
+					<li id="m_03">
+						<img src="img/moon_02.png">
+					</li>
+					<li id="m_04">
+						<img src="img/moon_03.png">
+					</li>
+					<li id="m_05">
+						<img src="img/moon_04.png">
+					</li>
+				</ul>
+			</div>
+			<div class="moon_line small_move_r">
+				<img src="img/arc_line.png" alt="달 라인">
+			</div>
+			<div class="title_wrap">
+				<h1 class="main_title main_item">
+					<a id="title_d" class="etc_move p_bg" href="#">D,</a>
+					<a id="title_h" class="small_move p_bg" href="#">Half Moon</a>
+				</h1>
+				<h1 class="link_title main_item">
+					<a class="move_01 p_bg" id="link_a" href="about.html">About</a>
+					<a class="move_02 p_bg" id="link_w" href="work.html">Work List</a>
+				</h1>
+			</div>
+		</div> <!-- main -->
+
+		<!-- mean -->
+		<div class="mean main_item etc_move_r">
+			<ul>
+				<li id="mean_01">Idea</li>
+				<li id="mean_02">Endeavor</li>
+				<li id="mean_03">Fruition</li>
+			</ul>
+		</div>
+		
+		<!-- data -->
+		<div class="main_item" id="data">
+			<ul id="api">
+				<li id="month">Month.Day THU</li>
+				<li id="hour">Hour:Minute PM</li>
+				<li id="temp">Temp ˚C</li>
+				<li id="condition">CONDITION</li>
+			</ul>
+		</div>
+
+
+
+		<!-- footer -->
+		<footer>
+			<div class="main_item" id="scroll">
+				<b></b>
+				<span>SCROLL</span>
+			</div>
+			<div class="main_item" id="location">SEL | KOREA</div>
+		</footer>
+
+
+
+		<!-- controller -->
+		<div class="controller">
+			<div class="control_title control_item">
+				<h1 class="etc_move p_bg">Mean</h1>
+				<span class="small_move p_bg">Moon</span>
+			</div>
+
+			<div class="weather half_top control_item">
+				<ul>
+					<li>
+						<span class="transition"></span>
+						<a class="transition" href="#">CLEAR</a>
+					</li>
+					<li>
+						<span class="transition"></span>
+						<a class="transition" href="#">CLOUDY</a>
+					</li>
+					<li>
+						<span class="transition"></span>
+						<a class="transition" href="#">RAIN</a>
+					</li>
+					<li>
+						<span class="transition"></span>
+						<a class="transition" href="#">SNOW</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="time half_top control_item">
+				<ul>
+					<li>
+						<a class="transition" href="#">12:00</a>
+					</li>
+					<li>
+						<a class="transition" href="#">16:00</a>
+					</li>
+					<li>
+						<a class="transition" href="#">20:00</a>
+					</li>
+					<li>
+						<a class="transition" href="#">04:00</a>
+					</li>
+					<li>
+						<a class="transition" href="#">08:00</a>
+					</li>
+				</ul>
+				<div id="slider">
+					<span></span>
+				</div>
+			</div>
+		</div> <!-- controller -->
+
+		<div id="weather_container">
+			<div class="wea" id="cloudy">
+				<div class="cloud" id="cloud_01"><img src="img/cloud_01_g.png"></div>
+				<div class="cloud" id="cloud_02"><img src="img/cloud_02_g.png"></div>
+				<div class="cloud" id="cloud_03"><img src="img/cloud_01.png"></div>
+			</div>
+			<div class="wea" id="rain"></div>
+			<div class="wea" id="snow"></div>
+		</div>
+
+	</div>	<!-- wrap -->
+
+	<script src="js/jquery_3.3.1.js"></script>
+	<script src="js/jquery.browser.min.js"></script>
+	<script src="js/jquery.easing.min.js"></script>
+	<script src="js/TweenMax.min.js"></script>
+	<script src="js/data_open.js"></script>
+	<script src="js/loader.js"></script>
+	<script src="js/resize.js"></script>
+	<script src="js/script.js"></script>
+	<script src="js/controller.js"></script>
+
+</body>
+
+</html>
