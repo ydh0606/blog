@@ -8,9 +8,33 @@ console.log ("W = " + window.innerWidth, "H = " + window.innerHeight);
 
 $(document).ready(function() {
 
-    // if($.browser.msie) {
-    //     $('body').addClass('ie');
-    // }
+    // ie browser check
+
+    var agent = navigator.userAgent.toLowerCase();
+
+    if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+
+        console.log("Yes, IE!");
+
+        $('.text_mask').css({
+            'color':'#646e79',
+            'background-image':'inherit',
+            '-webkit-background-clip':'inherit',
+            '-webkit-text-fill-color':'inherit'
+        });
+
+        $('.text_mask_y').css({
+            'background-image':'inherit',
+            '-webkit-background-clip':'inherit',
+            '-webkit-text-fill-color':'inherit'
+        });
+
+    }else {
+        console.log("No, IE!");
+
+    };
+
+
 
 
 
@@ -105,6 +129,13 @@ $(document).ready(function() {
                 backgroundPosition : ((posX / minMove) + 50) + "% " + ((posY / minMove) + 50) + "%"
             }
         })
+
+        TweenMax.to($('.img_box h1'), moveSpeed, {
+            css: {
+                backgroundPosition : ((posX / minMove) + 50) + "% " + ((posY / minMove) + 50) + "%"
+            }
+        })
+
 
     });
 
@@ -216,7 +247,7 @@ function zoomIn(){
     }, 500)
 
     $('.img_box h1').stop(true)
-    .animate({'opacity':0.5}, 1000, 'easeOutCubic')
+    .animate({'opacity':0.4}, 1000, 'easeOutCubic')
 
 }
 

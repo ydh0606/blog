@@ -20,19 +20,19 @@ function weatherClick(id){
 
 		if(id == 1){
 	    	//console.log("CLOUDY");
-	    	$('.wea').css({'display':'none'});
-	    	$('#cloudy').css({'display':'block'});
+	    	$('.wea').stop().animate({'opacity': '0'}, 1000);
+	    	$('#cloudy').stop().animate({'opacity': '1'}, 1000);
 	    } else if(id == 2){
 	    	//console.log("RAIN");
-	    	$('.wea').css({'display':'none'});
-	    	$('#rain').css({'display':'block'});
+	    	$('.wea').stop().animate({'opacity': '0'}, 1000);
+	    	$('#rain').stop().animate({'opacity': '1'}, 1000);
 	    } else if(id == 3){
 	    	//console.log("SNOW");
-	    	$('.wea').css({'display':'none'});
-	    	$('#snow').css({'display':'block'});
+	    	$('.wea').stop().animate({'opacity': '0'}, 1000);
+	    	$('#snow').stop().animate({'opacity': '1'}, 1000);
 	    } else {
 	    	//console.log("CLEAR");
-	    	$('.wea').css({'display':'none'});
+	    	$('.wea').stop().animate({'opacity': '0'}, 1000);
 	    }
     }
 
@@ -48,84 +48,6 @@ function weatherCont(){
 }
 
 weatherCont ();
-
-
-
-
-
-// // Time
-
-// var $controlT = $('.controller .time li');
-// var $thisMoon = $('.moon img');
-// var $controlTitle = $('.controller .control_title');
-
-// var $moonList = $('.moon_list li')
-// var $moonListBox = $('.moon_list')
-
-// var _cuId = 0;
-// var _exId = _cuId;
-
-// function timeClick(id){
-
-//     function onTimeClick(event){
-//     	//console.log('Weather Click');
-//     	event.preventDefault();
-
-//     	_cuId = id;
-
-//     	console.log('_cuId', _cuId);
-//     	console.log('_exId', _exId);
-
-//     	$moonList.eq(_exId).removeClass('fade_in');
-//         $moonList.eq(_cuId).addClass('fade_in');
-
-//         //$('.moon_list').css({'background':'url(img/moon_0' + _exId + '.png) no-repeat center center'});
-//         //$('.moon_list').css({'backgroundSize':'cover'});
-
-//     	_exId = _cuId;
-      
-//     	$controlT.removeClass('select');
-// 		$controlT.eq(id).addClass('select');
-
-// 		//var _id = id + 1;
-
-//    		//$thisMoon.attr("src","img/moon_0" + _id + ".png");
-
-//    		if(id == 0 || id == 4){
-// 	    	//console.log("New Moon");
-// 	    	$controlTitle.children('h1').html('Idea');
-//        		$controlTitle.children('span').html('New Moon');
-
-// 	    } else if(id == 1 || id == 3){
-// 	    	//console.log("Half Moon");
-// 	    	$controlTitle.children('h1').html('Endeavor');
-//        		$controlTitle.children('span').html('Half Moon');
-
-// 	    } else {
-// 	    	//console.log("Full Moon");
-// 	    	$controlTitle.children('h1').html('Fruition');
-//        		$controlTitle.children('span').html('Full Moon');
-// 	    }
-
-// 	    $('.control_title').css({
-// 			"marginTop" : - ($('.control_title').height() / 2),
-// 			"marginLeft" : - ($('.control_title').width() / 2)
-// 		});
-
-//     }
-
-//     $controlT[id].addEventListener('click', onTimeClick);
-// }
-
-
-
-// function timeCont(){
-//     for(var i = 0; i < $controlT.length; i++){
-//         timeClick(i);
-//     }
-// }
-
-// timeCont ();
 
 
 
@@ -268,4 +190,3 @@ function cloudMov(){
 }
 
 cloudMov()
-

@@ -54,18 +54,17 @@
 	/*background-color:red;*/
 }
 .text_box h1, .img_box h1 {
-	font-family:linotype-didot, 'Italiana', serif;
-	font-size:120px; font-weight:; line-height:1.2; 
-	opacity:0.9;
-/*	background-image:url(../img/text_mask.png);
+	font-family:linotype-didot, 'Playfair Display', serif;
+	font-size:120px; font-weight:bold; line-height:1.2; letter-spacing:3px;
+	background-image:url(../img/text_mask.png);
 	background-position:50% 50%; background-repeat:repeat; 
 	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;*/
+	-webkit-text-fill-color:transparent;
 }
 .img_box h1 {
 	opacity:0.2;
 	color:#c7b299;
-/*	background-image:url(../img/text_mask_02.png);*/
+	background-image:url(../img/text_mask_02.png);
 }
 
 

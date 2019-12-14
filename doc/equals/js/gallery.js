@@ -29,24 +29,6 @@
         $('.gal_img_' + _exId).removeClass('fade_in');
         $('.gal_img_' + _cuId).addClass('fade_in');
 
-
-        // $('.s_img').css({background : 'url(img/img_' + _exId + '.jpg) no-repeat center center'});
-        // $('.s_img').css({backgroundSize : 'cover'});
-
-
-        // if(_cuId == 0 && _exId == 0){ 
-        //   $('.s_img_' + _cuId).addClass('fade_in');
-        //   $('.s_img').css({background : 'url(img/img_0.jpg) no-repeat center center'})
-        //   $('.s_img').css({backgroundSize : 'cover'});
-
-        // } else{
-        //   $('.s_img_' + _exId).removeClass('fade_in');
-        //   $('.s_img_' + _cuId).addClass('fade_in');
-
-        //   $('.s_img').css({background : 'url(img/img_' + _exId + '.jpg) no-repeat center center'})
-        //   $('.s_img').css({backgroundSize : 'cover'});
-        // }
-
         _exId = _cuId;
          
     }
@@ -55,13 +37,13 @@
       var init = function() {
           $arrow.on('click', function(e) {
               e.preventDefault();
-              var $el = $(this); //$(e.target) - 현재 눌린 버튼을 선택.
-              if($el.is($prev)) { //prev. --
-                  if(_id > 0){ //최소값일 때 그 이하 감소하지 못하도록.
+              var $el = $(this); 
+              if($el.is($prev)) { 
+                  if(_id > 0){ 
                       _id--;
                   }
               }else{ //next. ++
-                  if(_id < _itemMax - 1){ //최대값일 때 그 이상 증가하지 못하도록.
+                  if(_id < _itemMax - 1){ 
                       _id++;
                   }
               }
@@ -71,7 +53,6 @@
               galClick(_id);
           });
       }
-      //함수 호출.
       init();
 
     });

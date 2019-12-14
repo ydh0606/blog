@@ -1,3 +1,22 @@
+//IE Browser Check
+
+var agent = navigator.userAgent.toLowerCase();
+
+if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+
+  console.log("Yes, IE!");
+  $('h2#title').css({
+    'opacity':'0.8'
+  });
+
+}else {
+  console.log("No, IE!");
+};
+
+
+
+
+
 // Mouse Pointer
 var $cursor = document.querySelector('#cursor');
 var $allA = document.querySelectorAll('a');
@@ -23,12 +42,6 @@ for(var i = 0; i < $allA.length; i++){
    $allA[i].addEventListener('mouseover', aPointer01);
    $allA[i].addEventListener('mouseout', aPointer02);
 }
-
-
-
-
-
-
 
 
 
@@ -98,8 +111,10 @@ function menuClick(id){
           $menuTitle[_exId].classList.remove ('menu_select');
           $el.classList.add ('menu_select');
 
-          $contentBox[_exId].classList.remove ('fade_in', 'text_index');
-          $contentBox[_cuId].classList.add ('fade_in', 'text_index');
+          $contentBox[_exId].classList.remove ('fade_in');
+          $contentBox[_exId].classList.remove ('text_index');
+          $contentBox[_cuId].classList.add ('fade_in');
+          $contentBox[_cuId].classList.add ('text_index');
 
           $wrapper.style.background = 'url(img/bg_' + _exId + '.jpg) no-repeat center center'
           $wrapper.style.backgroundSize = 'cover'
@@ -193,8 +208,8 @@ function outTrailer(){
     $tPlay.style.transform = 'scale(1, 1)';
 }
 
-$trailer.addEventListener('mouseover', onTrailer);
-$trailer.addEventListener('mouseout', outTrailer);
+$tCircle.addEventListener('mouseover', onTrailer);
+$tCircle.addEventListener('mouseout', outTrailer);
 
 
 
@@ -207,28 +222,39 @@ $trailer.addEventListener('mouseout', outTrailer);
 
 // Mouse parallax & Gradient
 
-var $parallax = document.querySelectorAll('.parallax');
-
 var $homeColor = document.querySelector('.home_color');
 var $colorBg = document.querySelectorAll('.color_bg');
 
 var screenW = window.innerWidth;
 var screenH = window.innerHeight;
 
-var _pNum = 15;
-var _tNum = 5;
+var moveSpeed = 0.75;
+var bigMove = 30, smallMove = 50, minMove = 80, tinyMove = 200;
 
+$(window).mousemove(function(e) {
 
+  var posX = (e.pageX - screenW / 2),
+      posY = (e.pageY - screenH / 2);
 
-function mouseParallax(e){
-    //console.log('Mouse Parallax');
-
-   for(var i = 0; i < $parallax.length; i++){
-        $parallax[i].style.transform ='translate(' + e.pageY/screenH * _pNum + 'px, ' + e.pageX/screenW * _pNum + 'px)';
+  TweenMax.to($('.parallax'), moveSpeed, {
+    css: {
+      transform : "translate(" + ( - posX / bigMove) + "px, " + ( - posY / bigMove) + "px"
     }
+  });
 
-    //$trailer.style.transform ='translate(' + e.pageX/screenH * _tNum + 'px, ' + e.pageY/screenW * _tNum + 'px)';
-}
+  TweenMax.to($('.parallax_s'), moveSpeed, {
+    css: {
+      transform : "translate(" + ( - posX / smallMove) + "px, " + ( - posY / smallMove) + "px"
+    }
+  });
+
+  TweenMax.to($('.parallax_sr'), moveSpeed, {
+    css: {
+      transform : "translate(" + ( posX / smallMove) + "px, " + ( posY / smallMove) + "px"
+    }
+  });
+
+});
 
 function mouseGradient(e){
     //console.log('Mouse Gradient');
@@ -241,5 +267,4 @@ function mouseGradient(e){
     }
 }
 
-window.addEventListener('mousemove', mouseParallax);
 window.addEventListener('mousemove', mouseGradient);

@@ -115,25 +115,25 @@ function textFill(){
         //console.log("andrew")
         $sort.empty().html('Web Design');
         $num.empty().html('01');
-        $btn.attr('href', 'doc/portfolio/clay/index.html');
+        $btn.attr('href', '../clay/index.html');
 
     } else if(i == 2){
         //console.log("equals")
         $sort.empty().html('Web Design');
         $num.empty().html('02');
-        $btn.attr('href', 'https://ucmpltme.github.io');
+        $btn.attr('href', 'index.html');
 
     } else if(i == 3){
         //console.log("pagatonia")
         $sort.empty().html('Web Design');
         $num.empty().html('03');
-        $btn.attr('href', 'doc/portfolio/patagonia/index.html');
+        $btn.attr('href', '../patagonia/index.html');
 
     } else if(i == 4 || i == 0){
         //console.log("clay")
         $sort.empty().html('App Design');
         $num.empty().html('04');
-        $btn.attr('href', 'doc/portfolio/equals/index.html');
+        $btn.attr('href', '../equals/index.html');
     }
 
 }
@@ -153,4 +153,36 @@ $('.w_scroll').on('click', function(e) {
 
     workTitleSlide()
 });
+
+
+$('#prev_arr').on('click', function(e) {
+    e.preventDefault();
+
+    i--;
+
+    if(i == -1){               
+        i = 3
+        $('.title').css({top : - titleH * 4})
+        $('.title h1').eq(4).css({opacity : 1})
+    } 
+
+    workTitleSlide()
+});
+
+
+
+$('#next_arr').on('click', function(e) {
+    e.preventDefault();
+
+    i++;
+
+    if(i == 6){               
+        i = 2
+        $('.title').css({top : - titleH * 1})
+        $('.title h1').eq(1).css({opacity : 1})
+    } 
+
+    workTitleSlide()
+});
+
 

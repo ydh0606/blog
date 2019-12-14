@@ -11,23 +11,6 @@ $('.control_item').hide()
 
 
 
-// Intro
-
-// function introOpenAni(){
-
-// 	var dur = 1; 
-
-// 	TweenMax.set($('.intro_open'), {y:100});
-// 	TweenMax.to($('.intro_open'), dur, {y:0});
-
-//     $('.intro .moon').show().stop(true).delay(200)
-//     .animate({'opacity':1}, 700)
-
-//     $('.intro .moon_line').show().stop(true).delay(500)
-//     .animate({'opacity':1}, 1000)
-
-// }
-
 var introOpenAni = setTimeout(function(){
 
 	var dur = 1; 
@@ -181,7 +164,7 @@ function scrollMov(){
 
 
 
-introOpenAni ();
+//introOpenAni ();
 
 
 
@@ -209,7 +192,7 @@ function clickScroll(){
 
 
 
-$(window).on("mousewheel",function(e){
+$(window).on("mousewheel DOMMouseScroll",function(e){
 
     if(e.originalEvent.wheelDelta >= 0) {
         //console.log("Scroll Up");
@@ -256,6 +239,9 @@ function goControl(){
     $('#scroll b').stop(true).delay(1000)
     .animate({'left':70}, 1500, 'easeInOutCubic')
 
+    $('#scroll b > b').stop(true).delay(1000)
+    .animate({'left':60}, 1500, 'easeInOutCubic')
+
     $('#scroll span').stop(true).delay(1000)
     .animate({'left':0}, 1500, 'easeInOutCubic')
 
@@ -276,6 +262,9 @@ function goControl(){
 function goMain(){
 
 	$('#scroll b').stop(true).delay(1000)
+    .animate({'left':0}, 1500, 'easeInOutCubic')
+
+    $('#scroll b > b').stop(true).delay(1000)
     .animate({'left':0}, 1500, 'easeInOutCubic')
 
     $('#scroll span').stop(true).delay(1000)

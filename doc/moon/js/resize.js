@@ -82,7 +82,7 @@ function titleSize() {
 
 	//work
 	$('.work .title h1 span').css({
-		"fontSize" : $('.left').height() / 3.7
+		"fontSize" : $('.left').height() / 4
 	});
 
 };

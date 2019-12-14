@@ -44,7 +44,7 @@ function dateTime(){
     //html += '<li>' + month + '.' + date + ' ' + day + '</li>';
     $('#month').empty().html(month + '.' + date + ' ' + day);
 
-    if(hours >= 00 && hours < 12){
+    if(hours >= 0 && hours < 12){
         //html += '<li>' + timeString + ' AM </li>';
         $('#hour').empty().html(timeString + ' AM');
     }else {
@@ -290,15 +290,15 @@ $(document).ready(function() {
 
             success : function(response){
 
-                console.log(response);
-                console.log("도시이름  : " + (response.name));
+                //console.log(response);
+                //console.log("도시이름  : " + (response.name));
 
                 var temp = Math.floor(response.main.temp-273);
                 var condition = response.weather[0].main;
                 var code = response.weather[0].id;
 
-                console.log("현재온도 : " + temp);
-                console.log("날씨 : " + condition, "코드 : " + code);
+                //console.log("현재온도 : " + temp);
+                //console.log("날씨 : " + condition, "코드 : " + code);
 
 
                 var html = '';
@@ -314,8 +314,8 @@ $(document).ready(function() {
                     $controlW.removeClass('select');
                     $controlW.eq(1).addClass('select');
 
-                    $('.wea').css({'display':'none'});
-                    $('#cloudy').css({'display':'block'});
+                    $('.wea').stop().animate({'opacity': '0'}, 100);
+                    $('#cloudy').stop().animate({'opacity': '1'}, 100);
 
                 } else if((code >= 300 && code <= 321) || (code >= 500 && code <= 531)){
                     text = "Rain";
@@ -323,8 +323,8 @@ $(document).ready(function() {
                     $controlW.removeClass('select');
                     $controlW.eq(2).addClass('select');
 
-                    $('.wea').css({'display':'none'});
-                    $('#rain').css({'display':'block'});
+                    $('.wea').stop().animate({'opacity': '0'}, 1000);
+                    $('#rain').stop().animate({'opacity': '1'}, 100);
 
                 } else if(code >= 600 && code <= 622){
                     text = "Snow";
@@ -332,8 +332,8 @@ $(document).ready(function() {
                     $controlW.removeClass('select');
                     $controlW.eq(3).addClass('select');
 
-                    $('.wea').css({'display':'none'});
-                    $('#snow').css({'display':'block'});
+                    $('.wea').stop().animate({'opacity': '0'}, 1000);
+                    $('#snow').stop().animate({'opacity': '1'}, 100);
 
                 } else if(code >= 800 && code <= 801){
                     text = "Clear";
@@ -364,7 +364,7 @@ $(document).ready(function() {
     weatherData();
 
     $('#data').on('click', function(){
-        console.log("Data Area Click");
+        //console.log("Data Area Click");
         dateTime();
         weatherData();
     });

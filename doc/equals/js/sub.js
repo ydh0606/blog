@@ -50,6 +50,7 @@ function subExit(event){
     event.preventDefault();
 
     $sub.style.display = 'none';
+    galClick(1);
 }
 
 $exit.addEventListener('click', subExit);
@@ -62,10 +63,10 @@ $logo.addEventListener('click', subExit);
 function castClick(id){
 
     function onClickCast(event){
-      //console.log('onClickCast');
+      console.log('onClickCast');
       event.preventDefault();
 
-      $textArea.scrollTo(0,0);
+      $('.text_area').scrollTop(0);
 
       var $el = this;
 

@@ -20,11 +20,11 @@ function titleAuto() {
 
 	$('.title_box').css({
 		"height" : img_h,
-		"marginTop" : - (img_h / 2) + 85
+		"marginTop" : - (img_h / 2) + 75
 	});
 
 	$('.title_box h1 span').css({
-		"fontSize" : $('.title_box').width() / 15
+		"fontSize" : $('.title_box').width() / 14
 	});
 
 	$('.bg_text span').css({

@@ -9,7 +9,7 @@
 
 
 /*reset*/
-html, body { width:100%; height:100%; overflow:hidden; cursor:none; }
+html, body { width:100%; height:100%; overflow:hidden; /*cursor:none;*/ }
 
 body,p,h1,h2,h3,h4,h5,h6,ul,ol,li { margin:0; padding:0; }
 body,p,h1,h2,h3,h4,h5,h6, a { font-family: 'Raleway', sans-serif; font-size:12px; letter-spacing:1px; text-decoration:none; color:#fff; }
@@ -125,7 +125,7 @@ ul#bottom li:last-child a:hover { background-color:rgba(255,255,255,0.85); color
 /* Main Contents */
 .bg { z-index:1000; position:absolute; opacity:0; top:0; left:0; width:100%; height:100%; }
 .bg a { display:block; }
-.bg a:hover { opacity:0.5; }
+/*.bg a:hover { opacity:0.5; }*/
 
 #home_bg { background:url(../img/bg_0.jpg) no-repeat center center; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; }
 #cast_bg { background:url(../img/bg_1.jpg) no-repeat center center; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; }
@@ -159,7 +159,7 @@ h3#sub_title { width:25%; margin-top:50px; transition:0.3s all; -webkit-transiti
 /* Cast */
 #cast_box { position:absolute; top:50%; left:5%; width:90%; height:300px; margin-top:-30px; }
 
-ul#cast_btn li { transition:0.3s all; -webkit-transition:0.3s all; -moz-transition:0.3s all; -o-transition:0.3s all; }
+ul#cast_btn li { transition:0.3s opacity; -webkit-transition:0.3s opacity; -moz-transition:0.3s opacity; -o-transition:0.3s opacity; }
 
 ul#cast_btn li#kris { float:left; }
 ul#cast_btn li#nic { float:right; }
@@ -168,6 +168,9 @@ ul#cast_btn h2, ul#cast_btn h3 { font-weight:200; color:#e8dace; line-height:1; 
 ul#cast_btn h2 { font-size:100px; }
 ul#cast_btn h3 { font-size:50px; margin-top:25px; }
 
+ul#cast_btn li a { transition:0.3s all; -webkit-transition:0.3s all; -moz-transition:0.3s all; -o-transition:0.3s all; }
+ul#cast_btn li a:hover { opacity:0.2; }
+
 
 
 
@@ -175,10 +178,10 @@ ul#cast_btn h3 { font-size:50px; margin-top:25px; }
 /* Story */
 #story_box { position:absolute; top:50%; left:5%; width:90%; height:55%; transform:translateY(-35%); -webkit-transform:translateY(-35%); -moz-transform:translateY(-35%); }
 
-#story_box h2 a, #story_box h3 { position:absolute; font-weight:200; color:#e8dace; transition:0.3s all; -webkit-transition:0.3s all; -moz-transition:0.3s all; -o-transition:0.3s all; }
+#story_box h2 a, #story_box h3 { position:absolute; font-weight:200; color:#e8dace; transition:0.3s opacity; -webkit-transition:0.3s opacity; -moz-transition:0.3s opacity; -o-transition:0.3s opacity; }
 
 #story_box h2 a { bottom:0; font-size:100px; line-height:1; }
-#story_box h2 a:hover { opacity:0.5; }
+#story_box h2 a:hover { opacity:0.2; }
 
 #story_box h3 { top:0; right:10%; font-size:35px; line-height:1.2; }
 
@@ -189,10 +192,10 @@ ul#cast_btn h3 { font-size:50px; margin-top:25px; }
 /* Highlight */
 #high_box { position:absolute; top:50%; left:5%; width:90%; height:300px; transform:translateY(-30%); -webkit-transform:translateY(-30%); -moz-transform:translateY(-30%); }
 
-#high_box h2 a, #high_box h3 { position:absolute; font-weight:200; color:#e8dace; transition:0.3s all; -webkit-transition:0.3s all; -moz-transition:0.3s all; -o-transition:0.3s all; }
+#high_box h2 a, #high_box h3 { position:absolute; font-weight:200; color:#e8dace; transition:0.3s opacity; -webkit-transition:0.3s opacity; -moz-transition:0.3s opacity; -o-transition:0.3s opacity; }
 
 #high_box h2 a { bottom:0; font-size:100px; line-height:1; }
-#high_box h2 a:hover { opacity:0.5; }
+#high_box h2 a:hover { opacity:0.2; }
 
 #high_box h3 { top:0; right:5%; font-size:35px; line-height:1.2; }
 
@@ -309,7 +312,7 @@ a#exit:hover span:before, a#exit:hover span:after { transform:rotate(0deg); -web
 
 /* Highlight Cast */
 
-#sub_high .img_area { position:absolute; width:70%; /*background-color:pink;*/ }
+#sub_high .img_area { position:absolute; width:70%; background-color:#333; }
 #sub_high .text_area { width:30%; }
 
 .gal_img { position:absolute; width:100%; opacity:0; background:url(../img/img_0.jpg) no-repeat center center; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; }

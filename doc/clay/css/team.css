@@ -93,10 +93,10 @@ b#menu_line { display:block; position:absolute; bottom:0; left:250px; width:100p
 
 
 
-.role_box { top:400px; width:60%; -webkit-display:flex; display:flex; } 			
+.role_box { top:450px; width:60%; -webkit-display:flex; display:flex; } 			
 
 .role_box ul { -webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1; } 
-.role_box ul li + li { margin-top:40px;  } 
+.role_box ul li + li { margin-top:50px;  } 
 
 .role_box h5 { font-size:17px; font-weight:700; margin-bottom:10px; }
 .role_box span { font-size:17px; font-weight:300; }			

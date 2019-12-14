@@ -41,17 +41,14 @@
 .intro_title span,
 .title_wrap h1 a {
 	display:block;
-	font-family:linotype-didot, 'Italiana', serif;
-	font-weight:; line-height:1.2;
+	font-family:linotype-didot, 'Playfair Display', serif;
+	font-weight:bold; line-height:1.2; letter-spacing:3px;
 	white-space:nowrap;
-	opacity:0.8;
-	/*background-image:url(../img/text_mask.png);
+	background-image:url(../img/text_mask.png);
 	background-position:50% 50%;
 	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;*/
+	-webkit-text-fill-color:transparent;
 }
-
-
 
 .intro_title span+span {
 	margin-top:0%;
@@ -76,11 +73,11 @@
 	-webkit-transition:color 0.5s;
 	-moz-transition:color 0.5s;
 	-o-transition:color 0.5s;
-	/*background-image:url(../img/text_mask_02.png);
+	background-image:url(../img/text_mask_02.png);
 	transition:background-image 0.5s;
 	-webkit-transition:background-image 0.5s;
 	-moz-transition:background-image 0.5s;
-	-o-transition:background-image 0.5s; */
+	-o-transition:background-image 0.5s; 
 }
 
 
@@ -114,14 +111,14 @@
 	bottom:50%; left:50%;
 }
 .mean ul li {
-	font-family:linotype-didot, 'Italiana', serif;
+	font-family:linotype-didot, 'Playfair Display', serif;
 	font-size:15px; font-weight:700;
 	letter-spacing:1px; 
 	opacity:0.35;
 	margin-bottom:15px;
 }
 .mean ul li.select {
-	opacity:0.85;
+	opacity:0.6;
 }
 .mean ul li:nth-child(1) {
 	text-indent:0;
@@ -223,6 +220,13 @@ footer {
 	width:60px; height:1px; 
 	background-color:#525d69;
 }
+#scroll b > b {
+	position:absolute;
+	top:-2px; left:0;
+	width:5px; height:5px;
+	border-radius:7px;
+	background-color:#525d69;
+}
 #scroll span {
 	position:absolute;
 	top:0; left:70px;
@@ -249,27 +253,26 @@ footer {
 }
 .control_title h1 {
 	display:block;
-	font-family:linotype-didot, 'Italiana', serif;
-	font-weight:; line-height:1.2;
+	font-family:linotype-didot, 'Playfair Display', serif;
+	font-weight:bold; line-height:1.2;
 	text-align:center; white-space:nowrap; 
-	opacity:0.9;
-/*	background-image:url(../img/text_mask.png);
+	background-image:url(../img/text_mask.png);
 	background-position:50% 50%;
 	background-repeat:repeat; 
 	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;*/
+	-webkit-text-fill-color:transparent;
 }
 .control_title span {
 	display:block; 
-	font-family:linotype-didot, 'Italiana', serif;
+	font-family:linotype-didot, 'Playfair Display', serif;
 	font-weight:; line-height:1.2;
 	text-align:center; white-space:nowrap;
-	opacity:0.7;
-/*	background-image:url(../img/text_mask.png);
+	opacity:0.8;
+	background-image:url(../img/text_mask.png);
 	background-position:50% 50%;
 	background-repeat:repeat; 
 	-webkit-background-clip:text;
-	-webkit-text-fill-color:transparent;*/
+	-webkit-text-fill-color:transparent;
 	}
 
 
@@ -283,7 +286,12 @@ footer {
 .weather ul li+li {
 	margin-top:35px;
 }
-.weather ul li span {
+
+.weather ul li a {
+	opacity:0.35;
+}
+
+.weather ul li a span {
 	display:inline-block;
 	width:0; height:1px;
 	margin-bottom:5px;
@@ -292,9 +300,6 @@ footer {
 	-webkit-transition:all 0.5s;
 	-moz-transition:all 0.5s;
 	-o-transition:all 0.5s;
-}
-.weather ul li a {
-	opacity:0.35;
 }
 
 .weather ul li:hover span {
@@ -383,7 +388,7 @@ footer {
 }
 
 #rain {
-	display:none;
+	opacity:0;
 }
 .rain_01 {
 	width:23px; height:73px; 
@@ -397,7 +402,7 @@ footer {
 
 
 #snow {
-	display:none;
+	opacity:0;
 }
 .snow_01 {
 	width:30px; height:30px; 
@@ -412,7 +417,7 @@ footer {
 
 #cloudy {
 	z-index:100000;
-	display:none;
+	opacity:0;
 }
 .cloud {
 	position:absolute;

@@ -36,7 +36,7 @@ function subShowAni(){
     .animate({'opacity':1}, 1000)
 
     $('.image_show').show().stop(true).delay(700)
-    .animate({'opacity':1}, 1000)
+    .animate({'opacity':1}, 1500)
 
 };
 
@@ -131,6 +131,9 @@ var workShowAni = setTimeout(function(){
 
     $('.title').show().stop(true).delay(0)
     .animate({'opacity':1}, 1000)
+    
+    $('.arr_wrap').show().stop(true).delay(0)
+    .animate({'opacity':1}, 1000)
 
     $('.num').show().stop(true).delay(0)
     .animate({'opacity':1}, 1000)
@@ -140,5 +143,6 @@ var workShowAni = setTimeout(function(){
 
     $('.role').show().stop(true).delay(300)
     .animate({'opacity':1}, 2000)
+
 
 }, 1000);

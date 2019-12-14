@@ -25,7 +25,7 @@
 #content_01 { top:0; height:1400px; }
 #content_02 { top:1500px; }
 #content_03 { top:2500px; }
-#content_04 { top:3500px; margin-bottom:200px; }
+#content_04 { top:3500px; height:1100px; }
 
 .contents h1, .contents > h2, .contents .img, .contents > p, .contents .text
 { position:absolute; } 
@@ -98,8 +98,8 @@
 
 #content_04 h1 { line-height:0.8; top:-150px; right:0; white-space:nowrap; }
 
-#content_04 h2 { bottom:0; left:10%; margin:0; }
-#content_04 .text { bottom:0; right:10%; }
+#content_04 h2 { bottom:200px; left:10%; margin:0; }
+#content_04 .text { bottom:200px; right:10%; }
 
 
 
@@ -145,7 +145,7 @@
 	#content_01 { top:0; height:1000px; }
 	#content_02 { top:1250px; height:800px; }
 	#content_03 { top:2300px; height:450px; }
-	#content_04 { top:3100px; height:700px; }
+	#content_04 { top:3100px; height:900px; }
 
 
 

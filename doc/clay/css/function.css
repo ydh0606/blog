@@ -90,13 +90,13 @@ b#menu_line { display:block; position:absolute; bottom:0; left:125px; width:100p
 
 
 .con_01_clay { height:100%; }	
-.con_02_today { height:800px; margin-top:100px; background-color:#fff; }	
-.con_03_sch { height:650px; padding-top:100px; }	
-.con_04_for { height:900px; padding-top:100px; }	
-.con_05_info { height:800px; padding-top:100px; background-color:#fff; }	
-.con_06_diary { height:1200px; margin-top:200px; }	
-.con_07_my { height:1025px; margin-top:100px; background-color:#fff; }	
-.con_08_sch { height:1150px; margin-top:100px; background-color:#fff; }
+.con_02_today { height:800px; background-color:#fff; }	
+.con_03_sch { height:700px; }	
+.con_04_for { height:800px; }	
+.con_05_info { height:850px; background-color:#fff; }	
+.con_06_diary { height:1235px; }	
+.con_07_my { height:1025px; background-color:#fff; }	
+.con_08_sch { height:1150px; background-color:#fff; }
 
 
 
@@ -142,7 +142,7 @@ b#menu_line { display:block; position:absolute; bottom:0; left:125px; width:100p
 
 
 .con_04_for .img_box { width:650px; bottom:-100px; left:0; }
-.con_04_for .text_box { top:550px; right:0; }
+.con_04_for .text_box { top:400px; right:0; }
 
 
 
