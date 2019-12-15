@@ -148,10 +148,14 @@
 	.contents h1 { font-size:200px; }
 	.contents h2 { font-size:50px; margin:0 0 50px -2px; }
 
+	.contents + .contents {
+		margin-top:200px;
+	}
+
 	#content_01 { top:0; height:1000px; }
-	#content_02 { top:1250px; height:800px; }
-	#content_03 { top:2300px; height:450px; }
-	#content_04 { top:3100px; height:900px; }
+	#content_02 {  height:800px; }
+	#content_03 { height:600px; }
+	#content_04 { height:900px; }
 
 
 
@@ -197,10 +201,14 @@
 
 	.contents .img { display:none; }
 
+	.contents + .contents {
+		margin-top:200px;
+	}
+
 	#content_01 { top:0; height:1000px; }
-	#content_02 { top:1350px; height:800px; }
-	#content_03 { top:2450px; height:300px; }
-	#content_04 { top:3150px; height:500px; }
+	#content_02 { height:800px; }
+	#content_03 { height:300px; }
+	#content_04 { height:500px; margin-bottom:200px; }
 
 
 
