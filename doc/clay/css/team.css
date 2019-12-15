@@ -24,7 +24,7 @@ b#menu_line {
 	position:relative;
 	top:0; left:50%;
 	width:64%;
-	margin-top:300px; margin-bottom:200px;
+	margin-top:200px; margin-bottom:200px;
 	-webkit-transform:translateX(-50%); 
 	-ms-transform:translateX(-50%); 
 	-moz-transform:translateX(-50%); 
@@ -136,7 +136,7 @@ b#menu_line {
 .bg_text #bgt_team { 
 	position:absolute;
 	width:100%;
-	top:790px; left:15%;
+	top:690px; left:15%;
 }
 
 .bg_text span.font_en { 

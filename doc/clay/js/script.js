@@ -56,12 +56,12 @@ if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') !
 
 
 
-// main resize
+// resize
 titleAuto();
 
 function titleAuto() {
 
-	// One
+	// Main
 
 	var img_h = ($('.title_box').width() / 2.5) * 0.9;
 
@@ -77,6 +77,12 @@ function titleAuto() {
 	$('h1#title span').css({
 		"fontSize" : $('.title_box').width() / 15
 	});
+
+	// Function
+
+	$('.con_01_clay .img_box').css({
+		"width" : $('.con_wrap').width() / 2
+	})
 }
 
 $(window).resize(function() {

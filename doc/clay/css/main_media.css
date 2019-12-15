@@ -50,6 +50,7 @@
 	#con_01 .text_box {
 		position:absolute;
 		width:65%;
+		max-width:750px;
 		bottom:4%; left:0;
 	}
 
@@ -81,7 +82,6 @@
 
 	#con_04_img { 
 		bottom:0; right:0;
-		width:500px; 
 	}
 
 }

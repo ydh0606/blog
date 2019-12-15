@@ -1,0 +1,186 @@
+
+/*media query*/
+
+@media screen and (min-width:1600px) {  
+	/*original 1920*/
+}
+
+
+
+@media screen and (min-width:1024px) and (max-width:1599px) {  
+	/*width check*/
+
+	.gnb ul a { color:orange; }
+
+
+	/*function*/
+
+	.top, .tip b, .tip span {
+		display:none;
+	}
+
+	.con_01_clay .con_wrap { 
+		width:90%;
+	}
+
+	.con_01_clay .img_box { 
+		right:8%; 
+	}	
+
+
+
+	.con_wrap { 
+		width:90%;
+	}
+
+	.con_04_for .img_box { 
+		width:550px; 
+	}
+
+	.con_05_info .img_box { 
+		bottom:-100px;
+	}
+
+	.con_06_diary .img_box { 
+		width:350px; 
+	}
+
+	.con_06_diary .text_box { 
+		left:60%; 
+	}
+
+	.con_06_diary .img_list { 
+		bottom:50px; 
+	}
+
+	.con_07_my .img_box { 
+		right:0; 
+	}	
+
+	.con_08_sch .img_box { 
+		width:350px; 
+	}
+	.con_08_sch .img_list ul li { 
+		width:220px; 
+	}
+
+
+}
+
+
+
+
+
+
+@media screen and (max-width:1023px) {  
+	/*width check*/
+
+	.gnb ul a { color:green; }
+
+
+	/*function*/
+
+	.top, .tip b, .tip span {
+		display:none;
+	}
+
+	.con .text_box h1 { 
+		font-size:80px;
+	}
+
+
+
+	.con_01_clay .con_wrap { 
+		width:90%;
+	}
+
+	.con_01_clay .img_box { 
+		right:0; 
+	}
+
+	.con_01_clay #text_list ul { 
+		display:none;
+	}	
+
+
+
+	.con_wrap { 
+		width:90%;
+	}
+
+	.con_02_today .img_box { 
+		width:250px; 
+		bottom:20px;
+	}	
+
+	.con_02_today .text_box,
+	.con_02_today .img_list { 
+		left:40%; 
+	}
+
+	.con_03_sch .img_box { 
+		width:550px; 
+		bottom:-100px;
+	}	
+
+	.con_04_for .img_box { 
+		width:500px; 
+		bottom:-100px;
+	}
+
+	.con_04_for .text_box { 
+		top:250px; right:0; 
+	}
+
+	.con_05_info .img_box { 
+		width:310px; height:550px; 
+		bottom:-100px; right:0; 
+	}
+	.con_05_info .img_box #img_01 { 
+		position:absolute; 
+		top:0; right:0; 
+		width:150px; 
+	}
+	.con_05_info .img_box #img_02 { 
+		position:absolute; 
+		bottom:0; left:0; 
+		width:200px; 
+	}
+
+	.con_06_diary .img_box { 
+		width:300px; 
+	}
+
+	.con_06_diary .text_box { 
+		left:60%; 
+	}
+
+	.con_06_diary .img_list { 
+		bottom:200px; 
+	}
+
+	.con_07_my .img_box { 
+		width:500px; 
+		top:400px; right:0%; 
+	}	
+
+	.con_07_my .img_list { 
+		left:5%; bottom:50px; 
+	}
+
+	.con_08_sch .img_box { 
+		width:350px; 
+		left:50%;
+		-webkit-transform:translateX(-50%); 
+		-ms-transform:translateX(-50%); 
+		-moz-transform:translateX(-50%); 
+		-o-transform:translateX(-50%); 
+		transform:translateX(-50%);
+	}
+
+	.con_08_sch .img_list { 
+		display:none;
+	}
+
+
+}

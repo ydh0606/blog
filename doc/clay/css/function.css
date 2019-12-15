@@ -37,7 +37,7 @@ b#menu_line {
 	position:absolute; 
 	top:0; left:50%;
 	width:64%; height:100%; 
-	max-width:1250px; min-width:1000px;
+	max-width:1250px;
 	-webkit-transform:translateX(-50%); 
 	-ms-transform:translateX(-50%); 
 	-moz-transform:translateX(-50%); 
@@ -154,7 +154,7 @@ b#menu_line {
 	position:absolute; 
 	top:0; left:50%;
 	width:70%; height:100%; 
-	max-width:1350px; min-width:1000px;
+	max-width:1350px;
 	-webkit-transform:translateX(-50%); 
 	-ms-transform:translateX(-50%); 
 	-moz-transform:translateX(-50%); 
@@ -179,7 +179,7 @@ b#menu_line {
 
 .con_01_clay .img_box { 
 	width:700px; 
-	top:50%; right:4%; 
+	top:50%; right:6%; 
 	margin-top:75px; 
 	-webkit-transform:translateY(-50%); 
 	-ms-transform:translateY(-50%); 
@@ -247,71 +247,182 @@ b#menu_line {
 
 
 
-.con_03_sch .motive { width:55%; bottom:0; left:50%; min-width:600px; 
-					-webkit-transform:translateX(-50%); -ms-transform:translateX(-50%); -moz-transform:translateX(-50%); -o-transform:translateX(-50%); transform:translateX(-50%); }
+.con_03_sch .motive { 
+	width:55%; 
+	bottom:0; left:50%; 
+	min-width:600px; 
+	-webkit-transform:translateX(-50%); 
+	-ms-transform:translateX(-50%); 
+	-moz-transform:translateX(-50%); 
+	-o-transform:translateX(-50%); 
+	transform:translateX(-50%); 
+}
 
-.con_03_sch .tip { bottom:0; left:5%; }
+.con_03_sch .tip { 
+	bottom:0; left:5%; 
+}
 
-.con_03_sch .img_box { z-index:1000; width:650px; bottom:-250px; left:50%; margin-left:-350px; }	
-.con_03_sch .text_box { z-index:100; top:55%; left:53%; }
-
-
-
-.con_04_for .img_box { width:650px; bottom:-100px; left:0; }
-.con_04_for .text_box { top:400px; right:0; }
-
-
-
-.con_05_info .tip { top:100px; right:5%; }
-
-.con_05_info .img_box { width:400px; height:700px; bottom:-100px; right:0; }
-.con_05_info .img_box #img_01 { position:absolute; top:0; right:0; width:200px; }
-.con_05_info .img_box #img_02 { position:absolute; bottom:0; left:0; width:250px; }
-
-.con_05_info .text_box { bottom:75px; left:0; }
-.con_05_info .text_box h1 { margin-bottom:150px;  }
-
-
-
-.con_06_diary .motive { width:50%; top:-5%; left:-5%; min-width:600px; }
-
-.con_06_diary .tip { top:100px; left:5%; }
-
-.con_06_diary .img_box { z-index:1000; top:250px; left:0; width:400px; }
-
-.con_06_diary .text_box { z-index:100; top:335px; left:50%; }
-.con_06_diary .text_box h1 { margin-left:-150px; }
-
-.con_06_diary .img_list { left:50%; bottom:-87px; width:50%; }
-.con_06_diary .img_list h2 { position:absolute; right:15px; top:-100px; }
-
-.con_06_diary .img_list ul { -webkit-display:flex; display:flex; }
-.con_06_diary .img_list ul li { -webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1; }
-.con_06_diary .img_list ul li + li { margin-left:5px; }
+.con_03_sch .img_box { 
+	z-index:1000; 
+	width:650px; 
+	bottom:-250px; left:50%; 
+	margin-left:-350px; 
+}	
+.con_03_sch .text_box { 
+	z-index:100; 
+	top:55%; left:53%; 
+}
 
 
 
-.con_07_my .tip { top:350px; right:5%; }
-.con_07_my .img_box { z-index:1000; width:650px; top:300px; right:3%; }	
-.con_07_my .text_box { top:325px; }	
-
-.con_07_my .img_list { z-index:100; left:-2%; bottom:0; width:65%; }
-.con_07_my .img_list ul { -webkit-display:flex; display:flex; }
-.con_07_my .img_list ul li { -webkit-flex:1; -ms-flex:1; -moz-flex:1; flex:1; }
-.con_07_my .img_list ul li + li { margin-left:25px; }
-
-.con_07_my .img_list ul li span { font-size:15px; font-weight:700; 
-								margin-top:15px; margin-left:5px; }
+.con_04_for .img_box { 
+	width:620px; 
+	bottom:-100px; left:0; 
+}
+.con_04_for .text_box { 
+	top:400px; right:0; 
+}
 
 
 
-.con_08_sch .motive { width:85%; bottom:-5%; left:-5%; min-width:1250px; }
-.con_08_sch .img_box { width:400px; top:165px; left:0; }
+.con_05_info .tip { 
+top:100px; right:5%; 
+}
 
-.con_08_sch .img_list { top:450px; right:0; }
-.con_08_sch .img_list ul { }
-.con_08_sch .img_list ul li { float:left; width:275px; 
-							-webkit-transition:all 0.5s; -moz-transition:all 0.5s; -o-transition:all 0.5s; transition:all 0.5s; }
-.con_08_sch .img_list ul li + li { margin-left:100px; }
+.con_05_info .img_box { 
+	width:400px; height:700px; 
+	bottom:-100px; right:0; 
+}
+.con_05_info .img_box #img_01 { 
+	position:absolute; 
+	top:0; right:0; 
+	width:200px; 
+}
+.con_05_info .img_box #img_02 { 
+	position:absolute; 
+	bottom:0; left:0; 
+	width:250px; 
+}
+
+.con_05_info .text_box { 
+	bottom:75px; left:0; 
+}
+.con_05_info .text_box h1 { 
+	margin-bottom:150px;  
+}
+
+
+
+.con_06_diary .motive { 
+	width:50%; 
+	top:-5%; left:-5%; 
+	min-width:600px; 
+}
+
+.con_06_diary .tip { 
+	top:100px; left:5%; 
+}
+
+.con_06_diary .img_box { 
+	z-index:1000; 
+	top:250px; left:0; 
+	width:400px; 
+}
+
+.con_06_diary .text_box { 
+	z-index:100; 
+	top:335px; left:50%; 
+}
+.con_06_diary .text_box h1 { 
+	margin-left:-150px; 
+}
+
+.con_06_diary .img_list { 
+	left:50%; bottom:-87px; 
+	width:50%; 
+}
+.con_06_diary .img_list h2 { 
+	position:absolute; 
+	right:15px; top:-100px; 
+}
+
+.con_06_diary .img_list ul { 
+	-webkit-display:flex; 
+	display:flex; 
+}
+.con_06_diary .img_list ul li { 
+	-webkit-flex:1; 
+	-ms-flex:1; 
+	-moz-flex:1; 
+	flex:1; 
+}
+.con_06_diary .img_list ul li + li { 
+	margin-left:5px; 
+}
+
+
+
+.con_07_my .tip { 
+	top:350px; right:5%; 
+}
+.con_07_my .img_box { 
+	z-index:1000; 
+	width:650px; 
+	top:300px; right:3%; 
+}	
+.con_07_my .text_box { 
+	top:325px; 
+}	
+
+.con_07_my .img_list { 
+	z-index:100; 
+	left:-2%; bottom:0; 
+	width:65%; 
+}
+.con_07_my .img_list ul { 
+	-webkit-display:flex; 
+	display:flex; 
+}
+.con_07_my .img_list ul li { 
+	-webkit-flex:1; 
+	-ms-flex:1; 
+	-moz-flex:1; 
+	flex:1; 
+}
+.con_07_my .img_list ul li + li { 
+	margin-left:25px; 
+}
+
+.con_07_my .img_list ul li span { 
+	font-size:15px; font-weight:700; 
+	margin-top:15px; margin-left:5px; 
+}
+
+
+
+.con_08_sch .motive { 
+	width:85%; 
+	bottom:-5%; left:-5%; 
+	min-width:1250px; 
+}
+.con_08_sch .img_box { 
+	width:400px; 
+	top:165px; left:0;
+}
+
+.con_08_sch .img_list { 
+	top:450px; right:0; 
+}
+.con_08_sch .img_list ul li { 
+	float:left; 
+	width:275px; 
+	-webkit-transition:all 0.5s; 
+	-moz-transition:all 0.5s; 
+	-o-transition:all 0.5s; 
+	transition:all 0.5s; 
+}
+.con_08_sch .img_list ul li + li { 
+	margin-left:100px; 
+}
 
 

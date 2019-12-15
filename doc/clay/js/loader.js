@@ -9,7 +9,6 @@ console.log (window.innerWidth, window.innerHeight);
 
 $('.bg_box.fade_in').addClass("visible");
 $('.con_01_clay').addClass("visible");
-$('.list_wrap').addClass("visible");
 
 var dur = 1; 
 
@@ -93,6 +92,12 @@ var oneLoad = setTimeout(function(){
 	TweenMax.to($('.role_box'), dur, {x:0});
 
 	$('.role_box').show().stop(true).delay(0)
+    .animate({'opacity':1}, 500)
+
+    TweenMax.set($('.list_wrap'), {y:50});
+	TweenMax.to($('.list_wrap'), dur, {y:0});
+
+	$('.list_wrap').show().stop(true).delay(0)
     .animate({'opacity':1}, 500)
 
     $('#bgt_team').show().stop(true).delay(0)
