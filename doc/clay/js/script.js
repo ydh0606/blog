@@ -5,30 +5,77 @@ console.log (window.innerWidth, window.innerHeight);
 
 
 
+// onLoad
+
+window.onbeforeunload = function() {
+
+    console.log("Reload")
+    scrollTo(0,0);
+
+};
+
+
+
+
+
+// IE Browser Check
+
+var agent = navigator.userAgent.toLowerCase();
+
+if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+
+	//alert("Yes, IE!");
+	//$('.work_img').attr('class', 'work_img float-up');
+
+	$('.text_box h5').css({
+        'color':'#60516f',
+        'background-image':'inherit',
+        '-webkit-background-clip':'inherit',
+        '-webkit-text-fill-color':'inherit'
+    });
+
+    $('.text_box h3').css({
+        'color':'#60516f',
+        'background-image':'inherit',
+        '-webkit-background-clip':'inherit',
+        '-webkit-text-fill-color':'inherit'
+    });
+
+    $('.img_list span').css({
+        'color':'#60516f',
+        'background-image':'inherit',
+        '-webkit-background-clip':'inherit',
+        '-webkit-text-fill-color':'inherit'
+    });
+
+}else {
+	//alert("No, IE!");
+};
+
+
+
+
 
 // main resize
 titleAuto();
 
 function titleAuto() {
+
+	// One
+
+	var img_h = ($('.title_box').width() / 2.5) * 0.9;
+
+	$('.title_box').css({
+		"height" : img_h,
+		"marginTop" : - (img_h / 2) + 60
+	});
+
 	$('#mp_0').css({
 		"width" : $('.title_box').width() / 2.5
 	})
 
-
-
-	var img_h = ($('.title_box').width() / 2.5) * 0.89;
-
-	$('.title_box').css({
-		"height" : img_h,
-		"marginTop" : - (img_h / 2) + 75
-	});
-
-	$('.title_box h1 span').css({
-		"fontSize" : $('.title_box').width() / 14
-	});
-
-	$('.bg_text span').css({
-		"fontSize" : $('.title_box').width() / 6
+	$('h1#title span').css({
+		"fontSize" : $('.title_box').width() / 15
 	});
 }
 
@@ -89,34 +136,34 @@ function menuMove(i) {
 
 
 
-$('li#dh a').mouseover(showBtn);
-$('li#je a').mouseover(showBtn);
-$('li#sj a').mouseover(showBtn);
 
-$('li#dh a').mouseout(hideBtn);
-$('li#je a').mouseout(hideBtn);
-$('li#sj a').mouseout(hideBtn);
+// Nice Scroll
 
+$(document).ready(function (){
 
-
-var btn_dur = 500;
-
-function showBtn(){
-
-	$('.btn', this).stop().animate({
-		//'left': '7%'
-		'top': '85%',
-		'opacity': '1'
-	}, btn_dur)
+	nice();
 	
-}
+});
 
-function hideBtn(){
+$(window).resize(function (){
 
-	$('.btn', this).stop().animate({
-		//'left': '100%'
-		'top': '100%',
-		'opacity': '0'
-	}, btn_dur)
+	nice();
+	
+});
 
+var nice = function(){
+	$('html').niceScroll({
+		zindex:1000000,
+		scrollspeed:100,
+		mousescrollstep:20,
+		cursorcolor:"#60516f",
+		cursoropacitymin:0,
+		cursoropacitymax:1,
+		cursorwidth:"12px",
+		cursorminheight:100,
+		cursorborder:"0px solid #fff",
+		cursorborderradius:"0",
+		background:"",
+		hidecursordelay:1000
+	});
 }

@@ -5,18 +5,16 @@
 	<title>CLAY | Colourful Play, CLAY!</title>
 
 	<link rel="shortcut icon" type="image/x-icon" href="img/favi.ico" />
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.1/css/all.css" integrity="sha384-5sAR7xN1Nv6T6+dT2mhtzEpVJvfS3NScPQTrOxhwjIuvcA67KV2R5Jz6kr4abQsz" crossorigin="anonymous">
 
 	<link href="css/common.css" rel="stylesheet" type="text/css"/>
 	<link href="css/main.css" rel="stylesheet" type="text/css"/>
+	<link href="css/main_media.css" rel="stylesheet" type="text/css"/>
 </head>
 
 <body>
-
-
 	<header>
-		<div class="header_wrap">
-			<span class="logo"><a href="index.html"><img src="img/logo_w.png" alt="컬러 로고"></a></span>
+		<div class="header_wrap fade_in">
+			<span class="logo"><a href="index.html"><img src="img/logo_w.png" alt="화이트 로고"></a></span>
 
 			<div class="gnb">
 				<ul>
@@ -29,105 +27,97 @@
 		</div>
 	</header>
 
+	
 	<div class="one">
-		<div class="bg_box">
-			<div class="bg_img fade_in" id="bg_01"></div>
-			<div class="bg_img" id="bg_02"></div>
-			<div class="bg_img" id="bg_03"></div>
+		<div class="bg_box fade_in">
+			<div class="bg_img"></div>
 		</div>
 
 		<div class="title_box">
-			<div class="parallax" id="mp_0"><img src="img/mp_0.png" alt="목업 이미지 0"></div>
-			<h1 class="parallax_r"><span class="font_en transition">Colourful Day,<br>Colourful Play!</h1>
-			<div id="sub_title">
-				<b class="transition"></b>
+			<div class="fade_in" id="mp_0">
+				<img src="img/mp_0.png" alt="목업 이미지 0">
+			</div>
+			<h1 id="title" class="fade_in"><span class="font_en">Colourful Day,<br>Colourful Play!</span></h1>
+			<div id="sub_title" class="fade_in">
+				<b></b>
 				<h2>컬러풀한 일상을 위한 문화생활 추천 서비스, <span class="font_en">CLAY</span></h2>
 			</div>
-			<span id="app_btn" class="font_en"><a href="app/index.html" class="transition" target="blank">CLAY App</a></span>
+			<span id="app_btn" class="font_en fade_in"><a href="#" class="transition">CLAY App</a></span>
 		</div>
-
-		<div id="scroll">
-			<b id="s_line_01"></b>
-			<b id="s_line_02"></b>
-			<span class="font_en">SCROLL</span>
-		</div>
-
 	</div>
 
-	<div class="two transition">
-		<div id="con_01" class="con up_fade">
-			<h4>일상의 여유, 어떻게 보내고 계시나요?</h4>
-		</div>
+	<div id="scroll">
+		<b id="s_line_01"></b>
+		<b id="s_line_02"></b>
+		<span class="font_en">SCROLL</span>
+	</div>
 
-		<div id="con_02" class="con up_fade">
-			<h3><span>나를 위한 시간</span><br>만족스러운 휴식</h3>
-			<div id="con_02_img" class="con_img transition"><img src="img/img_01.jpg"></div>
-			<div class="text_box transition">
-				<div class="line"></div>
-				<div class="text transition">
-					<h5><span class="font_en">CLAY</span>와 컬러풀한 일상의 가치를 느껴보세요!</h5>
-					<p>다양한 문화생활을 지속적으로 경험하는 것은 자기효능감 및 <br>자아 탄력성을 향상시키는 효과가 있어, <span>스트레스 지수는 낮아지고<br>일상에서의 회복 탄력성은 높아진다</span>는 분석이 있습니다.</p>
+	<div id="section">
+		<div class="two">
+			<div id="con_01" class="con up_fade">
+				<h3><span>나를 위한 시간</span><br>만족스러운 휴식</h3>
+				<div id="con_01_img" class="con_img"></div>
+				<div class="text_box">
+					<div class="text">
+						<h5><span class="font_en">CLAY</span>와 컬러풀한 일상의 가치를 느껴보세요!</h5>
+						<p>다양한 문화생활을 지속적으로 경험하는 것은 자기효능감 및 자아 탄력성을 향상시키는 효과가 있어, <span>스트레스 지수는 낮아지고 일상에서의 회복 탄력성은 높아진다</span>는 분석이 있습니다.</p>
+					</div>
+				</div>
+			</div>
+
+			<div id="con_02" class="con up_fade">
+				<h3><span>지금 그리고 오늘</span><br>경험해야만 하는 <br>문화생활</h3>
+				<div class="text_box">
+					<h5>전시 · 클래스 · 콘서트 · 뮤지컬 · 페스티벌</h5>
+					<p><span class="font_en">CLAY</span>는 시기나 장소가 중요한 요소로 작용하는 문화생활을 다룹니다. 음악이나 영화가 비교적 지속적으로 접할 수 있는 문화생활인 반면, 전시 · 클래스 · 콘서트 · 뮤지컬 · 페스티벌과 같은 문화생활은 <span>‘지금’이 아니면 경험하기 힘들다는 면에서 가치가 있습니다.</span></p>
+				</div>
+				<div id="con_02_img_box" class="con_img">
+					<ul>
+						<li>
+							<p>전시<br><span class="font_en">Exhibition</span></p>
+						</li>
+						<li>
+							<p>클래스<br><span class="font_en">Class</span></p>
+						</li>
+						<li>
+							<p>콘서트<br><span class="font_en">Concert</span></p>
+						</li>
+						<li>
+							<p>뮤지컬<br><span class="font_en">Musical</span></p>
+						</li>
+						<li>
+							<p>페스티벌<br><span class="font_en">Festival</span></p>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<div id="con_03" class="con up_fade">
+				<h3><span> 경험과 감정</span>을<br>이용한 맞춤 추천</h3>
+				<div id="con_03_img" class="con_img">
+					<img src="img/circle.png">
+				</div>
+				<div class="text_box">
+					<h5>날짜 · 계절 및 날씨 · 동기 · 기분 · 필요도</h5>
+					<p><span class="font_en">CLAY</span><span>는 사용자의 경험 및 취향을 분석하여 추천을 제공합니다.</span> '어떤 것-을 경험했다'의 기준으로 단순 필터링을 통해 제공하기보다 '언제- 경험했다' 혹은 '어떻게- 경험했다' 등 사용자의 경험과 감정을 기반으로 한 분석을 우선으로 합니다.</p>
+				</div>
+			</div>
+
+			<div id="con_04" class="con up_fade">
+				<h3>내 취향에 맞는,<br><span>내가 하고 싶은</span> <br>문화생활</h3>
+				<div id="con_04_img" class="con_img">
+					<img src="img/mp_01.png">
+				</div>
+				<div class="text_box">
+					<h5>쉽고 · 재미있고 · 가까운 문화생활!</h5>
+					<p>내가 하고 싶은 것 보다 다른 사람들이 많이 하며 좋다고 하는 것을 그대로 따르게 되는 현상이 좁은 문화생활 스펙트럼을 형성합니다. <span>CLAY는 '내 취향에 맞는 문화생활', '내가 하고 싶은 문화생활'을 응원하고 독려합니다.</span></p>
 				</div>
 			</div>
 		</div>
-
-		<div id="con_03" class="con up_fade">
-			<h3><span>지금</span> 그리고 <span>오늘</span><br>경험해야 하는 문화생활</h3>
-			<div class="text_box">
-				<h5>전시 · 클래스 · 콘서트 · 뮤지컬 · 페스티벌</h5>
-				<p><span class="font_en">CLAY</span>는 시기나 장소가 중요한 요소로 작용하는 문화생활을 다룹니다.<br>음악이나 영화가 비교적 지속적으로 접할 수 있는 문화생활인 반면,<br>전시 · 클래스 · 콘서트 · 뮤지컬 · 페스티벌과 같은 문화생활은<br><span>‘지금’이 아니면 경험하기 힘들다는 면에서 가치가 있습니다.</span></p>
-			</div>
-			<div id="con_03_img_box" class="con_img">
-				<ul>
-					<li>
-						<p>전시<br><span class="font_en">Exhibition</span></p>
-						<b></b>
-					</li>
-					<li>
-						<p>클래스<br><span class="font_en">Class</span></p>
-						<b></b>
-					</li>
-					<li>
-						<p>콘서트<br><span class="font_en">Concert</span></p>
-						<b></b>
-					</li>
-					<li>
-						<p>뮤지컬<br><span class="font_en">Musical</span></p>
-						<b></b>
-					</li>
-					<li>
-						<p>페스티벌<br><span class="font_en">Festival</span></p>
-						<b></b>
-					</li>
-				</ul>
-			</div>
+		<div class="bg_text">
+			<span id="bgt_clay" class="font_en left_fade">CLAY For U</span>
+			<span id="bgt_want" class="font_en left_fade">Want To Do</span>
 		</div>
-
-		<div id="con_04" class="con up_fade">
-			<h3>사용자의<span> 경험과 감정</span>을<br>이용한 <span>맞춤 추천</span></h3>
-			<div id="con_04_img" class="con_img">
-				<img src="img/circle.png">
-			</div>
-			<div class="text_box">
-				<h5>날짜 · 계절 및 날씨 · 동기 · 기분 · 필요도</h5>
-				<p><span class="font_en">CLAY</span><span>는 사용자의 경험 및 취향을 분석하여 추천을 제공합니다.</span><br>'어떤 것-을 경험했다'의 기준으로 단순 필터링을 통해 제공하기보다<br>'언제- 경험했다' 혹은 '어떻게- 경험했다' 등 사용자의 경험과 감정을<br>기반으로 한 분석을 우선으로 합니다.</p>
-			</div>
-		</div>
-
-		<div id="con_05" class="con up_fade">
-			<h3>내 <span>취향</span>에 맞는,<br>내가 <span>하고 싶은</span> 문화생활</h3>
-			<div class="text_box">
-				<h5>쉽고 · 재미있고 · 가까운 문화생활!</h5>
-				<p>내가 하고 싶은 것 보다 다른 사람들이 많이 하며 좋다고 하는 것을<br>그대로 따르게 되는 현상이 좁은 문화생활 스펙트럼을 형성합니다.<br><span>CLAY는 '내 취향에 맞는 문화생활', '내가 하고 싶은 문화생활'을 응원하고 독려합니다.</span></p>
-			</div>
-			<div id="con_05_img" class="con_img transition">
-				<img src="img/mp_00.png">
-			</div>
-		</div>
-	</div>
-
-	<div class="bg_text left_fade">
-		<span class="font_en">Want To Do</span>
 	</div>
 
 	<footer>
@@ -139,8 +129,10 @@
 	
 
 	<script src="js/jquery_3.3.1.js"></script>
+	<script src="js/jquery.nicescroll.js"></script>
+	<script src="js/TweenMax.min.js"></script>
 	<script src="js/script.js"></script>
-	<script src="js/main.js"></script>
+	<script src="js/loader.js"></script>
 </body>
 
 </html>
