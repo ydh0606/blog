@@ -18,13 +18,13 @@ var introOpenAni = setTimeout(function(){
 	TweenMax.set($('.intro_open'), {y:100});
 	TweenMax.to($('.intro_open'), dur, {y:0});
 
-    $('.intro .moon').show().stop(true).delay(200)
-    .animate({'opacity':1}, 700)
-
-    $('.intro .moon_line').show().stop(true).delay(500)
+    $('.intro .moon').show().stop(true).delay(0)
     .animate({'opacity':1}, 1000)
 
-}, 100)
+    $('.intro .moon_line').show().stop(true).delay(0)
+    .animate({'opacity':1}, 1000)
+
+}, 500)
 
 	
 

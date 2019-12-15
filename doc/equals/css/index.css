@@ -312,7 +312,7 @@ a#exit:hover span:before, a#exit:hover span:after { transform:rotate(0deg); -web
 
 /* Highlight Cast */
 
-#sub_high .img_area { position:absolute; width:70%; background-color:#333; }
+#sub_high .img_area { position:absolute; width:70%; }
 #sub_high .text_area { width:30%; }
 
 .gal_img { position:absolute; width:100%; opacity:0; background:url(../img/img_0.jpg) no-repeat center center; background-size:cover; -webkit-background-size:cover; -moz-background-size:cover; -o-background-size:cover; }

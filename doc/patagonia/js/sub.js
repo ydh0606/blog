@@ -4,7 +4,7 @@ console.log (window.innerWidth, window.innerHeight);
 
 $('.big_box').hide();
 $('.sub_item').hide();
-$('.wrap').hide();
+$('.title_wrap').hide();
 $('.line_img').hide();
 
 
@@ -82,7 +82,7 @@ function subOpenAni(){
     $('.sub_item').show().stop(true).delay(500)
     .animate({'opacity':1}, 1000);
 
-    $('.wrap').show().stop(true).delay(700)
+    $('.title_wrap').show().stop(true).delay(700)
     .animate({'opacity':1}, 1500);
 
     $('.line_img').show().stop(true).delay(800)
@@ -91,26 +91,6 @@ function subOpenAni(){
 }
 
 
-
-
-
-// Sub Scroll
-
-// var winScTop = $(window).scrollTop();
-
-// $(window).on("mousewheel",function(e){
-
-//     if(winScTop < 100 && e.originalEvent.wheelDelta >= 0) {
-//         console.log("Scroll Up");
-
-//     } else if(winScTop < 100 && e.originalEvent.wheelDelta < 0){
-//         console.log("Scroll Down");
-
-//         $('html').css({'background-color':'#333333'})
-//         $('body').css({'background-color':'#333333'})
-//     }
-
-// });
 
 $('.white_wrap').on("mousewheel",function(e){
     return false;
@@ -138,32 +118,17 @@ $(window).scroll(function(){
 
 
 
-	var pageTop = $(document).scrollTop();
-	var pageBottom = pageTop + $(window).height();
+	var upFade = $('.up_fade');
 
-	//console.log($(window).height());
+	var pageTop = $(document).scrollTop(),
+		pageBottom = pageTop + $(window).height();
 
-	var num = ($(window).height()) * 1.25;
-	var _num = ($(window).height()) * 6;
+	upFade.each(function(){
 
-	var upFadeItem = $('.contents');
-
-	// for(var i = 0; i < upFadeItem.length; i++){
-
-	// 	var upFade = upFadeItem[i]
-	// 	var y = $(upFade).position()
-
-	// 	if (y.top + num < pageBottom) {
-	// 		$(upFade).addClass("visible");
-	// 	} else if (y.top + _num > pageBottom){
-	// 		$(upFade).removeClass("visible");
-	// 	}
-	// }
-
-	upFadeItem.each(function(){
+		var num = ($(window).height()) * 0.15;
 
 		var $this = $(this),
-		yTop = $this.offset().top / 2;
+		yTop = $this.offset().top;
 
 		if (yTop + num < pageBottom){
 			//$this.css('opacity', 1);
@@ -173,5 +138,4 @@ $(window).scroll(function(){
 			$this.removeClass('visible');
 		};
 	});
-  
 })
