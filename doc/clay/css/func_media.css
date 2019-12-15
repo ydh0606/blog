@@ -10,7 +10,7 @@
 @media screen and (min-width:1024px) and (max-width:1599px) {  
 	/*width check*/
 
-	.gnb ul a { color:orange; }
+	/*.gnb ul a { color:orange; }*/
 
 
 	/*function*/
@@ -75,7 +75,7 @@
 @media screen and (max-width:1023px) {  
 	/*width check*/
 
-	.gnb ul a { color:green; }
+	/*.gnb ul a { color:green; }*/
 
 
 	/*function*/
