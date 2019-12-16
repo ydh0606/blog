@@ -17,10 +17,6 @@ window.onload = function () {
 	setTimeout('loading()', 1500);
 }
 
-// setTimeout(function(){
-// 	loading();
-// }, 1500)
-
 function loading(){
 
 	$('.load').animate({'opacity':0}, 500);

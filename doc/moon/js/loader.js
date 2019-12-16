@@ -34,7 +34,7 @@ function openAni(){
 	    $('.intro .moon_line').show().stop(true).delay(0)
 	    .animate({'opacity':1}, 1500)
 
-	}, 500)
+	}, 100)
 
 
 
