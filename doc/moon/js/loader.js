@@ -10,8 +10,17 @@ $('.control_item').hide()
 
 
 
+// Load 
 
-$(document).ready(function() {
+window.onload = function () {
+	setTimeout('loading()', 1000);
+}
+
+function loading(){
+	openAni();
+}
+
+function openAni(){
 	var introOpenAni = setTimeout(function(){
 
 		var dur = 1; 
@@ -26,8 +35,6 @@ $(document).ready(function() {
 	    .animate({'opacity':1}, 1500)
 
 	}, 1000)
-
-
 
 
 
@@ -65,8 +72,6 @@ $(document).ready(function() {
 	    .animate({'opacity':0}, 500)
 
 	}, 3000)
-
-
 
 
 
@@ -160,8 +165,7 @@ $(document).ready(function() {
 	 	})
 
 	}
-});
-
+};
 
 
 
