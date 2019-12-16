@@ -35,4 +35,3 @@ $(document).on('scroll', function(){
 		}
 	}
 });
-
