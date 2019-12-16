@@ -1,0 +1,30 @@
+
+/*Image*/
+
+#img_wrap {
+	background-color:#333
+}
+
+#img_wrap #img_list {
+	-webkit-box-shadow:0 0 80px 20px #292929;
+	-moz-box-shadow:0 0 80px 20px #292929;
+	box-shadow:0 0 80px 20px #292929;
+}
+
+#img_wrap #w_img_top {
+	margin-bottom:10%;
+}
+
+
+
+
+
+/*Under Box*/
+
+#under_wrap {
+	background-color:#f1ece6;
+}
+
+#sub_bot_wave {
+	background:url(../../img/wave.png);
+}

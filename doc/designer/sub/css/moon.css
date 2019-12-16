@@ -1,0 +1,12 @@
+
+/*Image*/
+
+#img_wrap #w_img_top {
+	margin-bottom:10%;
+}
+
+#img_wrap #img_list {
+	-webkit-box-shadow:0 0 80px 20px #eee;
+	-moz-box-shadow:0 0 80px 20px #eee;
+	box-shadow:0 0 80px 20px #eee;
+}
