@@ -13,7 +13,7 @@ $('.control_item').hide()
 // Load 
 
 window.onload = function () {
-	setTimeout('loading()', 1000);
+	setTimeout('loading()', 500);
 }
 
 function loading(){
@@ -34,7 +34,7 @@ function openAni(){
 	    $('.intro .moon_line').show().stop(true).delay(0)
 	    .animate({'opacity':1}, 1500)
 
-	}, 1000)
+	}, 500)
 
 
 
