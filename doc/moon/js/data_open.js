@@ -1,5 +1,5 @@
 // Ready
-console.log ("API In!");
+//console.log ("API In!");
 
 
 
@@ -371,6 +371,3 @@ $(document).ready(function() {
 
 });
 })(jQuery);
-
-
-

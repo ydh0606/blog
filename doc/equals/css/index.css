@@ -20,11 +20,6 @@ img { border:none; vertical-align:middle; width:100%; }
 
 
 
-
-
-
-
-
 /* Mouse Cursor */
 #cursor { z-index:500000; position:absolute; width:30px; height:30px; border-radius:50px; margin-top:-10px; margin-left:15px; background-color:rgba(167,176,181,0.5); } 
 

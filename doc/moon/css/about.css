@@ -55,9 +55,11 @@
 }
 .text_box h1, .img_box h1 {
 	font-family:linotype-didot, 'Playfair Display', serif;
-	font-size:120px; font-weight:bold; line-height:1.2; letter-spacing:3px;
+	font-size:120px; font-weight:bold; 
+	line-height:1.2; letter-spacing:3px;
 	background-image:url(../img/text_mask.png);
-	background-position:50% 50%; background-repeat:repeat; 
+	background-position:50% 50%;
+	background-repeat:repeat; 
 	-webkit-background-clip:text;
 	-webkit-text-fill-color:transparent;
 }

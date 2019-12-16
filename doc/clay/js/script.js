@@ -5,6 +5,31 @@ console.log (window.innerWidth, window.innerHeight);
 
 
 
+// Nice Scroll
+
+$(document).ready(function (){
+
+	$('html').niceScroll({
+		zindex:1000000,
+		scrollspeed:60,
+		mousescrollstep:20,
+		cursorcolor:"#60516f",
+		cursoropacitymin:0,
+		cursoropacitymax:1,
+		cursorwidth:"12px",
+		cursorminheight:100,
+		cursorborder:"0px solid #fff",
+		cursorborderradius:"0",
+		background:"none",
+		hidecursordelay:1000
+	});
+	
+});
+
+
+
+
+
 // onLoad
 
 window.onbeforeunload = function() {
@@ -138,38 +163,3 @@ function menuMove(i) {
 	}, 150)
 
 };
-
-
-
-
-
-// Nice Scroll
-
-$(document).ready(function (){
-
-	nice();
-	
-});
-
-$(window).resize(function (){
-
-	nice();
-	
-});
-
-var nice = function(){
-	$('html').niceScroll({
-		zindex:1000000,
-		scrollspeed:100,
-		mousescrollstep:20,
-		cursorcolor:"#60516f",
-		cursoropacitymin:0,
-		cursoropacitymax:1,
-		cursorwidth:"12px",
-		cursorminheight:100,
-		cursorborder:"0px solid #fff",
-		cursorborderradius:"0",
-		background:"",
-		hidecursordelay:1000
-	});
-}

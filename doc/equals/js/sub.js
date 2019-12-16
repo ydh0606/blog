@@ -1,3 +1,11 @@
+
+// ready
+//console.log ("Sub In!");
+
+
+
+
+
 // Sub Page
 
 var $logo = document.querySelector('#logo');
@@ -42,9 +50,6 @@ var _cu = 0;
 var _ex = _cu;
 
 
-
-
-
 function subExit(event){
     //console.log('subExit');
     event.preventDefault();
@@ -55,9 +60,6 @@ function subExit(event){
 
 $exit.addEventListener('click', subExit);
 $logo.addEventListener('click', subExit);
-
-
-
 
 
 function castClick(id){
@@ -118,7 +120,6 @@ function castClick(id){
 }
 
 
-
 function selectCastNav(){
 
     for(var i = 0; i < $castList.length; i++){
@@ -158,7 +159,6 @@ function subMenuClick(id){
     $subList[id].addEventListener('click', clickSubMenu);
     $pageSubList[id].addEventListener('click', clickSubMenu);
 }
-
 
 
 function selectSubMenu(){

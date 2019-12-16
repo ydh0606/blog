@@ -1,3 +1,9 @@
+
+// ready
+//console.log ("Script In!");
+
+
+
 //IE Browser Check
 
 var agent = navigator.userAgent.toLowerCase();
@@ -22,7 +28,6 @@ var $cursor = document.querySelector('#cursor');
 var $allA = document.querySelectorAll('a');
 
 
-
 function mousePointer(e){
     //console.log('Mouse Pointer');
     $cursor.style.transform = 'translate(' + e.pageX + 'px, ' + e.pageY + 'px)';
@@ -42,6 +47,7 @@ for(var i = 0; i < $allA.length; i++){
    $allA[i].addEventListener('mouseover', aPointer01);
    $allA[i].addEventListener('mouseout', aPointer02);
 }
+
 
 
 
@@ -76,11 +82,6 @@ $navBg.addEventListener('mouseout', outNav);
 
 
 
-
-
-
-
-
 // Nav Tab
 
 var $menuTitle = document.querySelectorAll('.menu_title');
@@ -93,7 +94,6 @@ var $tCircle = document.querySelector('#t_circle');
 
 var _cuId = 0;
 var _exId = _cuId;
-
 
 
 function menuClick(id){
@@ -141,7 +141,6 @@ function menuClick(id){
 }
 
 
-
 function selectMenu(){
     for(var i = 0; i < $menuTitle.length; i++){
         menuClick(i);
@@ -149,11 +148,6 @@ function selectMenu(){
 }
 
 selectMenu ();
-
-
-
-
-
 
 
 
@@ -210,11 +204,6 @@ function outTrailer(){
 
 $tCircle.addEventListener('mouseover', onTrailer);
 $tCircle.addEventListener('mouseout', outTrailer);
-
-
-
-
-
 
 
 

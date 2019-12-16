@@ -1,4 +1,8 @@
 
+// ready
+//console.log ("Gallery In!");
+
+
 (function($){
     $(document).ready(function(){
 
