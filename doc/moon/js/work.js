@@ -14,7 +14,7 @@ var imageList = $('.image li').length;
 $(window).on("mousewheel",function(e){
 
     if(e.originalEvent.wheelDelta >= 0) {
-        console.log("Scroll Up");
+        //console.log("Scroll Up");
 
         i--;
 
@@ -27,7 +27,7 @@ $(window).on("mousewheel",function(e){
         workTitleSlide()
 
     } else {
-        console.log("Scroll Down");
+        //console.log("Scroll Down");
         i++;
 
         if(i == 6){               

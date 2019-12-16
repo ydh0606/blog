@@ -42,6 +42,41 @@ img {
 	vertical-align:middle;
 }
 
+a[href^="tel"] {
+  color:inherit;
+  text-decoration:none;
+}
+
+::-moz-selection {
+   background-color:#eee;
+}
+::selection {
+   background-color:#eee;
+}
+
+
+
+
+
+/*Custom Scroll*/
+
+::-webkit-scrollbar {
+	width:8px;
+}
+
+::-webkit-scrollbar-track {
+	background:#eee;
+}
+ 
+::-webkit-scrollbar-thumb {
+	background:#60516f; 
+	border-radius:10px;
+}
+
+/*::-webkit-scrollbar-thumb:hover {
+	background:rgba(95,98,69,0.8); 
+}*/
+
 
 
 

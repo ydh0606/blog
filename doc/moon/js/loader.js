@@ -1,5 +1,5 @@
 // Ready
-console.log ("Loader In!");
+//console.log ("Loader In!");
 
 
 
@@ -181,10 +181,10 @@ function clickScroll(){
 	//goControl()
 
 	if($('#scroll b').css("left") === "0px"){
-		console.log("Go Control");
+		//console.log("Go Control");
 		goControl()
 	} else {
-		console.log("Go Main");
+		//console.log("Go Main");
 		goMain()
 	}
 

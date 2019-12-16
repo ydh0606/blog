@@ -1,6 +1,6 @@
 // Ready
-console.log ("Script In!");
-console.log ("W = " + window.innerWidth, "H = " + window.innerHeight);
+// console.log ("Script In!");
+console.log (window.innerWidth, window.innerHeight);
 
 
 
@@ -14,7 +14,7 @@ $(document).ready(function() {
 
     if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
 
-        console.log("Yes, IE!");
+        //console.log("Yes, IE!");
 
         $('.text_mask').css({
             'color':'#646e79',
@@ -30,7 +30,7 @@ $(document).ready(function() {
         });
 
     }else {
-        console.log("No, IE!");
+        //console.log("No, IE!");
 
     };
 

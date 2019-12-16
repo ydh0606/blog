@@ -1,5 +1,5 @@
 // Ready
-console.log ("Loader In!");
+//console.log ("Loader In!");
 
 
 
