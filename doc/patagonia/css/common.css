@@ -291,6 +291,8 @@ span#site a:hover { color:#fff; }
 
 @media screen and (min-width:1001px) and (max-width:1600px) { 
 
+	/*{ color:orange; }*/
+
 	/*menu*/
 
 	#left h2 { 
