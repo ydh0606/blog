@@ -11,8 +11,8 @@
 	background-color:#f1ece6;
 }
 #section_cont {
-	position:relative;
-	top:-15%;
+	position:absolute;
+	top:85%;
 	/*background-color:#f1ece6;*/
 }
 
