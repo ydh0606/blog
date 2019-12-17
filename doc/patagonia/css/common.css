@@ -294,6 +294,17 @@ span#site a:hover { color:#fff; }
 	/*{ color:orange; }*/
 
 	/*menu*/
+
+	#left h2 { 
+		font-size:50px; 
+	}
+	#left h3 { 
+		font-size:25px; 
+	}
+	#right ul li a { 
+		font-size:27px; 
+	}
+
 }
 
 @media screen and (min-width:651px) and (max-width:1000px) {  
@@ -301,6 +312,19 @@ span#site a:hover { color:#fff; }
 
 	header, footer { 
 		left:5%; width:90%; 
+	}
+
+
+	/*menu*/
+
+	#left h2 { 
+		font-size:50px; 
+	}
+	#left h3 { 
+		font-size:25px; 
+	}
+	#right ul li a { 
+		font-size:27px; 
 	}
 
 }
