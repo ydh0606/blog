@@ -57,67 +57,61 @@ $(document).ready(function() {
 		}
 	}
 
-	nice();
-
-	$(window).resize(function (){
-		nice();
-	});
-
     // Browser check
 
- //    var agent = navigator.userAgent.toLowerCase();
+    var agent = navigator.userAgent.toLowerCase();
 
- //    if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+    if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
 
- //        //alert("IE Browser");
+        //alert("IE Browser");
 
- //        nice();
+        nice();
 
-	// 	$(window).resize(function (){
-	// 		nice();
-	// 	});
+		$(window).resize(function (){
+			nice();
+		});
 
- //    }else if (agent.indexOf("edge") != -1) {
+    }else if (agent.indexOf("edge") != -1) {
 
-	// 	//alert("IE Edge Browser");
+		//alert("IE Edge Browser");
 
-	// 	nice();
+		nice();
 
-	// 	$(window).resize(function (){
-	// 		nice();
-	// 	});
+		$(window).resize(function (){
+			nice();
+		});
 
-	// }else if (agent.indexOf("whale") != -1) {
+	}else if (agent.indexOf("whale") != -1) {
 
-	// 	//alert("Whale Browser");
+		//alert("Whale Browser");
 
-	// }else if (agent.indexOf("chrome") != -1) {
+	}else if (agent.indexOf("chrome") != -1) {
 
-	// 	//alert("Chrome Browser");
+		//alert("Chrome Browser");
 
-	// 	nice();
+		nice();
 
-	// 	$(window).resize(function (){
-	// 		nice();
-	// 	});
+		$(window).resize(function (){
+			nice();
+		});
 
-	// }else if (agent.indexOf("safari") != -1) {
+	}else if (agent.indexOf("safari") != -1) {
 
-	// 	//alert("Safari Browser");
+		//alert("Safari Browser");
 
-	// }else if (agent.indexOf("firefox") != -1) {
+	}else if (agent.indexOf("firefox") != -1) {
 
-	// 	//alert("Firefox Browser");
+		//alert("Firefox Browser");
 
-	// 	nice();
+		nice();
 		
-	// 	$(window).resize(function (){
-	// 		nice();
-	// 	});
+		$(window).resize(function (){
+			nice();
+		});
 
-	// }else {
-	// 	//alert("ETC Browser");
-	// }
+	}else {
+		//alert("ETC Browser");
+	}
 });
 
 
@@ -126,26 +120,41 @@ $(document).ready(function() {
 
 // Header Show
 
-var scrollTop = $(window).scrollTop();
-//console.log(scrollTop);
+var didScroll;
+var lastScrollTop = 0;
+var delta = 5;
+var headerHeight = $('header').outerHeight();
 
-$(window).scroll(function(){
+$(window).scroll(function(e){
+	didScroll = true;
+})
 
-	var curTop = $(window).scrollTop();
-	//console.log(scrollTop, curTop);
+setInterval(function() {
+	if(didScroll){
+		hasScrolled();
+		didScroll = false;
+	}
+}, 250);
 
-	if(curTop > scrollTop){
-		// Scroll Down
-		$('header').css('top',-40);
-		// $('#hamburger').css('top',-40);
-	}else{
-		// Scroll Up
-		$('header').css('top',20);
-		// $('#hamburger').css('top',20);
+function hasScrolled() {
+	var st = $(this).scrollTop();
+
+	if(Math.abs(lastScrollTop - st) <= delta){
+		return;
 	}
 
-	scrollTop = curTop;
-});
+	if(st > lastScrollTop && st > headerHeight){
+		//scroll down
+		$('header').css('top',-40);
+		$('#hamburger').css('top',-40);
+	}else {
+		//scroll up
+		$('header').css('top',20);
+		$('#hamburger').css('top',20);
+	}
+
+	lastScrollTop = st;
+}
 
 
 

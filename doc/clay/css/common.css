@@ -42,11 +42,6 @@ img {
 	vertical-align:middle;
 }
 
-a[href^="tel"] {
-  color:inherit;
-  text-decoration:none;
-}
-
 ::-moz-selection {
    background-color:#eee;
 }
@@ -61,7 +56,7 @@ a[href^="tel"] {
 /*Custom Scroll*/
 
 ::-webkit-scrollbar {
-	width:8px;
+	width:8px; height:8px;
 }
 
 ::-webkit-scrollbar-track {
