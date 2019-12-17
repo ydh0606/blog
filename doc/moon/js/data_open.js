@@ -69,7 +69,7 @@ function dateTime(){
         //12 - 15 // new moon
         moon_ex = 0;
 
-        $thisMoon.attr("src","img/moon_00.png");
+        $thisMoon.attr("src","img/moon_00.jpg");
         $('#slider span').css({'top':3});
 
         $moonList.removeClass ('fade_in');
@@ -89,7 +89,7 @@ function dateTime(){
         //16 - 19 // half moon
         moon_ex = 1;
 
-        $thisMoon.attr("src","img/moon_01.png");
+        $thisMoon.attr("src","img/moon_01.jpg");
         $('#slider span').css({'top':55});
 
         $moonList.removeClass ('fade_in');
@@ -109,7 +109,7 @@ function dateTime(){
         //20 -24, 0 - 3 // full moon
         moon_ex = 2;
 
-        $thisMoon.attr("src","img/moon_02.png");
+        $thisMoon.attr("src","img/moon_02.jpg");
         $('#slider span').css({'top':110});
 
         $moonList.removeClass ('fade_in');
@@ -129,7 +129,7 @@ function dateTime(){
         //4 - 8 // half moon
         moon_ex = 3;
 
-        $thisMoon.attr("src","img/moon_03.png");
+        $thisMoon.attr("src","img/moon_03.jpg");
         $('#slider span').css({'top':165});
 
         $moonList.removeClass ('fade_in');
@@ -149,7 +149,7 @@ function dateTime(){
         //8 - 11 // new moon
         moon_ex = 4;
 
-        $thisMoon.attr("src","img/moon_04.png");
+        $thisMoon.attr("src","img/moon_04.jpg");
         $('#slider span').css({'top':220});
 
         $moonList.removeClass ('fade_in');
@@ -199,7 +199,7 @@ function timeClick(id){
         $moonList.removeClass('fade_in');
         $moonList.eq(id).addClass('fade_in');
 
-        $('.moon_list').css({'background':'url(img/moon_0' + _exId + '.png) no-repeat center center'});
+        $('.moon_list').css({'background':'url(img/moon_0' + _exId + '.jpg) no-repeat center center'});
         $('.moon_list').css({'backgroundSize':'cover'});
 
         _exId = _cuId;
@@ -209,7 +209,7 @@ function timeClick(id){
 
         //var _id = id + 1;
 
-        //$thisMoon.attr("src","img/moon_0" + _id + ".png");
+        //$thisMoon.attr("src","img/moon_0" + _id + ".jpg");
 
         if(id == 0){
             //console.log("New Moon");
