@@ -26,103 +26,96 @@ window.onbeforeunload = function() {
 
 
 
-// $(document).ready(function() {
+$(document).ready(function() {
 
-// 	// Scroll
+	// Scroll
 
-// 	var nice = function(){
+	var nice = function(){
 
-// 		$('html').getNiceScroll().remove();
+		$('html').niceScroll({
+			zindex:100000,
+			scrollspeed:80,
+			mousescrollstep:40,
+			cursorcolor:"#60516f",
+			cursoropacitymin:0,
+			cursoropacitymax:1,
+			cursorwidth:"8px",
+			cursorminheight:100,
+			cursorborder:"0px solid #fff",
+			cursorborderradius:"4px",
+			background:"none",
+			hidecursordelay:1000
+		});
+	}
 
-// 		if(window.innerWidth < 720){
-// 			//console.log("Slow Scroll Stop!")
-// 		}else {
-// 			//console.log("Slow Scroll Play!")
-// 			$('html').niceScroll({
-// 				zindex:100000,
-// 				scrollspeed:80,
-// 				mousescrollstep:40,
-// 				cursorcolor:"#60516f",
-// 				cursoropacitymin:0,
-// 				cursoropacitymax:1,
-// 				cursorwidth:"8px",
-// 				cursorminheight:100,
-// 				cursorborder:"0px solid #fff",
-// 				cursorborderradius:"4px",
-// 				background:"none",
-// 				hidecursordelay:1000
-// 			});
-// 		}
-// 	}
+    // Browser check
 
-//     // Browser check
+    var agent = navigator.userAgent.toLowerCase();
 
-//     var agent = navigator.userAgent.toLowerCase();
+    if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
 
-//     if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+        //alert("IE Browser");
 
-//         //alert("IE Browser");
+        nice();
 
-//         nice();
+		$(window).resize(function (){
+			nice();
+		});
 
-// 		$(window).resize(function (){
-// 			nice();
-// 		});
+    }else if (agent.indexOf("edge") != -1) {
 
-//     }else if (agent.indexOf("edge") != -1) {
+		//alert("IE Edge Browser");
 
-// 		//alert("IE Edge Browser");
+		nice();
 
-// 		nice();
+		$(window).resize(function (){
+			nice();
+		});
 
-// 		$(window).resize(function (){
-// 			nice();
-// 		});
+	}else if (agent.indexOf("whale") != -1) {
 
-// 	}else if (agent.indexOf("whale") != -1) {
+		//alert("Whale Browser");
 
-// 		//alert("Whale Browser");
+		// nice();
 
-// 		// nice();
+		// $(window).resize(function (){
+		// 	nice();
+		// });
 
-// 		// $(window).resize(function (){
-// 		// 	nice();
-// 		// });
+	}else if (agent.indexOf("chrome") != -1) {
 
-// 	}else if (agent.indexOf("chrome") != -1) {
+		//alert("Chrome Browser");
 
-// 		//alert("Chrome Browser");
+		// nice();
 
-// 		// nice();
+		// $(window).resize(function (){
+		// 	nice();
+		// });
 
-// 		// $(window).resize(function (){
-// 		// 	nice();
-// 		// });
+	}else if (agent.indexOf("safari") != -1) {
 
-// 	}else if (agent.indexOf("safari") != -1) {
+		//alert("Safari Browser");
 
-// 		//alert("Safari Browser");
+		// nice();
 
-// 		// nice();
+		// $(window).resize(function (){
+		// 	nice();
+		// });
 
-// 		// $(window).resize(function (){
-// 		// 	nice();
-// 		// });
+	}else if (agent.indexOf("firefox") != -1) {
 
-// 	}else if (agent.indexOf("firefox") != -1) {
+		//alert("Firefox Browser");
 
-// 		//alert("Firefox Browser");
-
-// 		nice();
+		nice();
 		
-// 		$(window).resize(function (){
-// 			nice();
-// 		});
+		$(window).resize(function (){
+			nice();
+		});
 
-// 	}else {
-// 		//alert("ETC Browser");
-// 	}
-// });
+	}else {
+		//alert("ETC Browser");
+	}
+});
 
 
 

@@ -1,4 +1,9 @@
 
+// ready
+//console.log("Home Script In!")
+console.log (window.innerWidth, window.innerHeight);
+
+
 
 
 

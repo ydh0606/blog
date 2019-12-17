@@ -1,6 +1,6 @@
+
 // ready
-console.log("Sub Script In!")
-console.log (window.innerWidth, window.innerHeight);
+//console.log("Sub Script In!")
 
 $('.big_box').hide();
 $('.sub_item').hide();
@@ -11,22 +11,97 @@ $('.line_img').hide();
 
 
 
-//Nice Scroll
+$(document).ready(function() {
 
-$('html').niceScroll({
-	zindex:100000,
-	scrollspeed:100,
-	mousescrollstep:20,
-	cursorcolor:"#a67c52",
-	cursoropacitymin:0,
-	cursoropacitymax:0.6,
-	cursorwidth:"12px",
-	cursorminheight:100,
-	cursorborder:"0px solid #fff",
-	cursorborderradius:"0",
-	background:"",
-	hidecursordelay:1000
+	// Scroll
+
+	var nice = function(){
+
+		$('html').niceScroll({
+			zindex:100000,
+			scrollspeed:100,
+			mousescrollstep:20,
+			cursorcolor:"#a67c52",
+			cursoropacitymin:0,
+			cursoropacitymax:0.6,
+			cursorwidth:"12px",
+			cursorminheight:100,
+			cursorborder:"0px solid #fff",
+			cursorborderradius:"0",
+			background:"",
+			hidecursordelay:1000
+		});
+	}
+
+    // Browser check
+
+    var agent = navigator.userAgent.toLowerCase();
+
+    if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+
+        //alert("IE Browser");
+
+        nice();
+
+		$(window).resize(function (){
+			nice();
+		});
+
+    }else if (agent.indexOf("edge") != -1) {
+
+		//alert("IE Edge Browser");
+
+		nice();
+
+		$(window).resize(function (){
+			nice();
+		});
+
+	}else if (agent.indexOf("whale") != -1) {
+
+		//alert("Whale Browser");
+
+		// nice();
+
+		// $(window).resize(function (){
+		// 	nice();
+		// });
+
+	}else if (agent.indexOf("chrome") != -1) {
+
+		//alert("Chrome Browser");
+
+		nice();
+
+		$(window).resize(function (){
+			nice();
+		});
+
+	}else if (agent.indexOf("safari") != -1) {
+
+		//alert("Safari Browser");
+
+		// nice();
+
+		// $(window).resize(function (){
+		// 	nice();
+		// });
+
+	}else if (agent.indexOf("firefox") != -1) {
+
+		//alert("Firefox Browser");
+
+		nice();
+		
+		$(window).resize(function (){
+			nice();
+		});
+
+	}else {
+		//alert("ETC Browser");
+	}
 });
+
 
 
 
@@ -34,8 +109,8 @@ $('html').niceScroll({
 // Sub Load
 
 window.onload = function () {
-	console.log("Load Complete");
-	setTimeout('loading()', 500);
+	//console.log("Load Complete");
+	setTimeout('loading()', 1000);
 }
 
 // setTimeout(function(){

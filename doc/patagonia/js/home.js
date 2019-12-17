@@ -1,6 +1,6 @@
+
 // ready
-console.log("Home Script In!")
-console.log (window.innerWidth, window.innerHeight);
+//console.log("Home Script In!")
 
 $('.big_box').hide();
 $('.main_item').hide();
@@ -13,14 +13,14 @@ $('.wrap').hide();
 // Home Load 
 
 window.onload = function () {
-	console.log("Load Complete");
-	setTimeout('loading()', 1500);
+	//console.log("Load Complete");
+	setTimeout('loading()', 1000);
 }
 
 function loading(){
 
 	$('.load').animate({'opacity':0}, 500);
-	$('.big_box').show().delay(350).animate({'opacity':1}, 500);
+	$('.big_box').show().delay(0).animate({'opacity':1}, 500);
 
 	mainOpenAni();
 }
@@ -38,25 +38,25 @@ function mainOpenAni(){
 	TweenMax.set($('.drop'), {css:{y:-35}});
 	TweenMax.set($('.title_wrap'), {css:{y:-100}});
 
-	TweenMax.to($('#logo'), dur, {css:{y:0}, delay:0.5});
+	TweenMax.to($('#logo'), dur, {css:{y:0}, delay:0.2});
 
-	TweenMax.to($('.lang_en'), dur, {css:{y:0}, delay:0.5});
-	TweenMax.to($('.lang_ko'), dur, {css:{y:0}, delay:0.6});
-	TweenMax.to($('#menu'), dur, {css:{y:0}, delay:0.7});
+	TweenMax.to($('.lang_en'), dur, {css:{y:0}, delay:0.3});
+	TweenMax.to($('.lang_ko'), dur, {css:{y:0}, delay:0.3});
+	TweenMax.to($('#menu'), dur, {css:{y:0}, delay:0.4});
 
-	TweenMax.to($('#sns li').eq(0), dur, {css:{y:0}, delay:0.5});
-	TweenMax.to($('#sns li').eq(1), dur, {css:{y:0}, delay:0.6});
-	TweenMax.to($('#sns li').eq(2), dur, {css:{y:0}, delay:0.7});
+	TweenMax.to($('#sns li').eq(0), dur, {css:{y:0}, delay:0.2});
+	TweenMax.to($('#sns li').eq(1), dur, {css:{y:0}, delay:0.3});
+	TweenMax.to($('#sns li').eq(2), dur, {css:{y:0}, delay:0.4});
 
-	TweenMax.to($('#site a'), dur, {css:{y:0}, delay:0.8});
-	TweenMax.to($('#load'), dur, {css:{y:0}, delay:0.8});
+	TweenMax.to($('#site a'), dur, {css:{y:0}, delay:0.5});
+	TweenMax.to($('#load'), dur, {css:{y:0}, delay:0.5});
 
-	TweenMax.to($('.title_wrap'), 4, {css:{y:0}, delay:0.6, ease:Elastic.easeOut.config(1, 0.5)});
+	TweenMax.to($('.title_wrap'), 4, {css:{y:0}, delay:0.3, ease:Elastic.easeOut.config(1, 0.5)});
 
-	$('.main_item').show().stop(true).delay(500)
+	$('.main_item').show().stop(true).delay(200)
     .animate({'opacity':1}, 1000);
 
-    $('.wrap').show().stop(true).delay(700)
+    $('.wrap').show().stop(true).delay(400)
     .animate({'opacity':1}, 1500);
 
     selectTitle();
@@ -212,7 +212,7 @@ $('ul.m_lang li').on('click', function(e){
 $('.lang_en').on('click', function(e){
 	e.preventDefault();
 
-	console.log("English Ver");
+	//console.log("English Ver");
 
 	//var $select = $(this).has('.select');
 
@@ -224,7 +224,7 @@ $('.lang_en').on('click', function(e){
 $('.lang_ko').on('click', function(e){
 	e.preventDefault();
 
-	console.log("Korean Ver");
+	//console.log("Korean Ver");
 
 	titleOut();
 	koShow();

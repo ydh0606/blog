@@ -26,6 +26,37 @@ body,p,h1,h2,h3,h4,h5,h6,a {
 ul,ol,li { list-style:none; }
 img { border:none; vertical-align:middle; }
 
+::-moz-selection {
+   background-color:#c7b299;
+   color:#fff;
+}
+::selection {
+   background-color:#c7b299;
+   color:#fff;
+}
+
+
+
+
+
+/*Custom Scroll*/
+
+::-webkit-scrollbar {
+	width:5px;
+}
+
+::-webkit-scrollbar-track {
+	background:#333;
+}
+ 
+::-webkit-scrollbar-thumb {
+	background:#a67c52;
+}
+
+/*::-webkit-scrollbar-thumb:hover {
+	background:rgba(95,98,69,0.8); 
+}*/
+
 
 
 
