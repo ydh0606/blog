@@ -51,11 +51,12 @@ var _ex = _cu;
 
 
 function subExit(event){
-    //console.log('subExit');
-    event.preventDefault();
+  //console.log('subExit');
+  event.preventDefault();
 
-    $sub.style.display = 'none';
-    galClick(1);
+  //alert('wait!');
+
+  $sub.style.display = 'none';
 }
 
 $exit.addEventListener('click', subExit);
@@ -65,7 +66,7 @@ $logo.addEventListener('click', subExit);
 function castClick(id){
 
     function onClickCast(event){
-      console.log('onClickCast');
+      //console.log('onClickCast');
       event.preventDefault();
 
       $('.text_area').scrollTop(0);
@@ -136,7 +137,7 @@ selectCastNav ();
 function subMenuClick(id){
 
     function clickSubMenu(event){
-      console.log('clickSubMenu ' + id);
+      //console.log('clickSubMenu ' + id);
       event.preventDefault();
 
       $sub.style.display = 'block';
@@ -168,3 +169,62 @@ function selectSubMenu(){
 }
 
 selectSubMenu ();
+
+
+
+
+
+/*Gallery*/
+
+var $highImg = document.querySelector('.img_area');
+var $numArea = $('#_cuid');
+
+var $arrow = $('.arrow');
+var $prev = $('.prev');
+var $next = $('.next');
+
+var _id = 0;
+var _itemMax = $highImg.children.length;
+//console.log(_itemMax)
+
+
+var _cuId = 0;
+var _exId = _cuId;
+
+
+
+function galClick(id){
+  _cuId = id;
+
+  // console.log('id', id);
+  //console.log('_cuId', _cuId);
+  //console.log('_exId', _exId);
+
+  $('.gal_img_' + _exId).removeClass('fade_in');
+  $('.gal_img_' + _cuId).addClass('fade_in');
+
+  _exId = _cuId;
+   
+}
+
+
+var init = function() {
+    $arrow.on('click', function(e) {
+        e.preventDefault();
+        var $el = $(this); 
+        if($el.is($prev)) { 
+            if(_id > 0){ 
+                _id--;
+            }
+        }else{ //next. ++
+            if(_id < _itemMax - 1){ 
+                _id++;
+            }
+        }
+        //console.log(_id)
+
+        $numArea.empty().html(_id + 1);
+        galClick(_id);
+    });
+}
+init();

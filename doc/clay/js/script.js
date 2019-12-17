@@ -13,104 +13,116 @@ window.onbeforeunload = function() {
 };
 
 
-if(self.name != 'reload'){
+// if(self.name != 'reload'){
 
-	self.name = 'reload';
-	self.location.reload(true);
+// 	self.name = 'reload';
+// 	self.location.reload(true);
 
-}else {
-	self.name = '';
-}
-
-
+// }else {
+// 	self.name = '';
+// }
 
 
 
-$(document).ready(function() {
 
-	// Scroll
 
-	var nice = function(){
+// $(document).ready(function() {
 
-		$('html').getNiceScroll().remove();
+// 	// Scroll
 
-		if(window.innerWidth < 720){
-			//console.log("Slow Scroll Stop!")
-		}else {
-			//console.log("Slow Scroll Play!")
-			$('html').niceScroll({
-				zindex:100000,
-				scrollspeed:80,
-				mousescrollstep:40,
-				cursorcolor:"#60516f",
-				cursoropacitymin:0,
-				cursoropacitymax:1,
-				cursorwidth:"8px",
-				cursorminheight:100,
-				cursorborder:"0px solid #fff",
-				cursorborderradius:"4px",
-				background:"none",
-				hidecursordelay:1000
-			});
-		}
-	}
+// 	var nice = function(){
 
-    // Browser check
+// 		$('html').getNiceScroll().remove();
 
-    var agent = navigator.userAgent.toLowerCase();
+// 		if(window.innerWidth < 720){
+// 			//console.log("Slow Scroll Stop!")
+// 		}else {
+// 			//console.log("Slow Scroll Play!")
+// 			$('html').niceScroll({
+// 				zindex:100000,
+// 				scrollspeed:80,
+// 				mousescrollstep:40,
+// 				cursorcolor:"#60516f",
+// 				cursoropacitymin:0,
+// 				cursoropacitymax:1,
+// 				cursorwidth:"8px",
+// 				cursorminheight:100,
+// 				cursorborder:"0px solid #fff",
+// 				cursorborderradius:"4px",
+// 				background:"none",
+// 				hidecursordelay:1000
+// 			});
+// 		}
+// 	}
 
-    if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
+//     // Browser check
 
-        //alert("IE Browser");
+//     var agent = navigator.userAgent.toLowerCase();
 
-        nice();
+//     if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
 
-		$(window).resize(function (){
-			nice();
-		});
+//         //alert("IE Browser");
 
-    }else if (agent.indexOf("edge") != -1) {
+//         nice();
 
-		//alert("IE Edge Browser");
+// 		$(window).resize(function (){
+// 			nice();
+// 		});
 
-		nice();
+//     }else if (agent.indexOf("edge") != -1) {
 
-		$(window).resize(function (){
-			nice();
-		});
+// 		//alert("IE Edge Browser");
 
-	}else if (agent.indexOf("whale") != -1) {
+// 		nice();
 
-		//alert("Whale Browser");
+// 		$(window).resize(function (){
+// 			nice();
+// 		});
 
-	}else if (agent.indexOf("chrome") != -1) {
+// 	}else if (agent.indexOf("whale") != -1) {
 
-		//alert("Chrome Browser");
+// 		//alert("Whale Browser");
 
-		// nice();
+// 		// nice();
 
-		// $(window).resize(function (){
-		// 	nice();
-		// });
+// 		// $(window).resize(function (){
+// 		// 	nice();
+// 		// });
 
-	}else if (agent.indexOf("safari") != -1) {
+// 	}else if (agent.indexOf("chrome") != -1) {
 
-		//alert("Safari Browser");
+// 		//alert("Chrome Browser");
 
-	}else if (agent.indexOf("firefox") != -1) {
+// 		// nice();
 
-		//alert("Firefox Browser");
+// 		// $(window).resize(function (){
+// 		// 	nice();
+// 		// });
 
-		nice();
+// 	}else if (agent.indexOf("safari") != -1) {
+
+// 		//alert("Safari Browser");
+
+// 		// nice();
+
+// 		// $(window).resize(function (){
+// 		// 	nice();
+// 		// });
+
+// 	}else if (agent.indexOf("firefox") != -1) {
+
+// 		//alert("Firefox Browser");
+
+// 		nice();
 		
-		$(window).resize(function (){
-			nice();
-		});
+// 		$(window).resize(function (){
+// 			nice();
+// 		});
 
-	}else {
-		//alert("ETC Browser");
-	}
-});
+// 	}else {
+// 		//alert("ETC Browser");
+// 	}
+// });
 
 
 

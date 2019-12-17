@@ -1,6 +1,7 @@
 
 // ready
 //console.log ("Script In!");
+console.log (window.innerWidth, window.innerHeight);
 
 
 
@@ -10,13 +11,13 @@ var agent = navigator.userAgent.toLowerCase();
 
 if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
 
-  console.log("Yes, IE!");
+  //console.log("Yes, IE!");
   $('h2#title').css({
     'opacity':'0.8'
   });
 
 }else {
-  console.log("No, IE!");
+  //console.log("No, IE!");
 };
 
 
@@ -27,13 +28,12 @@ if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') !
 var $cursor = document.querySelector('#cursor');
 var $allA = document.querySelectorAll('a');
 
+// function mousePointer(e){
+//     //console.log('Mouse Pointer');
+//     $cursor.style.transform = 'translate(' + e.pageX + 'px, ' + e.pageY + 'px)';
+// }
 
-function mousePointer(e){
-    //console.log('Mouse Pointer');
-    $cursor.style.transform = 'translate(' + e.pageX + 'px, ' + e.pageY + 'px)';
-}
-
-window.addEventListener('mousemove', mousePointer);
+//window.addEventListener('mousemove', mousePointer);
 
 function aPointer01(e){
    $cursor.style.backgroundColor = 'rgba(0,0,0,0.5)';
@@ -220,7 +220,14 @@ var screenH = window.innerHeight;
 var moveSpeed = 0.75;
 var bigMove = 30, smallMove = 50, minMove = 80, tinyMove = 200;
 
+
 $(window).mousemove(function(e) {
+
+  TweenMax.to($('#cursor'), 0.3, {
+    css: {
+      transform : "translate(" + e.pageX + "px, " + e.pageY + "px"
+    }
+  });
 
   var posX = (e.pageX - screenW / 2),
       posY = (e.pageY - screenH / 2);
