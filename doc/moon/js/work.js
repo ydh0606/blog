@@ -11,35 +11,77 @@ var imageList = $('.image li').length;
 
 
 
-$(window).on("mousewheel",function(e){
+var agent = navigator.userAgent.toLowerCase();
 
-    if(e.originalEvent.wheelDelta >= 0) {
-        //console.log("Scroll Up");
+if (agent.indexOf("firefox") != -1) {
 
-        i--;
+    //alert("Firefox Browser");
 
-        if(i == -1){               
-            i = 3
-            $('.title').css({top : - titleH * 4})
-            $('.title h1').eq(4).css({opacity : 1})
-        } 
+    $(window).on("DOMMouseScroll",function(e){
 
-        workTitleSlide()
+        if(e.originalEvent.detail >= 0) {
+            //console.log("Scroll Down");
+            i++;
 
-    } else {
-        //console.log("Scroll Down");
-        i++;
+            if(i == 6){               
+                i = 2
+                $('.title').css({top : - titleH * 1})
+                $('.title h1').eq(1).css({opacity : 1})
+            } 
 
-        if(i == 6){               
-            i = 2
-            $('.title').css({top : - titleH * 1})
-            $('.title h1').eq(1).css({opacity : 1})
-        } 
+            workTitleSlide()
 
-        workTitleSlide()
-    }
+        } else {
+            //console.log("Scroll Up");
 
-});
+            i--;
+
+            if(i == -1){               
+                i = 3
+                $('.title').css({top : - titleH * 4})
+                $('.title h1').eq(4).css({opacity : 1})
+            } 
+
+            workTitleSlide()
+        }
+
+    });
+
+}else {
+    //alert("ETC Browser");
+
+    $(window).on("mousewheel",function(e){
+
+        if(e.originalEvent.wheelDelta >= 0) {
+            //console.log("Scroll Up");
+
+            i--;
+
+            if(i == -1){               
+                i = 3
+                $('.title').css({top : - titleH * 4})
+                $('.title h1').eq(4).css({opacity : 1})
+            } 
+
+            workTitleSlide()
+
+        } else {
+            //console.log("Scroll Down");
+            i++;
+
+            if(i == 6){               
+                i = 2
+                $('.title').css({top : - titleH * 1})
+                $('.title h1').eq(1).css({opacity : 1})
+            } 
+
+            workTitleSlide()
+        }
+
+    });
+}
+
+
 
 function workTitleSlide(){
             

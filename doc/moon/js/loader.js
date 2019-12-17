@@ -192,18 +192,41 @@ function clickScroll(){
 
 
 
-$(window).on("mousewheel DOMMouseScroll",function(e){
+var agent = navigator.userAgent.toLowerCase();
 
-    if(e.originalEvent.wheelDelta >= 0) {
-        //console.log("Scroll Up");
-        goMain()
+if (agent.indexOf("firefox") != -1) {
 
-    } else {
-        //console.log("Scroll Down");
-        goControl()
-    }
+	//alert("Firefox Browser");
 
-});
+	$(window).on("DOMMouseScroll",function(e){
+
+	    if(e.originalEvent.detail >= 0) {
+	        //console.log("Scroll Down");
+	       goControl()
+	       
+	    } else {
+	        //console.log("Scroll Up");
+	         goMain()
+	    }
+
+	});
+
+}else {
+	//alert("ETC Browser");
+
+	$(window).on("mousewheel",function(e){
+
+	    if(e.originalEvent.wheelDelta >= 0) {
+	        //console.log("Scroll Up");
+	        goMain()
+
+	    } else {
+	        //console.log("Scroll Down");
+	        goControl()
+	    }
+
+	});
+}
 
 
 
@@ -236,24 +259,24 @@ function goControl(){
     $('#location').show().stop(true).delay(100)
     .animate({'opacity':0}, 2000)
 
-    $('#scroll b').stop(true).delay(1000)
+    $('#scroll b').stop(true).delay(500)
     .animate({'left':70}, 1500, 'easeInOutCubic')
 
-    $('#scroll b > b').stop(true).delay(1000)
+    $('#scroll b > b').stop(true).delay(500)
     .animate({'left':60}, 1500, 'easeInOutCubic')
 
-    $('#scroll span').stop(true).delay(1000)
+    $('#scroll span').stop(true).delay(500)
     .animate({'left':0}, 1500, 'easeInOutCubic')
 
-    $('.title_wrap').hide().stop(true).delay(2000)
+    $('.title_wrap').hide().stop(true).delay(1000)
 
-	$('.control_title').show().stop(true).delay(2000)
+	$('.control_title').show().stop(true).delay(1000)
     .animate({'opacity':1}, 2000)
 
-    $('.weather').show().stop(true).delay(2000)
+    $('.weather').show().stop(true).delay(1000)
     .animate({'opacity':1}, 2000)
 
-    $('.time').show().stop(true).delay(2000)
+    $('.time').show().stop(true).delay(1000)
     .animate({'opacity':1}, 2000)
 } 
 
