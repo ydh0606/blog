@@ -305,9 +305,17 @@ span#site a {
 	position:relative; 
 	float:left; 
 	font-size:14px; margin-top:0px; 
+	-webkit-transition:color 0.5s; 
+	-moz-transition:color 0.5s; 
+	-o-transition:color 0.5s; 
+	transition:color 0.5s;
 }
 span#site a:hover { 
 	color:#fff; 
+	-webkit-transition:color 0.5s; 
+	-moz-transition:color 0.5s; 
+	-o-transition:color 0.5s; 
+	transition:color 0.5s;
 }
 
 /*.white span#site a { font-weight:300; color:#777; }*/
