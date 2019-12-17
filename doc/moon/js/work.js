@@ -155,7 +155,7 @@ function textFill(){
 
     if(i == 5 || i == 1){
         //console.log("andrew")
-        $sort.empty().html('Web Design');
+        $sort.empty().html('App Design');
         $num.empty().html('01');
         $btn.attr('href', '../clay/index.html');
 
@@ -173,7 +173,7 @@ function textFill(){
 
     } else if(i == 4 || i == 0){
         //console.log("clay")
-        $sort.empty().html('App Design');
+        $sort.empty().html('Web Design');
         $num.empty().html('04');
         $btn.attr('href', '../equals/index.html');
     }
