@@ -1,0 +1,23 @@
+/*media query*/
+
+@media screen and (min-width:1601px) {  
+	/*width check*/
+	.text span { color:#fff; }
+}
+
+
+
+@media screen and (min-width:1025px) and (max-width:1600px) {  
+	/*width check*/
+	.text span { color:red; }
+
+}
+
+
+
+@media screen and (max-width:1024px) {  
+	/*width check*/
+	.text span { color:orange; }
+
+
+}
