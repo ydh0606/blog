@@ -1,0 +1,247 @@
+
+/*common*/
+html, body { background-color:#fff; }
+
+
+
+
+
+/*contents*/
+
+.wrap_show { 
+	z-index:10000; 
+	position:relative; 
+	top:6%; left:0; 
+	width:100%; height:94%; 
+	/*border:1px solid #fff;*/ 
+}
+
+.wrap { 
+	position:absolute; 
+	top:0; left:0; 
+	width:100%; height:100%; 
+	/*border:1px solid red;*/
+}
+
+
+
+/*contents wrap*/
+
+.contents_wrap { 
+	position:relative; 
+	top:110%; width:100%; 
+	overflow:hidden;
+}
+.contents { 
+	position:relative; 
+	top:0; left:50%;
+	width:1350px;
+	-webkit-transition:all 1s; 
+	-moz-transition:all 1s; 
+	-o-transition:all 1s; 
+	transition:all 1s; 
+	/*background-color:rgba(255,255,255,0.2);*/
+}
+
+.contents + .contents {
+	margin-top:200px;
+}
+
+.contents h1, 
+.contents > h2, 
+.contents .img, 
+.contents > p, 
+.contents .text { 
+	position:absolute; 
+} 
+
+.contents h1 { 
+	font-size:250px; font-weight:700; 
+	line-height:1; white-space:nowrap;
+	color:#c7b299; 
+	opacity:0.35; 
+	-webkit-transition:all 0.5s; 
+	-moz-transition:all 0.5s; 
+	-o-transition:all 0.5s; 
+	transition:all 0.5s; 
+}
+.contents h2 { 
+	font-size:50px; font-weight:700; 
+	line-height:1.1; 
+	margin:0 0 40px -6px;
+	color:#c7b299; 
+	-webkit-transition:all 0.5s; 
+	-moz-transition:all 0.5s; 
+	-o-transition:all 0.5s; 
+	transition:all 0.5s; 
+}
+
+.text span { 
+	display:inline-block;
+	position:relative; 
+	font-weight:500; font-size:17px; 
+	margin-bottom:30px; 
+}
+.text span:before { 
+	content:''; 
+	position:absolute; 
+	bottom:0px; left:0;
+	width:100%; height:0; 
+	border-bottom:1px solid #fff; 
+}
+
+.text p { 
+	line-height:1.5; font-size:17px; 
+	opacity:0.9; 
+}
+.text p:first-child {
+	margin-top:20px;
+}
+.text p + p {
+	margin-top:10px;
+}
+
+
+
+
+
+/*contents sub title*/
+
+.title_wrap { 
+	position:absolute; 
+	top:0; left:4%; 
+	width:92%; height:100%;
+	opacity:0;
+	/*border:1px solid blue;*/
+}
+
+#title { 
+	position:absolute; 
+	top:50%; left:5%;
+	-webkit-transform:translateY(-60%); 
+	-ms-transform:translateY(-60%); 
+	-moz-transform:translateY(-60%); 
+	-o-transform:translateY(-60%); 
+	transform:translateY(-60%); 
+	/*border:1px solid red;*/ 
+}
+#title h1 { 
+	font-size:125px; font-weight:500; 
+	line-height:1.5; 
+	color:rgba(255,255,255,0.95); 
+}
+#title span { 
+	display:inline-block; 
+	width:100px; height:5px; 
+	background-color:rgba(255,255,255,0.90);
+	margin:0 25px 15px 0; 
+}
+#title h2 { 
+	display:inline-block; 
+	font-size:50px; font-weight:400; 
+	line-height:1.5; 
+	color:rgba(255,255,255,0.90);
+}
+
+#story { 
+	position:absolute; 
+	top:60%; right:10%; 
+}
+#story span { 
+	position:relative; 
+	font-weight:500; font-size:17px; 
+	margin-bottom:15px; 
+}
+#story span:before { 
+	content:''; 
+	position:absolute; 
+	bottom:0px; left:0;
+	width:100%; height:0; 
+	border-bottom:1px solid #fff; 
+}
+
+#story p { 
+	margin:15px 0 7px 0; 
+	line-height:1.2; 
+	font-size:17px; 
+}
+#story p+p { 
+	margin:0; 
+}
+
+#story p#say { 
+	font-size:13px; 
+	margin-top:17px; 
+}
+
+#story span, #story p { 
+	color:rgba(255,255,255,0.95); 
+}
+
+span#sub_arr { 
+	display:block; 
+	position:absolute; 
+	bottom:6%; left:50%; 
+	width:25px; height:25px; 
+	-webkit-transform:translateX(-50%); 
+	-ms-transform:translateX(-50%); 
+	-moz-transform:translateX(-50%); 
+	-o-transform:translateX(-50%); 
+	transform:translateX(-50%); 
+}
+span#sub_arr img { 
+	width:100%; 
+}
+
+
+
+
+
+/*addClass */
+
+.sub_item { 
+	opacity:0; 
+}
+
+.transition { 
+	-webkit-transition:all 0.5s; 
+	-moz-transition:all 0.5s; 
+	-o-transition:all 0.5s; 
+	transition:all 0.5s;
+}
+
+.half_top { 
+	-webkit-transform:translateY(-50%); 
+	-ms-transform:translateY(-50%); 
+	-moz-transform:translateY(-50%); 
+	-o-transform:translateY(-50%); 
+	transform:translateY(-50%);
+}
+
+.half_left { 
+	-webkit-transform:translateX(-50%); 
+	-ms-transform:translateX(-50%); 
+	-moz-transform:translateX(-50%); 
+	-o-transform:translateX(-50%); 
+	transform:translateX(-50%); 
+}
+
+.up_fade { 
+	opacity:0; 
+	-webkit-transform:translate(-50%, 0); 
+	-ms-transform:translate(-50%, 0); 
+	-moz-transform:translate(-50%, 0); 
+	-o-transform:translate(-50%, 0); transform:translate(-50%, 0); 
+	-webkit-transition:all 1.5s; 
+	-moz-transition:all 1.5s; 
+	-o-transition:all 1.5s;
+}
+
+.visible { 
+	opacity:1; 
+	-webkit-transform:translate(-50%, 0); 
+	-ms-transform:translate(-50%, 0); 
+	-moz-transform:translate(-50%, 0); 
+	-o-transform:translate(-50%, 0); 
+	transform:translate(-50%, 0);
+}
