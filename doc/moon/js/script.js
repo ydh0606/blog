@@ -14,8 +14,25 @@ $(document).ready(function() {
 
     if ( (navigator.appName == 'Netscape' && navigator.userAgent.search('Trident') != -1) || (agent.indexOf("msie") != -1) ) {
 
-        //console.log("Yes, IE!");
+        //alert("Safari Browser");
+        textMask();
 
+    }else if (agent.indexOf("chrome") != -1) {
+
+        //alert("Chrome Browser");
+
+    }else if (agent.indexOf("safari") != -1) {
+
+        //alert("Safari Browser");
+        //textMask();
+
+    }else {
+        //alert("ETC Browser");
+
+    };
+
+
+    function textMask() {
         $('.text_mask').css({
             'color':'#646e79',
             'background-image':'inherit',
@@ -28,11 +45,7 @@ $(document).ready(function() {
             '-webkit-background-clip':'inherit',
             '-webkit-text-fill-color':'inherit'
         });
-
-    }else {
-        //console.log("No, IE!");
-
-    };
+    }
 
 
 

@@ -23,8 +23,8 @@ $(document).ready(function() {
 			mousescrollstep:20,
 			cursorcolor:"#a67c52",
 			cursoropacitymin:0,
-			cursoropacitymax:0.6,
-			cursorwidth:"12px",
+			cursoropacitymax:0.8,
+			cursorwidth:"8px",
 			cursorminheight:100,
 			cursorborder:"0px solid #fff",
 			cursorborderradius:"0",
@@ -71,11 +71,11 @@ $(document).ready(function() {
 
 		//alert("Chrome Browser");
 
-		nice();
+		// nice();
 
-		$(window).resize(function (){
-			nice();
-		});
+		// $(window).resize(function (){
+		// 	nice();
+		// });
 
 	}else if (agent.indexOf("safari") != -1) {
 

@@ -106,7 +106,7 @@
 }
 
 #content_03 .text { 
-	top:150px; left:750px; 
+	top:170px; left:750px; 
 }
 #content_03 #text_02 { 
 	top:400px; left:750px; 
@@ -175,26 +175,4 @@
 
 #content_05 .text { 
 	top:0; right:0%; 
-}
-
-
-
-
-
-/*media query*/
-
-@media screen and (min-width:1601px) { 
-}
-
-
-
-@media screen and (min-width:1025px) and (max-width:1600px) {  
-
-}
-
-
-
-@media screen and (max-width:1024px) {  
-
-
 }
