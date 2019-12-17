@@ -241,3 +241,45 @@ function menuMove(i) {
 	}, 150)
 
 };
+
+
+
+
+
+$(document).ready(function() {
+
+    // Mouse Position Parallax
+
+    var winW = $(window).width(),
+        winH = $(window).height();
+
+    var moveSpeed = 0.75;
+    var bigMove = 30, smallMove = 50, minMove = 100, move = 10;
+
+    $('body').mousemove(function(e) {
+        //console.log(e.pageX, e.pageY);
+
+        var posX = (e.pageX - winW / 2);
+        var posY = (e.pageY - winH / 2);
+        //console.log(posX, posY);
+
+        TweenMax.to($('.big_move'), moveSpeed, {
+            css: {
+                transform : "translate(" + (posX / bigMove) + "px, " + (posY / bigMove) + "px"
+            }
+        })
+
+        TweenMax.to($('.small_move'), moveSpeed, {
+            css: {
+                transform : "translate(" + ( - posX / smallMove) + "px, " + ( - posY / smallMove) + "px"
+            }
+        })
+
+        TweenMax.to($('.minMove'), moveSpeed, {
+            css: {
+                transform : "translate(" + ( - posX / minMove) + "px, " + ( - posY / minMove) + "px"
+            }
+        })
+
+    });
+});
