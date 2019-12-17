@@ -33,7 +33,7 @@ $(document).ready(function() {
 	var nice = function(){
 
 		$('html').niceScroll({
-			zindex:100000,
+			zindex:1000000,
 			scrollspeed:80,
 			mousescrollstep:40,
 			cursorcolor:"#60516f",
