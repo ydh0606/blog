@@ -120,7 +120,7 @@ window.onload = function () {
 function loading(){
 
 	$('.load').animate({'opacity':0}, 500);
-	$('.big_box').show().delay(350).animate({'opacity':1}, 500);
+	$('.big_box').show().delay(0).animate({'opacity':1}, 800);
 
 	subOpenAni();
 }
