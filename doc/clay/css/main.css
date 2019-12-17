@@ -198,6 +198,7 @@ h1#title span.font_en {
 	position:relative;
 	top:0; left:50%;
 	width:64%;
+	max-width:1250px; 
 	margin-top:300px; margin-bottom:200px;
 	-webkit-transform:translateX(-50%); 
 	-ms-transform:translateX(-50%); 

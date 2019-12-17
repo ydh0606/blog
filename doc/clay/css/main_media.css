@@ -1,7 +1,20 @@
 
 /*media query*/
 
-@media screen and (min-width:1600px) {  
+@media screen and (min-width:1921px) {  
+	
+	.bg_text #bgt_clay { 
+		left:auto; right:-40%;
+	}
+
+	.bg_text #bgt_want { 
+		left:10%;
+	}
+
+}
+
+
+@media screen and (min-width:1600px) and (max-width:1920px) {  
 	/*original 1920*/
 }
 
